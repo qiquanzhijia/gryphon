@@ -27,8 +27,7 @@ class CoinbaseOrderbookWebsocket(EmeraldWebSocketClientProtocol, WebsocketOrderb
 
         factory = WebSocketClientFactory(
             'wss://ws-feed.exchange.coinbase.com',
-            debug=False,
-        )
+            )
 
         # This actually creates a new Instance of CoinbaseOrderbook.
         factory.protocol = type(self)

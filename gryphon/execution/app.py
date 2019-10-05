@@ -44,6 +44,7 @@ class GryphonFuryBaseController(controller.CementBaseController):
             'exchange': None,
             'our_orders': False,
             'execute': False,
+            'backtest': False,
         }
 
         arguments = [
@@ -58,6 +59,10 @@ class GryphonFuryBaseController(controller.CementBaseController):
             (['-X', '--execute'], {
                 'action': 'store_true',
                 'help': 'execute real trades',
+            }),
+            (['--backtest'], {
+                'action': 'store_true',
+                'help': 'backtest strategy',
             }),
             (['--heartbeat'], {
                 'action': 'store_true',
@@ -118,7 +123,7 @@ class GryphonFuryBaseController(controller.CementBaseController):
         if self.app.pargs.more_logging:
             loggers = [
                 'requests.packages.urllib3',
-                'gryphon.lib.exchange.base',
+                'gryphon.lib.exchange.exchange_api_wrapper',
                 'strategies.harness',
                 'strategies.base',
             ]
@@ -187,6 +192,8 @@ class GryphonFuryBaseController(controller.CementBaseController):
         execute = self.app.config.get('controller.base', 'execute')
         wind_down(exchange_key, strategy_params, execute)
 
+        backtest = self.app.config.get('controller.base', 'backtest')
+        wind_down(exchange_key, strategy_params, backtest)
 
 class OrderBookController(controller.CementBaseController):
     """This controller's commands are 'stacked' onto the base controller."""

@@ -228,7 +228,7 @@ class TwistedProducer(object):
             return
 
         if not self._channel:
-            log.err('No Channel Avaialble')
+            log.err('No Channel Available')
             return
 
         properties = pika.BasicProperties(

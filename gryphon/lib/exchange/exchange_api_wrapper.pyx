@@ -35,6 +35,9 @@ from gryphon.lib.metrics import quote as quote_lib
 from gryphon.lib.money import Money
 from gryphon.lib.session import get_a_redis_connection
 
+import pandas as pd
+
+
 logger = get_logger(__name__)
 
 
@@ -212,7 +215,8 @@ class ExchangeAPIWrapper(ConfigurableObject):
         """
         Withdraw part of our balance from this exchange.
         """
-        pass
+        req = self.withdraw_req()
+        return self.get_withdraw_resp(req)
 
     def withdraw_req(self):
         raise NotImplementedError
@@ -240,6 +244,49 @@ class ExchangeAPIWrapper(ConfigurableObject):
 
     def get_ticker_resp(self, req):
         raise NotImplementedError
+
+
+    def get_ohlc_from_position(self, interval, position, verify=True):
+        '''Only implemented for Kraken so far
+           Should return a pandas series'''
+        req = self.get_ohlc_from_position_req(interval= interval, verify=verify)
+        return self.get_ohlc_from_position_resp(req, position)
+
+    def get_ohlc_from_position_req(self, interval, verify=True):
+        '''Only implemented for Kraken so far'''
+        raise NotImplementedError
+
+    def get_ohlc_from_position_resp(self, req, position):
+        '''Only implemented for Kraken so far'''
+        raise NotImplementedError
+
+
+
+    def get_ohlc_generator(self, lookback, interval):
+        '''Only implemented for Kraken so far'''
+        lookback = min(720, lookback)
+        for index in xrange(1, lookback):
+            value = self.get_ohlc_from_position(position=-index, interval=interval)
+            yield value
+
+
+
+    def get_full_ohlc(self, interval, verify=True):
+        '''Only implemented for Kraken so far
+           Should return a pandas dataframe'''
+        req = self.get_full_ohlc_req(interval=interval, verify=verify)
+        return self.get_full_ohlc_resp(req)
+
+
+    def get_full_ohlc_req(self, interval, verify=True):
+        '''Only implemented for Kraken so far'''
+        raise NotImplementedError
+
+    def get_full_ohlc_resp(self, req):
+        '''Only implemented for Kraken so far'''
+        raise NotImplementedError
+
+
 
     def get_orderbook(self, volume_limit=None, verify=True):
         """

@@ -30,5 +30,5 @@ class OpenExchangeRatePoller(RequestPoller):
 
             log.msg('[Exchange Rate] Successful @ %s' % ts)
         else:
-            log.msg('[Exchange Rage] Unsuccessful @ %s' % ts)
+            log.msg('[Exchange Rate] Unsuccessful @ %s' % ts)
 

@@ -13,6 +13,7 @@ down_revision = None
 from alembic import op
 import sqlalchemy as sa
 from sqlalchemy.dialects import mysql
+from sqlalchemy.dialects.mysql import DATETIME
 
 from gryphon.lib.models.exchange import JSONEncodedMoneyDict
 sa.JSONEncodedMoneyDict = JSONEncodedMoneyDict

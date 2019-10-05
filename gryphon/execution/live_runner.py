@@ -224,15 +224,24 @@ def live_run(configuration):
     strategy_name = configuration['platform']['strategy']
     is_builtin_strategy = configuration['platform']['builtin']
     execute = configuration['platform']['execute']
+    backtest = configuration['platform']['backtest']
+    backtest_file_path = configuration['backtest']['file_path']
+    backtest_commission = float(configuration['backtest']['commission'])
 
-    logger.info('live_run(%s, %s)' % (strategy_name, execute))
+    if execute == True and backtest == True:
+        raise Exception("execute and backtest can not run simultaneously")
+    
+    if backtest == True:
+        logger.info('live_run backtest(%s, %s)' % (strategy_name, backtest))
+    else:
+        logger.info('live_run execute(%s, %s)' % (strategy_name, execute))
 
     db = session.get_a_trading_db_mysql_session()
 
     harness = Harness(db, configuration)
 
     strategy_class = get_strategy_class(strategy_name, is_builtin_strategy)
-    strategy = strategy_class(db, harness, configuration['strategy'])
+    strategy = strategy_class(db, harness, configuration['strategy'], configuration['backtest'])
     strategy.set_up()
 
     harness.strategy = strategy
@@ -246,73 +255,90 @@ def live_run(configuration):
 
     sentry = Sentry(configuration['platform']['sentry'])
     heartbeat = Heartbeat(configuration['platform']['heartbeat'])
+    
 
-    try:
-        tick_count = 0
+    if backtest == False :
 
-        while True:
-            try:
-                tick_start = Delorean().epoch
-                print '\n\n%s' % strategy.name
+        strategy.mode = 'execute'
 
-                if warm_shutdown_flag:
-                    return  # This takes us into the finally block.
+        try:
+            tick_count = 0
 
-                # Initial audit. This is done inside the main loop so that our robust
-                # exception catching kicks in on initial audit failures.
-                if harness.audit is True and tick_count == 0:
-                    # We try a fast audit (no wind down) since the bots usually start
-                    # from a clean slate.
-                    try:
-                        harness.full_audit(wind_down=False)
-                    except AuditException:
-                        logger.info(
-                            'Bot was not cleanly shut down, winding down and auditing',
-                        )
+            while True:
+                try:
+                    tick_start = Delorean().epoch
+                    print '\n\n%s' % strategy.name
 
-                        harness.full_audit(wind_down=True)
+                    if warm_shutdown_flag:
+                        return  # This takes us into the finally block.
 
-                # Regular audits.
-                if (harness.audit is True
-                        and tick_count > 0
-                        and tick_count % harness.audit_tick == 0):
-                    harness.full_audit()
+                    # Initial audit. This is done inside the main loop so that our robust
+                    # exception catching kicks in on initial audit failures.
+                    if harness.audit is True and tick_count == 0:
+                        # We try a fast audit (no wind down) since the bots usually start
+                        # from a clean slate.
+                        try:
+                            harness.full_audit(wind_down=False)
+                        except AuditException:
+                            logger.info(
+                                'Bot was not cleanly shut down, winding down and auditing',
+                            )
+
+                            harness.full_audit(wind_down=True)
+
+                    # Regular audits.
+                    if (harness.audit is True
+                            and tick_count > 0
+                            and tick_count % harness.audit_tick == 0):
+                        harness.full_audit()
+                    else:
+                        harness.tick()
+
+                        harness.post_tick(tick_count)
+
+                    tick_profiling.record_tick_data(tick_start, strategy.name)
+                    tick_profiling.record_tick_block_data(
+                        strategy,
+                        tick_count,
+                        strategy.name,
+                    )
+
+                    heartbeat.heartbeat(strategy.name)
+
+                except Exception as e:
+                    sentry.captureException()
+
+                    logger.exception(tc.colored(
+                        '[%s] %s' % (e.__class__.__name__, e.message),
+                        'red',
+                    ))
+
+                    exception_retry_loop(harness, sentry, db)
+                finally:
+                    session.commit_mysql_session(db)
+                    tick_count += 1
+
+                if harness.strategy_complete() is True:
+                    break
                 else:
-                    harness.tick()
+                    gentle_sleep(harness.sleep_time_to_next_tick())
+        finally:
+            warm_shutdown(harness, db, sentry, execute)
+            session.commit_mysql_session(db)
+            db.remove()
 
-                    harness.post_tick(tick_count)
+            if restart_flag:
+                restart()
 
-                tick_profiling.record_tick_data(tick_start, strategy.name)
-                tick_profiling.record_tick_block_data(
-                    strategy,
-                    tick_count,
-                    strategy.name,
-                )
+    
+    else:
+        strategy.mode = 'backtest'
 
-                heartbeat.heartbeat(strategy.name)
+        # logger.info(tc.colored(' Backtesting engine is not implemented yet', 'red'))
 
-            except Exception as e:
-                sentry.captureException()
-
-                logger.exception(tc.colored(
-                    '[%s] %s' % (e.__class__.__name__, e.message),
-                    'red',
-                ))
-
-                exception_retry_loop(harness, sentry, db)
-            finally:
-                session.commit_mysql_session(db)
-                tick_count += 1
-
-            if harness.strategy_complete() is True:
-                break
-            else:
-                gentle_sleep(harness.sleep_time_to_next_tick())
-    finally:
-        warm_shutdown(harness, db, sentry, execute)
-        session.commit_mysql_session(db)
-        db.remove()
-
-        if restart_flag:
-            restart()
-
+        from gryphon.execution.models.backtesting import backtrader_feed_extension as btext
+        btext.run(
+            gryphon_strategy_class=strategy, 
+            data_path=backtest_file_path,
+            commission=backtest_commission
+            )

@@ -13,9 +13,27 @@ ALL_EXCHANGE_KEYS = [
     'bitstamp_bch_eur',
     'bitstamp_bch_usd',
     'bitfinex_btc_usd',
+    # 'bitfinex_bch_usd', #! via ccwt wrapper
+    # 'bitfinex_eth_usd', #! via ccxt wrapper
+    # 'bitfinex_ltc_usd', #! via ccxt wrapper
+    # 'bitfinex_zec_usd', #! via ccxt wrapper
+    # 'bitfinex_xrp_usd', #! via ccxt wrapper
     'kraken_btc_eur',
     'kraken_btc_usd',
     'kraken_btc_cad',
+    # 'kraken_bch_usd',   #! via ccxt wrapper
+    # 'kraken_bch_eur',   #! via ccxt wrapper
+    'kraken_eth_eur',   #! not added yet in test 
+    'kraken_eth_usd',   #! not added yet in test
+    # 'kraken_ltc_usd',   #! via ccxt wrapper
+    # 'kraken_ltc_eur',   #! via ccxt wrapper
+    'kraken_zec_usd',   #! via ccxt wrapper
+    # 'kraken_zec_eur',   #! via ccxt wrapper
+    'kraken_xrp_usd',   #! via ccxt wrapper
+    # 'kraken_xrp_eur',   #! via ccxt wrapper
+    'krakenfutures_btc_usd',
+    'bitmex_btc_usd',   #! own file, but uses ccxt lib 
+    'bitmex_eth_usd',   #! via ccxt wrapper
     'itbit_btc_usd',
     'okcoin_btc_usd',
     'coinbase_btc_usd',
@@ -186,9 +204,63 @@ def get_api_wrapper_class_by_name(exchange_name):
     elif exchange_name == 'KRAKEN_BTC_CAD':
         from gryphon.lib.exchange.kraken_btc_cad import KrakenBTCCADExchange
         return KrakenBTCCADExchange
+    # elif exchange_name == 'KRAKEN_BCH_EUR':     
+    #     from gryphon.lib.exchange.ccxt_wrapper import KrakenBCHEURExchange
+    #     return KrakenBCHEURExchange
+    # elif exchange_name == 'KRAKEN_BCH_USD':     
+    #     from gryphon.lib.exchange.ccxt_wrapper import KrakenBCHUSDExchange
+    #     return KrakenBCHUSDExchange
+    # elif exchange_name == 'KRAKEN_LTC_EUR':     
+    #     from gryphon.lib.exchange.ccxt_wrapper import KrakenLTCEURExchange
+    #     return KrakenLTCEURExchange
+    # elif exchange_name == 'KRAKEN_LTC_USD':     
+    #     from gryphon.lib.exchange.ccxt_wrapper import KrakenLTCUSDExchange
+    #     return KrakenLTCUSDExchange
+    elif exchange_name == 'KRAKEN_ETH_EUR':     
+        from gryphon.lib.exchange.kraken_eth_eur import KrakenETHEURExchange
+        return KrakenETHEURExchange
+    elif exchange_name == 'KRAKEN_ETH_USD':     
+        from gryphon.lib.exchange.kraken_eth_usd import KrakenETHUSDExchange
+        return KrakenETHUSDExchange
+    # elif exchange_name == 'KRAKEN_ZEC_EUR':     
+    #     from gryphon.lib.exchange.ccxt_wrapper import KrakenZECEURExchange
+    #     return KrakenZECEURExchange
+    elif exchange_name == 'KRAKEN_ZEC_USD':     
+        from gryphon.lib.exchange.ccxt_wrapper import KrakenZECUSDExchange
+        return KrakenZECUSDExchange
+    # elif exchange_name == 'KRAKEN_XRP_EUR':     
+    #     from gryphon.lib.exchange.ccxt_wrapper import KrakenXRPEURExchange
+    #     return KrakenXRPEURExchange
+    elif exchange_name == 'KRAKEN_XRP_USD':     
+        from gryphon.lib.exchange.ccxt_wrapper import KrakenXRPUSDExchange
+        return KrakenXRPUSDExchange
+    elif exchange_name == 'KRAKENFUTURES_BTC_USD':     
+        from gryphon.lib.exchange.krakenfutures_btc_usd import KrakenFuturesBTCUSDExchange
+        return KrakenFuturesBTCUSDExchange
+    elif exchange_name == 'BITMEX_BTC_USD':     
+        from gryphon.lib.exchange.bitmex_btc_usd import BitmexBTCUSDExchange
+        return BitmexBTCUSDExchange
+    elif exchange_name == 'BITMEX_ETH_USD':     
+        from gryphon.lib.exchange.ccxt_wrapper import BitmexETHUSDExchange
+        return BitmexETHUSDExchange
     elif exchange_name == 'BITFINEX_BTC_USD':
         from gryphon.lib.exchange.bitfinex_btc_usd import BitfinexBTCUSDExchange
         return BitfinexBTCUSDExchange
+    # elif exchange_name == 'BITFINEX_BCH_USD':   
+    #     from gryphon.lib.exchange.ccxt_wrapper import BitfinexBCHUSDExchange
+    #     return BitfinexBCHUSDExchange
+    # elif exchange_name == 'BITFINEX_ETH_USD':   
+    #     from gryphon.lib.exchange.ccxt_wrapper import BitfinexETHUSDExchange
+    #     return BitfinexETHUSDExchange
+    # elif exchange_name == 'BITFINEX_LTC_USD':   
+    #     from gryphon.lib.exchange.ccxt_wrapper import BitfinexLTCUSDExchange
+    #     return BitfinexLTCUSDExchange
+    # elif exchange_name == 'BITFINEX_ZEC_USD':
+    #     from gryphon.lib.exchange.ccxt_wrapper import BitfinexZECUSDExchange
+    #     return BitfinexZECUSDExchange
+    # elif exchange_name == 'BITFINEX_XRP_USD':
+    #     from gryphon.lib.exchange.ccxt_wrapper import BitfinexXRPUSDExchange
+    #     return BitfinexXRPUSDExchange
     elif exchange_name == 'ITBIT_BTC_USD':
         from gryphon.lib.exchange.itbit_btc_usd import ItbitBTCUSDExchange
         return ItbitBTCUSDExchange

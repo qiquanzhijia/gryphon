@@ -15,16 +15,16 @@ from gryphon.data_service.task import Task
 class VolumePollTask(Task):
     def __init__(self, exchanges=[]):
         exchange_pollers = {
-            'KRAKEN': KrakenVolume(),
+            # 'KRAKEN': KrakenVolume(),
             'KRAKEN_USD': KrakenUSDVolume(),
-            'KRAKEN_CAD': KrakenCADVolume(),
-            'ITBIT': ItbitVolume(),
-            'QUADRIGA': QuadrigaVolume(),
-            'OKCOIN': OkcoinVolume(),
-            'BITFINEX': BitfinexVolume(),
-            'COINBASE_BTC_USD': CoinbaseVolume(),
-            'BITSTAMP_BTC_USD': BitstampVolume(),
-            'COINBASE_CAD': CoinbaseCADVolume(),
+            # 'KRAKEN_CAD': KrakenCADVolume(),
+            # 'ITBIT': ItbitVolume(),
+            # 'QUADRIGA': QuadrigaVolume(),
+            # 'OKCOIN': OkcoinVolume(),
+            # 'BITFINEX': BitfinexVolume(),
+            # 'COINBASE_BTC_USD': CoinbaseVolume(),
+            # 'BITSTAMP_BTC_USD': BitstampVolume(),
+            # 'COINBASE_CAD': CoinbaseCADVolume(),
         }
 
         if exchanges:

@@ -74,7 +74,10 @@ def run_migrations_online():
     """
     
     engine = create_engine(os.environ.get('TRADING_DB_CRED'))
-        
+    
+    #! Use engine_from_config to create a new revision, 
+    #! before running "foreman run alembic revision -m "create new table",
+    #! then run "foreman alembic upgrade head"
     # engine = engine_from_config(
     #             config.get_section(config.config_ini_section),
     #             prefix='sqlalchemy.',

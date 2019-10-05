@@ -48,6 +48,7 @@ class Harness(ConfigurableObject):
 
         # Configurables.
         self.execute = False
+        self.backtest = False
         self.emerald = False
         self.audit = False
         self.audit_tick = 100
@@ -60,6 +61,7 @@ class Harness(ConfigurableObject):
 
     def configure(self, configuration):
         self.init_configurable('execute', configuration['platform'])
+        self.init_configurable('backtest', configuration['platform'])
         self.init_configurable('emerald', configuration['platform'])
         self.init_configurable('audit', configuration['platform'])
         self.init_configurable('audit_tick', configuration['platform'])

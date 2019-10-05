@@ -35,6 +35,7 @@ def get_command_line_configuration(known_args, extra_args):
             'emerald': known_args.emerald,
             'audit': known_args.audit,
             'execute': known_args.execute,
+            'backtest': known_args.backtest
         },
         'strategy': {
             'tick_sleep': configuration.parse_configurable_value(known_args.tick_sleep),
@@ -82,17 +83,15 @@ def parse_extra_strategy_args(args):
 
     return output
 
-
 def get_conf_filename_from_strategy_name(strategy_name):
     conf_filename = None
 
-    if strategy_name[-4:] == '.pyx':
-        conf_filename = '%s.conf' % strategy_name[:-4]
-    elif strategy_name[-3:] == '.py':
-        conf_filename = '%s.conf' % strategy_name[:-3]
-    else:
-        # Builtin strategies are not specified with a suffix.
-        conf_filename = '%s.conf' % strategy_name
+    if strategy_name[-4:] == ".pyx":
+        conf_filename = "%s.conf" % strategy_name[:-4]
+    elif strategy_name[-3:] == ".py":
+        conf_filename == "%s.conf" % strategy_name[:-3]
+    else: 
+        conf_filename = "%s.conf" % strategy_name
 
     return conf_filename
 
@@ -107,6 +106,7 @@ def get_conf_file_configuration(conf_filename, strategy_name):
     if conf_filename is None:
         conf_filename = get_conf_filename_from_strategy_name(strategy_name)
 
+        
     file_configuration = configuration.read_config_from_file(conf_filename)
 
     standardized_configuration = format_file_config_to_standard(file_configuration)

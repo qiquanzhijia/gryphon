@@ -21,7 +21,7 @@ class BitfinexOrderbookWebsocket(EmeraldWebSocketClientProtocol, WebsocketOrderb
     def connect_to_websocket(self):
         logger.info('Connecting to websocket')
 
-        factory = WebSocketClientFactory('wss://api2.bitfinex.com:3000/ws')
+        factory = WebSocketClientFactory('wss://api2.bitfinex.com:3000/ws') #! still valid ?
 
         factory.protocol = type(self)
 

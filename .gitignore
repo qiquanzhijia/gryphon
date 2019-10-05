@@ -126,7 +126,10 @@ data/*
 *.swo
 *.swn
 
+/.idea
 .sass-cache
 
-*.c
-/.idea
+gryphon/execution/models/backtesting/backtrader_wrapper_v2.py
+gryphon/execution/models/backtesting/backtrader_wrapper.py
+gryphon/execution/models/backtesting/backtrader_indicator_wrapper.py
+gryphon/lib/util/noconflict.py

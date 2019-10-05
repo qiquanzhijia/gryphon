@@ -18,6 +18,8 @@ from gryphon.lib.logger import get_logger
 from gryphon.lib.models.exchange import Balance
 from gryphon.lib.money import Money
 
+import pandas as pd
+
 logger = get_logger(__name__)
 
 
@@ -355,6 +357,54 @@ class KrakenBTCEURExchange(ExchangeAPIWrapper):
             'last': Money(ticker['c'][0], self.currency),
             'volume': Money(ticker['v'][1], 'BTC'),
         }
+
+    def get_ohlc_from_position_req(self, interval, verify=True):
+        url = '/public/OHLC?pair=%s&interval=%s' % (self.pair, interval)
+        return self.req("get", url, no_auth=True, verify=verify)
+
+    def get_ohlc_from_position_resp(self, req, position):
+        response = self.resp(req)
+        ohlc = response[self.pair][position]
+
+        series = pd.Series(ohlc, index=["timestamp", "open", "high", "low", "close", "vwap", "volume", "count"])
+        series = pd.to_numeric(series)
+        series["hl2"] = (series["high"] + series["low"]) / 2
+
+        return series       # return pandas serise
+        
+
+        # return {
+        #     "timestamp" : Decimal(ohlc[0]),      #removed Money() to make sure i can use this with pandas
+        #     "open" : Decimal(ohlc[1]),
+        #     "high" : Decimal(ohlc[2]), 
+        #     "low" : Decimal(ohlc[3]),
+        #     "close" : Decimal(ohlc[4]),
+        #     "hl2" : (Decimal(ohlc[2]) + Decimal(ohlc[3])) / 2,
+        #     "vwap" : Decimal(ohlc[5]),
+        #     "volume" : Decimal(ohlc[6]),
+        #     "count" : Decimal(ohlc[7])
+        # }
+
+
+    def get_full_ohlc_req(self, interval, verify=True):
+        url = '/public/OHLC?pair=%s&interval=%s' % (self.pair, interval)
+        return self.req("get", url, no_auth=True, verify=verify)
+
+    def get_full_ohlc_resp(self, req):
+        response = self.resp(req)
+        ohlc = response[self.pair]
+
+        df = pd.DataFrame(ohlc, columns=["timestamp", "open", "high", "low", "close", "vwap", "volume", "count"])
+        df["open"] = pd.to_numeric(df["open"])
+        df["high"] = pd.to_numeric(df["high"])
+        df["low"] = pd.to_numeric(df["low"])
+        df["close"] = pd.to_numeric(df["close"])
+        df["vwap"] = pd.to_numeric(df["vwap"])
+        df["volume"] = pd.to_numeric(df["volume"])
+        df["hl2"] = (df["high"] + df["low"]) / 2
+
+        return df   # return pandas dataframe       
+
 
     def _get_orderbook_from_api_req(self, verify=True):
         url = '/public/Depth?pair=%s&count=%s' % (self.pair, self.orderbook_depth)

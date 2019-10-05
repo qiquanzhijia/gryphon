@@ -3,7 +3,7 @@ A bare-bones wrapper class that allows us to turn off heartbeating if we don't w
 """
 
 import subprocess
-
+import os 
 
 class Heartbeat(object):
     def __init__(self, is_active=False):
@@ -14,3 +14,12 @@ class Heartbeat(object):
             filename = 'monit/heartbeat/%s.txt' % heartbeat_key
             subprocess.call(['touch', filename])
 
+
+
+    #! following is useless
+    # def check_file_existence(self, filename):
+    #     if self.is_active is True:
+    #         file_exists = os.path.exists(filename)
+
+    #         if not folder_exists:
+    #             os.makedirs(filename, exist_ok=True)

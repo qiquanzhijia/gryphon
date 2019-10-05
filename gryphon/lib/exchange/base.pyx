@@ -308,7 +308,7 @@ class Exchange(object):
 
     ###### Common Exchange Methods ######
 
-    def auth_request(req_method, url, request_args):
+    def auth_request(self, req_method, url, request_args):
         raise NotImplementedError
 
     def apply_fee(self, order):

@@ -4,10 +4,10 @@ import json
 import uuid
 
 from cdecimal import Decimal
-from sqlalchemy import ForeignKey, Column, Integer, Unicode, DateTime, UnicodeText, Numeric
+from sqlalchemy import ForeignKey, Column, Integer, Unicode, DateTime, UnicodeText, Numeric, desc
 
 from gryphon.lib.models.base import Base
-from gryphon.lib.session import commit_mysql_session
+from gryphon.lib import session
 from gryphon.lib.singleton import Singleton
 
 metadata = Base.metadata
@@ -99,3 +99,16 @@ class DatumRecorder(object):
             self.record(datum_type, numeric_value=mean)
             # Clear the content of a referenced list
             del data[:]
+
+
+class DatumRetriever(object):
+    __metaclass__ = Singleton
+
+    @staticmethod
+    def get(datum_type):
+        db = session.get_a_trading_db_mysql_session()
+        data = db.query(Datum).filter_by(
+            datum_type=datum_type).order_by(
+            desc(Datum.time_created)).all()
+        return data
+        

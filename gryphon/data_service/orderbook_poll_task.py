@@ -20,32 +20,33 @@ from gryphon.data_service.pollers.orderbook.okcoin_orderbook_poller import OkCoi
 from gryphon.data_service.pollers.orderbook.poloniex_eth_btc_orderbook_poller import PoloniexETHBTCOrderbook
 from gryphon.data_service.pollers.orderbook.quadriga_orderbook_poller import QuadrigaOrderbook
 from gryphon.data_service.pollers.orderbook.websocket.coinbase_cad_orderbook_websocket import CoinbaseCADOrderbookWebsocket
-from gryphon.data_service.pollers.orderbook.coinbase_btc_usd_orderbook_poller import CoinbaseBTCUSDOrderbook
+from gryphon.data_service.pollers.orderbook.websocket.coinbase_orderbook_websocket import CoinbaseOrderbookWebsocket
+from gryphon.data_service.pollers.orderbook.websocket.kraken_btc_usd_orderbook_websocket import KrakenBTCUSDOrderbookWebsocket
 from gryphon.data_service.task import Task
 
 
 class OrderbookPollTask(Task):
     def __init__(self, exchanges=[]):
         exchange_pollers = {
-            'BITFINEX_BTC_USD': BitfinexOrderbook(),
-            'BITSTAMP_BCH_EUR': BitstampBCHEUROrderbook(),
-            'BITSTAMP_BCH_USD': BitstampBCHUSDOrderbook(),
-            'BITSTAMP_BCH_BTC': BitstampBCHBTCOrderbook(),
-            'BITSTAMP_BTC_EUR': BitstampBTCEUROrderbook(),
-            'BITSTAMP_BTC_USD': BitstampBTCUSDOrderbook(),
-            'BITSTAMP_ETH_BTC': BitstampETHBTCOrderbook(),
-            'BITSTAMP_ETH_EUR': BitstampETHEUROrderbook(),
-            'BITSTAMP_ETH_USD': BitstampETHUSDOrderbook(),
-            'COINBASE_BTC_USD': CoinbaseBTCUSDOrderbook(),
-            'GEMINI_BTC_USD': GeminiOrderbook(),
-            'GEMINI_ETH_BTC': GeminiETHBTCOrderbook(),
-            'GEMINI_ETH_USD': GeminiETHUSDOrderbook(),
-            'ITBIT_BTC_USD': ItbitOrderbook(),
-            'KRAKEN_BTC_EUR': KrakenOrderbook(),
-            'KRAKEN_BTC_USD': KrakenUSDOrderbook(),
-            'KRAKEN_BTC_CAD': KrakenCADOrderbook(),
-            'OKCOIN_BTC_USD': OkCoinOrderbook(),
-            'POLONIEX_ETH_BTC': PoloniexETHBTCOrderbook(),
+            # 'BITFINEX_BTC_USD': BitfinexOrderbook(),
+            # 'BITSTAMP_BCH_EUR': BitstampBCHEUROrderbook(),
+            # 'BITSTAMP_BCH_USD': BitstampBCHUSDOrderbook(),
+            # 'BITSTAMP_BCH_BTC': BitstampBCHBTCOrderbook(),
+            # 'BITSTAMP_BTC_EUR': BitstampBTCEUROrderbook(),
+            # 'BITSTAMP_BTC_USD': BitstampBTCUSDOrderbook(),
+            # 'BITSTAMP_ETH_BTC': BitstampETHBTCOrderbook(),
+            # 'BITSTAMP_ETH_EUR': BitstampETHEUROrderbook(),
+            # 'BITSTAMP_ETH_USD': BitstampETHUSDOrderbook(),
+            'COINBASE_BTC_USD': CoinbaseOrderbookWebsocket(),
+            # 'GEMINI_BTC_USD': GeminiOrderbook(),
+            # 'GEMINI_ETH_BTC': GeminiETHBTCOrderbook(),
+            # 'GEMINI_ETH_USD': GeminiETHUSDOrderbook(),
+            # 'ITBIT_BTC_USD': ItbitOrderbook(),
+            # 'KRAKEN_BTC_EUR': KrakenOrderbook(),
+            'KRAKEN_BTC_USD': KrakenBTCUSDOrderbookWebsocket(),
+            # 'KRAKEN_BTC_CAD': KrakenCADOrderbook(),
+            # 'OKCOIN_BTC_USD': OkCoinOrderbook(),
+            # 'POLONIEX_ETH_BTC': PoloniexETHBTCOrderbook(),
         }
 
         if exchanges:

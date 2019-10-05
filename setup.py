@@ -2,6 +2,7 @@ import os
 import setuptools
 
 
+
 class CleanCommand(setuptools.Command):
     """
     Custom clean command to tidy up the project root, because even

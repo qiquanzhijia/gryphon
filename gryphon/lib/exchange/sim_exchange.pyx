@@ -8,7 +8,8 @@ import math
 import uuid
 import copy
 from gryphon.lib.money import Money
-from gryphon.lib.exchange.base import Exchange
+# from gryphon.lib.exchange.base import Exchange
+from gryphon.lib.exchange_api_wrapper import ExchangeAPIWrapper
 from gryphon.lib.exchange.exchange_order import Order
 from gryphon.lib.exchange.consts import Consts
 from gryphon.lib.models.exchange import Balance
@@ -18,7 +19,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-class SimExchange(Exchange):
+class SimExchange(ExchangeAPIWrapper):
     
     def __init__(self, data_source=None, debug=False, engine=None):
         self.name = u'SIM'

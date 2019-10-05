@@ -4,6 +4,14 @@ This library provides functions for creating various types of database connectio
 """
 
 
+import termcolor as tc
+from sqlalchemy.exc import IntegrityError
+from gryphon.lib.logger import get_logger
+
+
+logger = get_logger(__name__)
+
+
 def get_mongo_creds():
     import os
     return os.environ['MONGO_DB']
@@ -68,6 +76,10 @@ def get_a_dashboard_db_mysql_session():
 def commit_mysql_session(session):
     try:
         session.commit()
+    except IntegrityError: 
+        session.rollback()
+        logger.info(tc.colored("Integrity Error : data already exists in db", "red"))
+        pass
     except Exception as e:
         session.rollback()
         raise e

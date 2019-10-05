@@ -78,7 +78,7 @@ class MutableDict(Mutable, dict):
             # This will error.
             return Mutable.coerce(key, value)
 
-    def __delitem(self, key):
+    def __delitem__(self, key):
         dict.__delitem__(self, key)
         self.changed()
 

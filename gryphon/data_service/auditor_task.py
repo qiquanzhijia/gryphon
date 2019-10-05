@@ -2,6 +2,7 @@
 from gryphon.data_service.auditors.bitstamp_orderbook_auditor import BitstampOrderbookAuditor
 from gryphon.data_service.auditors.coinbase_cad_orderbook_auditor import CoinbaseCADOrderbookAuditor
 from gryphon.data_service.auditors.coinbase_orderbook_auditor import CoinbaseOrderbookAuditor
+from gryphon.data_service.auditors.kraken_btc_usd_orderbook_auditor import KrakenBTCUSDOrderbookAuditor
 from gryphon.data_service.auditors.heartbeat_auditor import HeartbeatAuditor
 from gryphon.data_service.auditors.performance_auditor import PerformanceAuditor
 from gryphon.data_service.auditors.trades_auditor import TradesAuditor
@@ -12,8 +13,9 @@ class AuditorTask(Task):
     def __init__(self, exchanges=[]):
         exchange_orderbook_auditors = {
             'COINBASE_BTC_USD': CoinbaseOrderbookAuditor(),
-            'BITSTAMP_BTC_USD': BitstampOrderbookAuditor(),
-            'COINBASE_BTC_CAD': CoinbaseCADOrderbookAuditor(),
+            # 'BITSTAMP_BTC_USD': BitstampOrderbookAuditor(),
+            # 'COINBASE_BTC_CAD': CoinbaseCADOrderbookAuditor(),
+            'KRAKEN_BTC_USD': KrakenBTCUSDOrderbookAuditor(),
         }
 
         if exchanges:

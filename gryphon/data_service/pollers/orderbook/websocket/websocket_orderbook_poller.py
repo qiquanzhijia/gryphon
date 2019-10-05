@@ -12,6 +12,10 @@ logger = get_logger(__name__)
 class WebsocketOrderbookPoller(OrderbookPoller):
     AMQP_PUSH_MAX_FREQUENCY = 1  # Seconds.
 
+    def __init__(self):
+        self.exchange_name = None
+        self.redis = None
+
     def start(self):
         # Don't do any setup in here, because connect_to_websocket creates a new
         # instance.
@@ -76,3 +80,17 @@ class WebsocketOrderbookPoller(OrderbookPoller):
             logger.debug('%s Orderbook Poller respecting Auditor hard failure.' % self.exchange_name)
 
         defer.returnValue(should_continue)
+
+    
+    @defer.inlineCallbacks
+    def onOpen(self):
+        pass
+
+    def connect_to_websocket(self):
+        pass
+
+    def subscribe_to_websocket(self):
+        pass
+    
+    def get_orderbook_to_publish(self):
+        pass

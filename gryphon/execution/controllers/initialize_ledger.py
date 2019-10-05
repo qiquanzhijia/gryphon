@@ -88,10 +88,10 @@ def initialize_exchange_ledger(db, wrapper_obj):
     }
 
     price_currency_tx = Transaction(
-        Transaction.DEPOSIT,
-        Transaction.IN_TRANSIT,
-        price_currency_balance,
-        db_obj,
+        transaction_type=Transaction.DEPOSIT,
+        transaction_status=Transaction.IN_TRANSIT,
+        amount=price_currency_balance,
+        exchange=db_obj,
         transaction_details=price_tx_details,
         fee=Money('0', price_currency),
     )
