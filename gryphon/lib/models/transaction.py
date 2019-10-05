@@ -47,9 +47,9 @@ class Transaction(Base):
     time_completed = Column(DateTime, nullable=True)
     
     _amount = Column('amount', Numeric(precision=24, scale=14))
-    _amount_currency = Column('amount_currency', str(3))
+    _amount_currency = Column('amount_currency', Unicode(3))
     _fee = Column('fee', Numeric(precision=24, scale=14))
-    _fee_currency = Column('fee_currency', str(3))
+    _fee_currency = Column('fee_currency', Unicode(3))
     _transaction_details = Column('transaction_details', UnicodeText(length=2**31))
     
     exchange_id = Column(Integer, ForeignKey('exchange.exchange_id'))

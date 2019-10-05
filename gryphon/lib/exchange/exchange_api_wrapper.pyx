@@ -265,7 +265,7 @@ class ExchangeAPIWrapper(ConfigurableObject):
     def get_ohlc_generator(self, lookback, interval):
         '''Only implemented for Kraken so far'''
         lookback = min(720, lookback)
-        for index in xrange(1, lookback):
+        for index in range(1, lookback):
             value = self.get_ohlc_from_position(position=-index, interval=interval)
             yield value
 

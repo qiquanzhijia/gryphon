@@ -112,6 +112,6 @@ def dict_update_override(dicta, dictb):
         iii) does override a valid value in a with a valid value from b
     """
     dicta.update(
-        {k: v for k, v in dictb.iteritems() if v or (k not in dicta)}
+        {k: v for k, v in dictb.items() if v or (k not in dicta)}
     )
 

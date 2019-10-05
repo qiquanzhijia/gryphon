@@ -37,11 +37,11 @@ class Trade(Base):
     time_created = Column(DateTime, nullable=False)
     
     _fee = Column('fee', Numeric(precision=24, scale=14))
-    _fee_currency = Column('fee_currency', str(3))
+    _fee_currency = Column('fee_currency', Unicode(3))
     _price = Column('price', Numeric(precision=24, scale=14))
-    _price_currency = Column('price_currency', str(3))
+    _price_currency = Column('price_currency', Unicode(3))
     _volume = Column('volume', Numeric(precision=24, scale=14))
-    _volume_currency = Column('volume_currency', str(3))
+    _volume_currency = Column('volume_currency', Unicode(3))
 
     meta_data = Column('meta_data', UnicodeText(length=2**31))
 

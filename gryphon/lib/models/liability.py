@@ -48,7 +48,7 @@ class Liability(Base):
 
     # Data columns.
     _amount = Column('amount', Numeric(precision=24, scale=14))
-    _amount_currency = Column('amount_currency', str(3))
+    _amount_currency = Column('amount_currency', Unicode(3))
     liability_type = Column(Unicode(64))
     entity_name = Column(Unicode(128), nullable=False)
     time_started = Column(DateTime, nullable=True)

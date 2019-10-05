@@ -226,7 +226,7 @@ class ExchangeCoordinator(object):
         """
         Formerly harness:update_position.
         """ 
-        for currency_code, position in position_change.iteritems():
+        for currency_code, position in position_change.items():
             self.exchange_account.position[currency_code] += position
             self.exchange_account.balance[currency_code] += position
 

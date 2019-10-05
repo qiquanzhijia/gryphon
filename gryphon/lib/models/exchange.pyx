@@ -102,7 +102,7 @@ class Balance(MutableDict):
         # Make a deep copy of self. copy.deepcopy() is 4x slower than this
         # because we know the exact structure and don't have to watch for recursions
         result = self.__class__()
-        for currency, m in self.iteritems():
+        for currency, m in self.items():
             result[currency] = Money(m.amount, m.currency)
 
         if isinstance(other, Balance):
@@ -117,7 +117,7 @@ class Balance(MutableDict):
 
     def __neg__(self):
         result = self.__class__()
-        for currency, balance in self.iteritems():
+        for currency, balance in self.items():
             result[currency] = -balance
         return result
 
@@ -138,7 +138,7 @@ class Balance(MutableDict):
 
     def total_usd_value(self, date=None):
         total_usd_value = Money(0, 'USD')
-        for currency, balance in self.iteritems():
+        for currency, balance in self.items():
             total_usd_value += balance.to('USD', date=date)
         return total_usd_value
 

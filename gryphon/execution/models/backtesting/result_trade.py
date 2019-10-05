@@ -23,9 +23,9 @@ class ResultTrade(Base):
     trade_id = Column(Integer, primary_key=True)
     
     _price = Column('price', Numeric(precision=20, scale=10))
-    _price_currency = Column('price_currency', str(3))
+    _price_currency = Column('price_currency', Unicode(3))
     _volume = Column('volume', Numeric(precision=20, scale=10))
-    _volume_currency = Column('volume_currency', str(3))
+    _volume_currency = Column('volume_currency', Unicode(3))
     tick = Column(Integer)
     
     user_trade = Column(Unicode(64))

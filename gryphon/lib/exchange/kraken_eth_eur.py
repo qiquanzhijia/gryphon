@@ -150,7 +150,7 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
                 'fiat_fee': Money(0, self.currency),
             }
 
-        for ledger_id, entry in entries.iteritems():
+        for ledger_id, entry in entries.items():
             trade_id = entry['refid']
 
             if trade_id not in trade_ids:
@@ -266,7 +266,7 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
         count = int(response['count'])
         closed_orders = []
 
-        for order_id, raw_order in response['closed'].iteritems():
+        for order_id, raw_order in response['closed'].items():
             raw_order['order_id'] = order_id
             closed_orders.append(raw_order)
 
@@ -461,7 +461,7 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
         try:
             raw_open_orders = response['open']
 
-            for order_id, raw_order in raw_open_orders.iteritems():
+            for order_id, raw_order in raw_open_orders.items():
                 if raw_order['status'] == 'open':
                     mode = self._order_mode_to_const(raw_order['descr']['type'])
                     volume = Money(raw_order['vol'], 'ETH')
@@ -499,7 +499,7 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
         return self.get_multi_order_details_resp(req, order_ids)
  
     def get_multi_order_details_req(self, order_ids):
-        order_ids = [unicode(o) for o in order_ids]
+        order_ids = [str(o) for o in order_ids]
 
         payload = {
             'trades': True,
@@ -538,7 +538,7 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
                         closetm,
                     )
 
-                    for t_id, t in trades.iteritems():
+                    for t_id, t in trades.items():
                         fiat = abs(t['fiat'])
                         eth = abs(t['eth'])
 
@@ -611,12 +611,12 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
         # find the corresponding exchange name, which we then pass to Kraken.
         deposit_addresses = {
             name: addr
-            for name, addr in os.environ.iteritems() if '_DEPOSIT_ADDRESS' in name
+            for name, addr in os.environ.items() if '_DEPOSIT_ADDRESS' in name
         }
 
         address_to_name_map = {
             addr: name.replace('_DEPOSIT_ADDRESS', '')
-            for name, addr in deposit_addresses.iteritems()
+            for name, addr in deposit_addresses.items()
         }
 
         try:

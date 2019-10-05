@@ -150,7 +150,7 @@ def order_audit(db, exchange, skip_recent=0, tolerance=Decimal('0')):
 
     failed_order_data = []
 
-    for exchange_order_id, exchange_volume_filled in audit_data.iteritems():
+    for exchange_order_id, exchange_volume_filled in audit_data.items():
         try:
             db_volume_filled = db_order_hash[exchange_order_id]
 

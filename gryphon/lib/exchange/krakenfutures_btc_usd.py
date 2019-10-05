@@ -180,7 +180,7 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
                 'fiat_fee': Money(0, self.currency),
             }
 
-        for ledger_id, entry in entries.iteritems():
+        for ledger_id, entry in entries.items():
             trade_id = entry['refid']
 
             if trade_id not in trade_ids:
@@ -312,7 +312,7 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
         count = int(response['count'])
         closed_orders = []
 
-        for order_id, raw_order in response['closed'].iteritems():
+        for order_id, raw_order in response['closed'].items():
             raw_order['order_id'] = order_id
             closed_orders.append(raw_order)
 
@@ -478,7 +478,7 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
         try:
             raw_open_orders = response['openOrders']
 
-            for raw_order in raw_open_orders.iteritems():
+            for raw_order in raw_open_orders.items():
                 if raw_order['status'] in ('untouched', 'partiallyFilled'):
                     mode = self._order_mode_to_const(raw_order["side"])
                     volume_filled = Money(raw_order['filledSize'], self.currency)
@@ -528,7 +528,7 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
     def get_multi_order_details_req(self, order_ids):
         # ! not done yet
 
-        order_ids = [unicode(o) for o in order_ids]
+        order_ids = [str(o) for o in order_ids]
 
         payload = {
             'trades': True,
@@ -569,7 +569,7 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
                         closetm,
                     )
 
-                    for t_id, t in trades.iteritems():
+                    for t_id, t in trades.items():
                         fiat = abs(t['fiat'])
                         btc = abs(t['btc'])
 

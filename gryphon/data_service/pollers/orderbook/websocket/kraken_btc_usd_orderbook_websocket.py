@@ -145,11 +145,11 @@ class KrakenBTCUSDOrderbookWebsocket(EmeraldWebSocketClientProtocol, WebsocketOr
         bids = []
         asks = []
 
-        for price, volume in sorted(self.bids_dict.iteritems(), reverse=True):
+        for price, volume in sorted(self.bids_dict.items(), reverse=True):
             if volume > 0:
                 bids.append([str(price), str(volume), ''])
 
-        for price, volume in sorted(self.asks_dict.iteritems()):
+        for price, volume in sorted(self.asks_dict.items()):
             if volume > 0:
                 asks.append([str(price), str(volume), ''])
 

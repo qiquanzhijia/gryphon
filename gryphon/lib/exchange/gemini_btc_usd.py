@@ -146,7 +146,7 @@ class GeminiBTCUSDExchange(ExchangeAPIWrapper):
         return self.all_trades_req()
 
     def trades_for_orders_resp(self, req, order_ids):
-        order_ids = [unicode(o) for o in order_ids]
+        order_ids = [str(o) for o in order_ids]
         trades = self.all_trades_resp(req)
 
         matching_trades = {}
@@ -270,7 +270,7 @@ class GeminiBTCUSDExchange(ExchangeAPIWrapper):
         return self.trades_for_orders_req()
 
     def get_multi_order_details_resp(self, req, order_ids):
-        order_ids = [unicode(o) for o in order_ids]
+        order_ids = [str(o) for o in order_ids]
 
         multi_trades = self.trades_for_orders_resp(req, order_ids)
         data = {}
