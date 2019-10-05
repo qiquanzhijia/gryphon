@@ -56,3 +56,4 @@ wcwidth==0.1.7
 websocket-client==0.48.0
 python-memcached==1.59
 mpmath==1.1.0
+cdecimal==2.3

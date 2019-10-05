@@ -10,7 +10,7 @@ import time
 from cdecimal import *
 
 from base import *
-from exceptions import *
+# from exceptions import *
 from gryphon.lib.models.exchange import Balance
 from gryphon.lib.money import Money
 

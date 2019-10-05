@@ -9,6 +9,9 @@ from cdecimal import *
 from delorean import Delorean
 from collections import OrderedDict, defaultdict
 
+from gryphon.lib.exchange.exceptions import ExchangeAPIErrorException
+from numpy import unicode, basestring
+
 from gryphon.lib.exchange import exceptions
 from gryphon.lib.exchange import order_types
 from gryphon.lib.exchange.exchange_order import Order

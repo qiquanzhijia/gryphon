@@ -4,7 +4,7 @@ A library that makes it easy to read from .conf files.
 
 import argparse
 from collections import defaultdict
-import ConfigParser
+import configparser
 import StringIO
 
 from cdecimal import Decimal, InvalidOperation
@@ -19,7 +19,7 @@ def read_config_from_file(config_filename):
 
     Section titles of the form [x:y] are parsed into sub-dictionaries under the key x.
     """
-    parser = ConfigParser.RawConfigParser()
+    parser = configparser.Rawconfigparser()
     parser.read(config_filename)
 
     configuration = parse_sections(parser)
@@ -32,7 +32,7 @@ def _get_parser_for_string_config(string_config):
     This should only be used for unit testing.
     """
     buf = StringIO.StringIO(string_config)
-    parser = ConfigParser.ConfigParser()
+    parser = configparser.configparser()
     parser.readfp(buf)
 
     return parser

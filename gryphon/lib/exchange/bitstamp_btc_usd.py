@@ -10,6 +10,7 @@ import time
 
 from cdecimal import *
 from delorean import Delorean, epoch
+from numpy import unicode, basestring
 from requests_futures.sessions import FuturesSession
 from requests_toolbelt.cookies.forgetful import ForgetfulCookieJar
 

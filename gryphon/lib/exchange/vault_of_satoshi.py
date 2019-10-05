@@ -18,7 +18,7 @@ from gryphon.lib.models.datum import DatumRecorder
 from exchange_order import Order
 from gryphon.lib.exchange.consts import Consts
 from base import *
-from exceptions import *
+# from exceptions import *
 from gryphon.lib.models.exchange import Balance
 
 from gryphon.lib.logger import get_logger

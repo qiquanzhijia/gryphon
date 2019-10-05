@@ -5,6 +5,9 @@ import hashlib
 import cdecimal
 from cdecimal import Decimal
 from delorean import Delorean, parse
+from numpy import basestring
+
+from gryphon.lib.exchange.exceptions import CancelOrderNotFoundError
 
 from gryphon.lib.exchange import exceptions
 from gryphon.lib.exchange.consts import Consts

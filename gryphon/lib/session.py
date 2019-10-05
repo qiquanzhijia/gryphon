@@ -109,7 +109,7 @@ def get_an_rq_connection():
     queue_conn = get_a_redis_connection()
     return queue_conn
 
-
+# redis
 def get_a_worker_queue():
     from rq import Queue
     queue_conn = get_an_rq_connection()
@@ -119,18 +119,22 @@ def get_a_worker_queue():
 
 def get_a_memcache_connection():
     import os
-    import pylibmc
+    # import pylibmc
+    import memcache
 
     if (os.environ.get('MEMCACHIER_SERVERS')
             and os.environ.get('MEMCACHIER_USERNAME')
             and os.environ.get('MEMCACHIER_PASSWORD')):
-        mc = pylibmc.Client(
+        mc = memcache.Client(
             servers=os.environ.get('MEMCACHIER_SERVERS').split(','),
-            username=os.environ['MEMCACHIER_USERNAME'],
-            password=os.environ['MEMCACHIER_PASSWORD'],
-            binary=True
-        )
+            # defaults
+            debug=1,
+            dead_retry=30,  # seconds to wait before a retry
+            socket_timeout=3)
+        mc.set(os.environ['MEMCACHIER_USERNAME'], os.environ['MEMCACHIER_PASSWORD'])
     else:
-        mc = pylibmc.Client(servers=['localhost:11211'])
+        # mc = pylibmc.Client(servers=['localhost:11211'])  # python-memcache
+        mc = memcache.Client(servers=['localhost:11211'])
+
     return mc
 

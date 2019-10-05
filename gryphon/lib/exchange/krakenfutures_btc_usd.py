@@ -10,6 +10,7 @@ import urllib
 from cdecimal import Decimal
 from delorean import Delorean
 from more_itertools import chunked
+from numpy import unicode
 
 from gryphon.lib.exchange import exceptions
 from gryphon.lib.exchange import order_types
