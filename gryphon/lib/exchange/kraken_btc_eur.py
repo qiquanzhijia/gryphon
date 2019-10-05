@@ -10,7 +10,7 @@ import urllib
 from cdecimal import Decimal
 from delorean import Delorean
 from more_itertools import chunked
-from numpy import unicode, basestring
+from numpy import unicode
 
 from gryphon.lib.exchange import exceptions
 from gryphon.lib.exchange import order_types
@@ -590,7 +590,7 @@ class KrakenBTCEURExchange(ExchangeAPIWrapper):
             )
 
     def withdraw_crypto_req(self, address, volume):
-        if not isinstance(address, basestring):
+        if not isinstance(address, str):
             raise TypeError('Withdrawal address must be a string')
 
         if self.volume_currency != 'BTC':

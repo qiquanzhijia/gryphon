@@ -10,7 +10,7 @@ from delorean import Delorean
 from collections import OrderedDict, defaultdict
 
 from gryphon.lib.exchange.exceptions import ExchangeAPIErrorException
-from numpy import unicode, basestring
+from numpy import unicode
 
 from gryphon.lib.exchange import exceptions
 from gryphon.lib.exchange import order_types
@@ -336,7 +336,7 @@ class QuadrigaBTCCADExchange(ExchangeAPIWrapper):
         return {'success': True}
 
     def withdraw_crypto_req(self, address, volume):
-        if not isinstance(address, basestring):
+        if not isinstance(address, str):
             raise TypeError('Withdrawal address must be a string')
 
         if not isinstance(volume, Money) or volume.currency != self.volume_currency:

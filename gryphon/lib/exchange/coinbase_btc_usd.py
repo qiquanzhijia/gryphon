@@ -538,7 +538,7 @@ class CoinbaseBTCUSDExchange(ExchangeAPIWrapper):
                 raise exceptions.CancelOrderNotFoundError()
 
     def withdraw_crypto(self, address, volume):
-        if not isinstance(address, basestring):
+        if not isinstance(address, str):
             raise TypeError('Withdrawal address must be a string')
 
         if not isinstance(volume, Money) or volume.currency != 'BTC':
