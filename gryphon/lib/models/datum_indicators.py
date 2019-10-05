@@ -39,25 +39,25 @@ class Datum(Base):
 
     def __init__(self, datum_type, timestamp=None, exchange=None, numeric_value=None, string_value=None, meta_data={}, order=None):
         self.time_created = datetime.utcnow()
-        self.datum_type = unicode(datum_type, "utf-8")
+        self.datum_type = str(datum_type, "utf-8")
         if timestamp is None:
            self.timestamp = datetime.utcnow().strftime("%s")
         else:
             self.timestamp = int(round(timestamp))
-        self.exchange = unicode(exchange, "utf-8")
+        self.exchange = str(exchange, "utf-8")
         self.numeric_value = numeric_value
         self.string_value = string_value 
-        self.unique_id = u'dat_%s' % unicode(uuid.uuid4().hex)
+        self.unique_id = u'dat_%s' % str(uuid.uuid4().hex)
         self.meta_data = json.dumps(meta_data)
         self.order = order
 
     def __unicode__(self):
-        return unicode(repr(self))
+        return str(repr(self))
 
     def __repr__(self):
         d = {
             'datum_type': self.datum_type,
-            'time_created': unicode(self.time_created),
+            'time_created': str(self.time_created),
             'timestamp' : self.timestamp,
             'exchange' : self.exchange,
             'meta_data': json.loads(self.meta_data),

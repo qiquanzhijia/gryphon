@@ -55,7 +55,7 @@ import dotenv
 import os
 import os.path
 
-from numpy import unicode
+
 
 dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 dotenv.load_dotenv(dotenv_path)
@@ -72,7 +72,7 @@ def requests_dot_post():
     print('---')
     print("Trying requests.post")
 
-    nonce = unicode(int(round(time.time() * 1000)))
+    nonce = str(int(round(time.time() * 1000)))
     message = nonce + CLIENT_ID + API_KEY
     sig = hmac.new(SECRET, msg=message, digestmod=hashlib.sha256).hexdigest().upper()
 
@@ -107,7 +107,7 @@ def session_post(session=None, clear_cookies=None):
             print("Clearing the session's cookies")
             session.cookies.clear()
 
-    nonce = unicode(int(round(time.time() * 1000)))
+    nonce = str(int(round(time.time() * 1000)))
     message = nonce + CLIENT_ID + API_KEY
     sig = hmac.new(SECRET, msg=message, digestmod=hashlib.sha256).hexdigest().upper()
 

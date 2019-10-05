@@ -10,7 +10,7 @@ import urllib
 from cdecimal import Decimal
 from delorean import Delorean
 from more_itertools import chunked
-from numpy import unicode
+
 
 from gryphon.lib.exchange import exceptions
 from gryphon.lib.exchange import order_types
@@ -337,7 +337,7 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
         endpoint = url.replace(self.base_url, '')
         endpoint = '/0' + endpoint
 
-        nonce = unicode(int(round(time.time() * 1000)))
+        nonce = str(int(round(time.time() * 1000)))
 
         try:
             payload = request_args['data']
@@ -440,8 +440,8 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
                 'orderType': 'lmt',
                 'symbol': 'pi_xbtusd',
                 'side':mode,
-                'size': unicode(volume.amount),
-                'limitPrice': unicode(price.amount)
+                'size': str(volume.amount),
+                'limitPrice': str(price.amount)
                 # 'stopPrice': optional
                 }
 
@@ -456,7 +456,7 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
         response = self.resp(req)
 
         try:
-            return {'success': True, 'order_id': unicode(response['order_id'])}
+            return {'success': True, 'order_id': str(response['order_id'])}
         except KeyError:
             raise exceptions.ExchangeAPIErrorException(
                 self,
@@ -591,7 +591,7 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
 
                         our_trades.append({
                             'time': int(t['time']),
-                            'trade_id': unicode(t_id),
+                            'trade_id': str(t_id),
                             'fee': fee,
                             'btc': btc,
                             'fiat': fiat,
@@ -611,7 +611,7 @@ class KrakenFuturesBTCUSDExchange(ExchangeAPIWrapper):
         # https://support.kraken.com/hc/en-us/articles/360022635872-Cancel-Order
 
         payload = {
-            'order_id': unicode(order_id),
+            'order_id': str(order_id),
         }
 
         return self.req('post', '/cancelorder', data=payload)

@@ -47,9 +47,9 @@ class Transaction(Base):
     time_completed = Column(DateTime, nullable=True)
     
     _amount = Column('amount', Numeric(precision=24, scale=14))
-    _amount_currency = Column('amount_currency', Unicode(3))
+    _amount_currency = Column('amount_currency', str(3))
     _fee = Column('fee', Numeric(precision=24, scale=14))
-    _fee_currency = Column('fee_currency', Unicode(3))
+    _fee_currency = Column('fee_currency', str(3))
     _transaction_details = Column('transaction_details', UnicodeText(length=2**31))
     
     exchange_id = Column(Integer, ForeignKey('exchange.exchange_id'))
@@ -62,7 +62,7 @@ class Transaction(Base):
     fee_buyback_transaction = relationship("Transaction", remote_side=[transaction_id], backref='fee_buyback_transactions')
     
     def __init__(self, transaction_type, transaction_status, amount, exchange, transaction_details, fee=None):
-        self.unique_id = unicode(uuid.uuid4().hex)
+        self.unique_id = str(uuid.uuid4().hex)
         self.time_created = datetime.utcnow()
         self.transaction_type = transaction_type
         self.transaction_status = transaction_status

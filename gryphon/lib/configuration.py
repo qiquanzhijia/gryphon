@@ -5,7 +5,7 @@ A library that makes it easy to read from .conf files.
 import argparse
 from collections import defaultdict
 import configparser
-import StringIO
+from io import StringIO
 
 from cdecimal import Decimal, InvalidOperation
 

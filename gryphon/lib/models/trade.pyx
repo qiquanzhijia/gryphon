@@ -37,11 +37,11 @@ class Trade(Base):
     time_created = Column(DateTime, nullable=False)
     
     _fee = Column('fee', Numeric(precision=24, scale=14))
-    _fee_currency = Column('fee_currency', Unicode(3))
+    _fee_currency = Column('fee_currency', str(3))
     _price = Column('price', Numeric(precision=24, scale=14))
-    _price_currency = Column('price_currency', Unicode(3))
+    _price_currency = Column('price_currency', str(3))
     _volume = Column('volume', Numeric(precision=24, scale=14))
-    _volume_currency = Column('volume_currency', Unicode(3))
+    _volume_currency = Column('volume_currency', str(3))
 
     meta_data = Column('meta_data', UnicodeText(length=2**31))
 
@@ -54,7 +54,7 @@ class Trade(Base):
     order_id = Column(Integer, ForeignKey('order.order_id'))
     
     def __init__(self, trade_type, price, fee,  volume, exchange_trade_id, order, meta_data={}):
-        self.unique_id = unicode(uuid.uuid4().hex)
+        self.unique_id = str(uuid.uuid4().hex)
         self.time_created = datetime.utcnow()
         self.trade_type = trade_type
         self.price = price

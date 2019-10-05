@@ -28,7 +28,7 @@ class Orderbook(EmeraldHavocBase):
     _asks = Column('asks', UnicodeText(length=2**31))
     
     def __init__(self, exchange, orderbook, timestamp=None):
-        self.unique_id = unicode(uuid.uuid4().hex)
+        self.unique_id = str(uuid.uuid4().hex)
         self.time_created = datetime.utcnow()
         self.timestamp = timestamp
         self.bids = orderbook['bids']

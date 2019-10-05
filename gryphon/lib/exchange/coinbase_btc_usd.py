@@ -298,7 +298,7 @@ class CoinbaseBTCUSDExchange(ExchangeAPIWrapper):
         self.load_creds()
 
         req_method = req_method.upper()
-        timestamp = unicode(int(round(time.time())))
+        timestamp = str(int(round(time.time())))
 
         # This has already been dumped to json by req().
         body = request_args['data']

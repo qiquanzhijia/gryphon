@@ -152,7 +152,7 @@ class GeminiBTCUSDExchange(ExchangeAPIWrapper):
         matching_trades = {}
 
         for trade in trades:
-            oid = unicode(trade['order_id'])
+            oid = str(trade['order_id'])
 
             if oid in order_ids:
                 if not oid in matching_trades:
@@ -296,7 +296,7 @@ class GeminiBTCUSDExchange(ExchangeAPIWrapper):
 
                     our_trades.append({
                         'time': int(float(t['timestamp'])),
-                        'trade_id': unicode(t['tid']),
+                        'trade_id': str(t['tid']),
                         'fee': fee,
                         self.volume_currency.lower(): volume_amount,
                         'fiat': price_currency_amount,

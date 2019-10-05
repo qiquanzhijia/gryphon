@@ -168,7 +168,7 @@ class Exchange(Base):
     transactions = relationship('Transaction', cascade='all,delete-orphan', backref='exchange', lazy='dynamic')
 
     def __init__(self, name):
-        self.unique_id = unicode(uuid.uuid4().hex)
+        self.unique_id = str(uuid.uuid4().hex)
         self.name = name
         self.position = Position()
         self.target = Target()

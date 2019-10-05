@@ -10,7 +10,7 @@ import time
 
 from cdecimal import *
 from delorean import Delorean, epoch
-from numpy import unicode
+
 from requests_futures.sessions import FuturesSession
 from requests_toolbelt.cookies.forgetful import ForgetfulCookieJar
 
@@ -112,9 +112,9 @@ class BitstampBTCUSDExchange(ExchangeAPIWrapper):
         }
 
     def order_is_open(self, order_id):
-        order_id = unicode(order_id)
+        order_id = str(order_id)
         open_orders = self.open_orders()
-        matching_orders = [o for o in open_orders if unicode(o.get('id')) == order_id]
+        matching_orders = [o for o in open_orders if str(o.get('id')) == order_id]
         is_open = len(matching_orders) > 0
 
         return is_open
@@ -161,7 +161,7 @@ class BitstampBTCUSDExchange(ExchangeAPIWrapper):
         matching_trades = {}
 
         for trade in trades:
-            oid = unicode(trade['order_id'])
+            oid = str(trade['order_id'])
 
             if oid in order_ids:
                 if oid not in matching_trades:
@@ -195,7 +195,7 @@ class BitstampBTCUSDExchange(ExchangeAPIWrapper):
             payload = request_args['data'] = {}
 
         # TODO: fix nonce collisions
-        nonce = unicode(int(round(time.time() * 1000)))
+        nonce = str(int(round(time.time() * 1000)))
         message = nonce + self.client_id + self.api_key
 
         sig = hmac.new(
@@ -290,7 +290,7 @@ class BitstampBTCUSDExchange(ExchangeAPIWrapper):
         response = self.resp(req)
 
         try:
-            return {'success': True, 'order_id': unicode(response['id'])}
+            return {'success': True, 'order_id': str(response['id'])}
         except KeyError:
             raise exceptions.ExchangeAPIErrorException(
                 self,
@@ -378,7 +378,7 @@ class BitstampBTCUSDExchange(ExchangeAPIWrapper):
 
                     our_trades.append({
                         'time': int(parse(t['datetime']).epoch),
-                        'trade_id': unicode(t['id']),
+                        'trade_id': str(t['id']),
                         'fee': fee,
                         vol_currency_key: volume_currency_amount,
                         'fiat': price_currency_amount,

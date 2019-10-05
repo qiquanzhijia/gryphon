@@ -96,7 +96,7 @@ class BitfinexBTCUSDExchange(ExchangeAPIWrapper):
         matching_trades = {}
 
         for trade in trades:
-            oid = unicode(trade['order_id'])
+            oid = str(trade['order_id'])
             if oid in order_ids:
                 if not oid in matching_trades:
                     matching_trades[oid] = []
@@ -294,7 +294,7 @@ class BitfinexBTCUSDExchange(ExchangeAPIWrapper):
 
                     our_trades.append({
                         'time': int(float(t['timestamp'])),
-                        'trade_id': unicode(t['tid']),
+                        'trade_id': str(t['tid']),
                         'fee': fee,
                         'btc': btc_amount,
                         'fiat': usd_amount,

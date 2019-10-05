@@ -10,7 +10,7 @@ import urllib
 from cdecimal import Decimal
 from delorean import Delorean
 from more_itertools import chunked
-from numpy import unicode
+
 
 from gryphon.lib.exchange import exceptions
 from gryphon.lib.exchange import order_types
@@ -291,7 +291,7 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
         endpoint = url.replace(self.base_url, '')
         endpoint = '/0' + endpoint
 
-        nonce = unicode(int(round(time.time() * 1000)))
+        nonce = str(int(round(time.time() * 1000)))
 
         try:
             payload = request_args['data']
@@ -430,8 +430,8 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
                 'pair': self.pair,
                 'type': mode,
                 'ordertype': 'limit',
-                'price': unicode(price.amount),
-                'volume': unicode(volume.amount),
+                'price': str(price.amount),
+                'volume': str(volume.amount),
             }
 
         except AttributeError:
@@ -443,7 +443,7 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
         response = self.resp(req)
 
         try:
-            return {'success': True, 'order_id': unicode(response['txid'][0])}
+            return {'success': True, 'order_id': str(response['txid'][0])}
         except KeyError:
             raise exceptions.ExchangeAPIErrorException(
                 self,
@@ -560,7 +560,7 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
 
                         our_trades.append({
                             'time': int(t['time']),
-                            'trade_id': unicode(t_id),
+                            'trade_id': str(t_id),
                             'fee': fee,
                             'eth': eth,
                             'fiat': fiat,
@@ -578,7 +578,7 @@ class KrakenETHEURExchange(ExchangeAPIWrapper):
 
     def cancel_order_req(self, order_id):
         payload = {
-            'txid': unicode(order_id),
+            'txid': str(order_id),
         }
 
         return self.req('post', '/private/CancelOrder', data=payload)

@@ -5,7 +5,7 @@ import hashlib
 import cdecimal
 from cdecimal import Decimal
 from delorean import Delorean, parse
-# from numpy import unicode
+# 
 
 from gryphon.lib.exchange.exceptions import CancelOrderNotFoundError
 

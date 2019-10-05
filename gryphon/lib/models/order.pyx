@@ -36,17 +36,17 @@ class Order(Base, BasicOrder):
     time_created = Column(DateTime, nullable=False)
     time_executed = Column(DateTime)
 
-    _exchange_name = Column('exchange_name', Unicode(64))
+    _exchange_name = Column('exchange_name', str(64))
     _price = Column('price', Numeric(precision=20, scale=10))
-    _price_currency = Column('price_currency', Unicode(64))
+    _price_currency = Column('price_currency', str(64))
     _volume = Column('volume', Numeric(precision=20, scale=10))
-    _volume_currency = Column('volume_currency', Unicode(64))
+    _volume_currency = Column('volume_currency', str(64))
     _fundamental_value = Column('fundamental_value', Numeric(precision=20, scale=10))
-    _fundamental_value_currency = Column('fundamental_value_currency', Unicode(3))
+    _fundamental_value_currency = Column('fundamental_value_currency', str(3))
     _competitiveness = Column('competitiveness', Numeric(precision=20, scale=10))
-    _competitiveness_currency = Column('competitiveness_currency', Unicode(3))
+    _competitiveness_currency = Column('competitiveness_currency', str(3))
     _spread = Column('spread', Numeric(precision=20, scale=10))
-    _spread_currency = Column('spread_currency', Unicode(3))
+    _spread_currency = Column('spread_currency', str(3))
     
     trades = relationship('Trade', cascade="all,delete-orphan", backref='order')
     datums = relationship("Datum",  backref='order')
@@ -56,7 +56,7 @@ class Order(Base, BasicOrder):
     
     def __init__(self, actor, mode, volume, price, exchange, exchange_order_id):
         self.status = self.OPEN
-        self.unique_id = unicode(uuid.uuid4().hex)
+        self.unique_id = str(uuid.uuid4().hex)
         self.time_created = datetime.utcnow()
 
         assert actor and price and volume and exchange and mode

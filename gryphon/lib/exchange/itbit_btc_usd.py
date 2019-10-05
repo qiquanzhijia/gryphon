@@ -13,7 +13,7 @@ import urllib
 
 import cdecimal
 from cdecimal import Decimal
-# from numpy import unicode
+# 
 
 from gryphon.lib.exchange import exceptions
 from gryphon.lib.exchange import order_types

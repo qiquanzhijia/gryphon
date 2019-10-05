@@ -10,7 +10,7 @@ from delorean import Delorean
 from collections import OrderedDict, defaultdict
 
 from gryphon.lib.exchange.exceptions import ExchangeAPIErrorException
-from numpy import unicode
+
 
 from gryphon.lib.exchange import exceptions
 from gryphon.lib.exchange import order_types
@@ -144,8 +144,8 @@ class QuadrigaBTCCADExchange(ExchangeAPIWrapper):
 
                 trades.append({
                     'time': self._datetime_to_timestamp(raw_transaction['datetime']),
-                    'trade_id': unicode(raw_transaction['id']),
-                    'order_id': unicode(raw_transaction['order_id']),
+                    'trade_id': str(raw_transaction['id']),
+                    'order_id': str(raw_transaction['order_id']),
                     'btc': btc,
                     'fiat': fiat,
                     'fee': fee,
@@ -180,7 +180,7 @@ class QuadrigaBTCCADExchange(ExchangeAPIWrapper):
         except KeyError:
             payload = request_args['data'] = {}
 
-        nonce = unicode(int(round(time.time() * 1000)))
+        nonce = str(int(round(time.time() * 1000)))
         message= nonce + self.api_key + self.client_id
 
         sig = hmac.new(
@@ -233,7 +233,7 @@ class QuadrigaBTCCADExchange(ExchangeAPIWrapper):
         response = self.resp(req)
 
         try:
-            return {'success': True, 'order_id': unicode(response['id'])}
+            return {'success': True, 'order_id': str(response['id'])}
         except KeyError:
             raise exceptions.ExchangeAPIErrorException(
                 self,
@@ -268,7 +268,7 @@ class QuadrigaBTCCADExchange(ExchangeAPIWrapper):
     
     def get_order_details_req(self, order_id):
         payload = {
-            'id': unicode(order_id),
+            'id': str(order_id),
         }
 
         return self.req('post', '/lookup_order', data=payload)
