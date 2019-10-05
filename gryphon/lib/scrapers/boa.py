@@ -82,8 +82,8 @@ class BoAScraper(Scraper):
 
 def main():
     scraper = BoAScraper()
-    print scraper.load()
-    print scraper.load_transactions(os.environ['BOA_MAIN_ACCOUNT_NUMBER'])
+    print(scraper.load())
+    print(scraper.load_transactions(os.environ['BOA_MAIN_ACCOUNT_NUMBER']))
     scraper.quit()
 
 if __name__ == '__main__':

@@ -1,20 +1,23 @@
 import numpy as np
 from exponential_moving_average import ExpMovingAverage
 
-
-sampleData = open('sampleData.txt','r').read()
+sampleData = open('sampleData.txt', 'r').read()
 splitData = sampleData.split('\n')
 
-date,closep,highp,lowp,openp,volume = np.loadtxt(splitData, delimiter=',',unpack=True)
+date, closep, highp, lowp, openp, volume = np.loadtxt(splitData, delimiter=',', unpack=True)
 
-def TR(d,c,h,l,o,yc):
-    x = h-l
-    y = abs(h-yc)
-    z = abs(l-yc)
 
-    print x
-    print y
-    print z
+def TR(d, c, h, l, o, yc):
+    x = h - l
+    y = abs(h - yc)
+    z = abs(l - yc)
+
+    # print x
+    # print y
+    # print z
+    print(x)
+    print(y)
+    print(z)
 
     if y <= x >= z:
         TR = x
@@ -23,8 +26,9 @@ def TR(d,c,h,l,o,yc):
     elif x <= z >= y:
         TR = z
 
-    print d, TR
+    print(d, TR)
     return d, TR
+
 
 x = 1
 
@@ -32,14 +36,12 @@ TRDates = []
 TrueRanges = []
 
 while x < len(date):
-    TRDate, TrueRange = TR(date[x],closep[x],highp[x],lowp[x],openp[x],closep[x-1])
+    TRDate, TrueRange = TR(date[x], closep[x], highp[x], lowp[x], openp[x], closep[x - 1])
     TRDates.append(TRDate)
     TrueRanges.append(TrueRange)
-    x+=1
+    x += 1
 
+print("len is{}".format(len(TrueRanges)))
+ATR = ExpMovingAverage(TrueRanges, 14)
 
-
-print len(TrueRanges)
-ATR = ExpMovingAverage(TrueRanges,14)
-
-print ATR
+print(ATR)

@@ -25,7 +25,7 @@ def tx_log():
 
 
 def stop():
-    print "Log Counter: %s" % log_counter
+    print("Log Counter: %s" % log_counter)
     reactor.stop()
 
 

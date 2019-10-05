@@ -62,7 +62,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 '''
 
-import urllib2
+import urllib3
 import time
 import datetime
 import numpy as np
@@ -207,8 +207,8 @@ def graphData(stock,MA1,MA2):
         plt.show()
         fig.savefig('example.png',facecolor=fig.get_facecolor())
            
-    except Exception,e:
-        print 'main loop',str(e)
+    except Exception as e:
+        print('main loop:{}'.format(str(e)))
 
 while True:
-    graphData('YHOO',10,50)
+    graphData('YHOO', 10, 50)

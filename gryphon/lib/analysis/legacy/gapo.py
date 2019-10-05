@@ -23,7 +23,7 @@ def GAPO(d,h,l,tf):
         gapos = ( (math.log(HighestHigh - LowestLow)) /
                   math.log(tf))
 
-        print gapos
+        print(gapos)
         gapo.append(gapos)
         x+=1
     return d[tf:],gapo

@@ -285,9 +285,9 @@ class AnyEc:
 
 def main():
     scraper = BMOScraper()
-    print scraper.load()
-    print scraper.load_transactions(os.environ['BMO_USD_ACCOUNT_NUMBER'])
-    print scraper.load_transactions(os.environ['BMO_CAD_ACCOUNT_NUMBER'])
+    print(scraper.load())
+    print(scraper.load_transactions(os.environ['BMO_USD_ACCOUNT_NUMBER']))
+    print(scraper.load_transactions(os.environ['BMO_CAD_ACCOUNT_NUMBER']))
     scraper.quit()
 
 if __name__ == '__main__':

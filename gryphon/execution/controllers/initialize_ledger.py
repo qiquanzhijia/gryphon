@@ -53,7 +53,7 @@ def initialize_exchange_ledger(db, wrapper_obj):
         pass
     finally:
         if db_obj is not None:
-            print ALREADY_INITIALIZED_ERR_MESSAGE % wrapper_obj.name
+            print(ALREADY_INITIALIZED_ERR_MESSAGE % wrapper_obj.name)
             return
 
     # Create the entry in the Exchange table.
@@ -66,12 +66,12 @@ def initialize_exchange_ledger(db, wrapper_obj):
     try:
         balance = wrapper_obj.get_balance()
     except KeyError as e:
-        print NO_API_CREDENTIALS_ERR_MESSAGE % wrapper_obj.name
-        print e
+        print(NO_API_CREDENTIALS_ERR_MESSAGE % wrapper_obj.name)
+        print(e)
         return
     except Exception as e:
-        print UNKNOWN_ERR_MESSAGE % wrapper_obj.name
-        print e
+        print(UNKNOWN_ERR_MESSAGE % wrapper_obj.name)
+        print(e)
         return
 
     price_currency = wrapper_obj.currency

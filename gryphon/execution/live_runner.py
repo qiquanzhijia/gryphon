@@ -267,7 +267,7 @@ def live_run(configuration):
             while True:
                 try:
                     tick_start = Delorean().epoch
-                    print '\n\n%s' % strategy.name
+                    print('\n\n%s' % strategy.name)
 
                     if warm_shutdown_flag:
                         return  # This takes us into the finally block.

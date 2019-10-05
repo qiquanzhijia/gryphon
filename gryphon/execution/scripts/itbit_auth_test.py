@@ -59,5 +59,5 @@ def main(script_arguments, execute):
 
     full_url = 'https://api.itbit.com/v1' + url
 
-    print requests.get(full_url, data=request_args).text
+    print(requests.get(full_url, data=request_args).text)
 

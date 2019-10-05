@@ -13,7 +13,6 @@ decorator==4.3.0
 Delorean==1.0.0
 enum34==1.1.6
 futures==3.2.0
-gryphon-cdecimal==2.3
 gryphon-money==1.2.1
 gryphon-pusherclient==0.2.1
 humanize==0.5.1
@@ -25,7 +24,6 @@ Mako==1.0.7
 MarkupSafe==1.0
 mock==1.0.1
 more-itertools==4.3.0
-MySQL-python==1.2.5
 nose==1.3.7
 pathlib2==2.3.2
 pexpect==4.6.0
@@ -33,9 +31,9 @@ pickleshare==0.7.4
 prompt-toolkit==1.0.15
 ptyprocess==0.6.0
 Pygments==2.2.0
-pylibmc==1.6.0
+python-memcached
 python-dateutil==2.7.5
-python-dotenv==0.8.2
+python-dotenv==0.10.3
 pytz==2018.5
 raven==6.9.0
 redis==2.10.6
@@ -48,11 +46,13 @@ scandir==1.7
 simplegeneric==0.8.1
 six==1.11.0
 SQLAlchemy==1.2.14
-sure==1.2.9
+sure==1.4.11
 termcolor==1.1.0
 termstyle==0.1.11
 traitlets==4.3.2
-tzlocal==1.5.1
+tzlocal==2.0.0
 urllib3==1.23
 wcwidth==0.1.7
 websocket-client==0.48.0
+python-memcached==1.59
+mpmath==1.1.0

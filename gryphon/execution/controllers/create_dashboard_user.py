@@ -10,6 +10,8 @@ import getpass
 import termcolor as tc
 import os
 
+from click._compat import raw_input
+
 from gryphon.lib import session
 from gryphon.dashboards.models.user import User
 from gryphon.dashboards.models.columns.password_column import Password
@@ -43,14 +45,14 @@ Success! You should be able to log in with the new credentials now.'\
 
 
 def main(execute):
-    print tc.colored(WARNING_MESSAGE, 'red')
+    print(tc.colored(WARNING_MESSAGE, 'red'))
     informed_consent = raw_input(WARNING_PROMPT)
 
     if informed_consent != 'y':
-        print EXIT_MESSAGE
+        print(EXIT_MESSAGE)
         return
     else:
-        print CONTINUE_MESSAGE
+        print(CONTINUE_MESSAGE)
 
     dashboard_db = session.get_a_dashboard_db_mysql_session()
 
@@ -65,7 +67,7 @@ def main(execute):
         dashboard_db.add(user)
         dashboard_db.commit()
 
-        print tc.colored(SUCCESS_MESSAGE, 'green')
+        print(tc.colored(SUCCESS_MESSAGE, 'green'))
     else:
-        print SUCCESS_NO_EXECUTE_MESSAGE
+        print(SUCCESS_NO_EXECUTE_MESSAGE)
      

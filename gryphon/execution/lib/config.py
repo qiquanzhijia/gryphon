@@ -6,7 +6,7 @@ logger = get_logger(__name__)
 
 
 def get_config_var(filepath, section, key):
-    print filepath
+    print(filepath)
 
     config = ConfigParser.RawConfigParser()
     config.read(filepath)
