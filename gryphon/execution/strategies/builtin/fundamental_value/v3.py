@@ -7,7 +7,7 @@ calculation.
 TODO: If we like this, rip out cfv_v1.
 """
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib.exchange.retry import exchange_retry
 from gryphon.lib.money import Money

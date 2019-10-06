@@ -8,7 +8,7 @@ import hashlib
 import hmac
 import time
 
-from cdecimal import *
+from decimal import *
 from delorean import Delorean, epoch
 
 from requests_futures.sessions import FuturesSession

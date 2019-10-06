@@ -1,7 +1,7 @@
 # -*- coding: utf-8; py-indent-offset:4 -*-
 import os
 import datetime
-from cdecimal import Decimal
+from decimal import Decimal
 
 import backtrader as bt 
 import pandas as pd

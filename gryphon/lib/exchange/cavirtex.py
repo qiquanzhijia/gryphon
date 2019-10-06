@@ -20,7 +20,7 @@ from base import *
 from exceptions import *
 from gryphon.lib.models.exchange import Balance
 
-from cdecimal import *
+from decimal import *
 from gryphon.lib.logger import get_logger
 logger = get_logger(__name__)
 

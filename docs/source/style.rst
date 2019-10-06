@@ -16,7 +16,7 @@ Gryphon style follows `PEP8`_ and the `Google Python Style Guide`_ by default, w
 Always run :code:`flake8` on new files from the root gryphon package directory (to pick up the project's :code:`setup.cfg`). It should pass without errors. If an error shows up that disagrees with this style guide, discuss and consider adding it to flake8's ignore list
 
 
-Use cdecimal.Decimal, not naked scalar values
+Use decimal.Decimal, not naked scalar values
 ---------------------------------------------
 
 :code:`Decimal` is superior to python's built-in float class for handling high-precision numbers. Never use naked floats, unless comparing a :code:`Decimal` or :code:`Money` against zero, which is well defined.

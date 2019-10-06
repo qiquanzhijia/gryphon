@@ -1,7 +1,7 @@
 import json
 
 from autobahn.twisted.websocket import connectWS, WebSocketClientFactory
-from cdecimal import Decimal
+from decimal import Decimal
 from twisted.internet import defer, ssl, reactor
 from twisted.internet import protocol
 from txredis.client import RedisClient

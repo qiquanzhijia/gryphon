@@ -1,7 +1,7 @@
 from bitstamp import BitstampBTCUSDExchange
 import os
 import json
-from cdecimal import *
+from decimal import *
 from gryphon.lib.logger import get_logger
 logger = get_logger(__name__)
 

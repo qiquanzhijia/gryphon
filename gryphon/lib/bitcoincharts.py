@@ -1,7 +1,7 @@
 import requests
 import datetime
 from delorean import Delorean
-from cdecimal import Decimal
+from decimal import Decimal
 from gryphon.lib.logger import get_logger
 logger = get_logger(__name__)
 

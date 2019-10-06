@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 import uuid
 
-from cdecimal import Decimal
+from decimal import Decimal
 from gryphon.lib.session import commit_mysql_session
 from sqlalchemy import ForeignKey, Column, Integer, Unicode, DateTime, UnicodeText, Numeric, desc
 

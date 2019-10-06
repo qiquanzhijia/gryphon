@@ -6,8 +6,8 @@ import hmac
 import json
 import time
 
-import cdecimal
-from cdecimal import Decimal
+import decimal
+from decimal import Decimal
 from delorean import Delorean, parse
 
 from gryphon.lib.exchange import exceptions

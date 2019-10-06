@@ -123,7 +123,7 @@ setup(
     },
     include_package_data=True,
     install_requires=[
-        'alembic==1.2.0',
+        'alembic==0.6.0',
         'Babel==2.6.0',
         'backports.shutil-get-terminal-size==1.0.0',
         'cement==2.10.12',
@@ -136,7 +136,7 @@ setup(
         'Delorean>=1.0.0,<2',
         'enum34==1.1.6',
         'futures==3.2.0',
-        'cdecimal==2.3',
+        # 'decimal==2.3',
         'idna==2.7',
         'ipython==5.7.0',
         'ipython-genutils==0.2.0',

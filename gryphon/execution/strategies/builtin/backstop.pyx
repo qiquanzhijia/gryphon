@@ -7,7 +7,7 @@ prices.
 
 from datetime import datetime, timedelta
 
-from cdecimal import *
+from decimal import *
 import termcolor as tc
 
 from gryphon.execution.strategies.base import Strategy

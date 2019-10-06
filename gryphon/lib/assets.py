@@ -1,6 +1,6 @@
 from collections import namedtuple
 
-from cdecimal import Decimal
+from decimal import Decimal
 from delorean import Delorean
 from sqlalchemy import func, or_, and_
 

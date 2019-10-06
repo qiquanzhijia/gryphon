@@ -4,7 +4,7 @@ import pickle
 import random
 import termcolor as tc
 
-from cdecimal import Decimal, InvalidOperation, ROUND_UP, ROUND_DOWN
+from decimal import Decimal, InvalidOperation, ROUND_UP, ROUND_DOWN
 
 from gryphon.lib.configurable_object import ConfigurableObject
 from gryphon.lib.exchange.consts import Consts

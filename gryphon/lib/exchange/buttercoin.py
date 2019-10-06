@@ -20,7 +20,7 @@ from exchange_order import Order
 from gryphon.lib.models.exchange import Balance
 from gryphon.lib.models.datum import DatumRecorder
 
-from cdecimal import *
+from decimal import *
 from gryphon.lib.logger import get_logger
 logger = get_logger(__name__)
 

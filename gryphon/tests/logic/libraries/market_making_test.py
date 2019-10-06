@@ -4,7 +4,7 @@ import os
 import unittest
 import sure
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib import market_making
 from gryphon.lib.exchange.exchange_order import Order

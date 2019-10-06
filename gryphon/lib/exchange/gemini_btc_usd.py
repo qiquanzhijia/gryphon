@@ -10,7 +10,7 @@ import hmac
 import json
 import time
 
-from cdecimal import *
+from decimal import *
 
 from gryphon.lib.exchange.consts import Consts
 from gryphon.lib.exchange.exchange_api_wrapper import ExchangeAPIWrapper

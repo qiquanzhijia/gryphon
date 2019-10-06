@@ -1,6 +1,6 @@
 
 from gryphon.execution.strategies.base import Strategy
-from cdecimal import Decimal
+from decimal import Decimal
 from gryphon.lib.money import Money
 from gryphon.lib.exchange.consts import Consts
 import gryphon.lib.metrics.quote as quote

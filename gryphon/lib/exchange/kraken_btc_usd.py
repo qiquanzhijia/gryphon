@@ -1,4 +1,4 @@
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib.exchange.kraken_btc_eur import KrakenBTCEURExchange
 from gryphon.lib.logger import get_logger

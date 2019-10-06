@@ -1,5 +1,5 @@
 import numpy as np
-from cdecimal import Decimal
+from decimal import Decimal
 
 def MovingAverage(values, timestamps, window_time=300):
     assert len(values) == len(timestamps)

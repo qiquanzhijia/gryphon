@@ -3,7 +3,7 @@ import pyximport; pyximport.install()
 import os
 import unittest
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib.metrics import orderbook_strength
 from gryphon.lib.exchange.exchange_order import Order as ExchangeOrder

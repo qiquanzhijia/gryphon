@@ -7,7 +7,7 @@ import unittest
 import mock
 import sure
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib import configuration
 from gryphon.lib.money import Money
@@ -113,7 +113,7 @@ class TestConfiguration(unittest.TestCase):
 
         output = configuration.parse_configurable_value(value)
 
-        output.should.equal('1000 USD')
+        output.should.equal('USD 1000.00')
 
     def test_configurable_value_number(self):
         value = '133120102'

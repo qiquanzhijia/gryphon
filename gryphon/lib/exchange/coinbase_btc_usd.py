@@ -10,7 +10,7 @@ import json
 import time
 import urllib
 
-from cdecimal import Decimal
+from decimal import Decimal
 import coinbase.client
 
 from gryphon.lib.exchange import exceptions

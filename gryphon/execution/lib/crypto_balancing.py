@@ -1,6 +1,6 @@
 import hashlib
 
-from cdecimal import *
+from decimal import *
 from delorean import Delorean
 
 from gryphon.execution.lib import conf

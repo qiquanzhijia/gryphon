@@ -8,7 +8,7 @@ import time
 import unittest
 import sure
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.execution.lib import config_helper
 from gryphon.lib.money import Money

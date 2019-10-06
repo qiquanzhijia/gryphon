@@ -6,8 +6,8 @@ import hmac
 import json
 import time
 
-import cdecimal
-from cdecimal import Decimal
+import decimal
+from decimal import Decimal
 from delorean import Delorean, parse
 
 from gryphon.lib.exchange import exceptions
@@ -284,7 +284,7 @@ class BitfinexBTCUSDExchange(ExchangeAPIWrapper):
                     usd_amount = price * btc_amount.amount
                     usd_amount = usd_amount.round_to_decimal_places(
                             8,
-                            rounding=cdecimal.ROUND_HALF_UP,
+                            rounding=decimal.ROUND_HALF_UP,
                     )
 
                     our_type = self._order_mode_to_const(t['type'].lower())

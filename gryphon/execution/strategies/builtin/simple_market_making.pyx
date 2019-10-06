@@ -4,7 +4,7 @@ framework. It follows the same tick-logic as SuperSimpleMarketMaking, but it's t
 exchange, spread, and base volume, are all configurable.
 """
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.execution.strategies.base import Strategy
 from gryphon.lib import market_making as mm

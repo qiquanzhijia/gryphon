@@ -7,7 +7,7 @@ import os
 import time
 import urllib
 
-from cdecimal import Decimal
+from decimal import Decimal
 from delorean import Delorean
 from more_itertools import chunked
 

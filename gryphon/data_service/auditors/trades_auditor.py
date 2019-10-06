@@ -2,7 +2,7 @@
 from datetime import datetime, timedelta
 import subprocess
 
-from cdecimal import Decimal
+from decimal import Decimal
 from sqlalchemy import and_, func, select
 from twisted.internet import defer
 from twisted.internet.defer import inlineCallbacks

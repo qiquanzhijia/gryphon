@@ -1,5 +1,5 @@
 import numpy as np
-from cdecimal import Decimal
+from decimal import Decimal
 
 
 def ExpMovingAverage(values, timestamps, window_time=300):

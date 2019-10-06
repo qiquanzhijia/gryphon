@@ -17,7 +17,7 @@ from gryphon.lib.exchange.exchange_order import Order
 from gryphon.lib.exchange.consts import Consts
 from gryphon.lib.models.exchange import Balance
 
-from cdecimal import *
+from decimal import *
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 

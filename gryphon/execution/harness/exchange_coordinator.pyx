@@ -17,7 +17,7 @@ import pyximport; pyximport.install()
 
 from sets import Set
 
-from cdecimal import Decimal, ROUND_UP, ROUND_DOWN
+from decimal import Decimal, ROUND_UP, ROUND_DOWN
 from delorean import Delorean
 from sqlalchemy.orm import joinedload
 
@@ -346,7 +346,7 @@ class ExchangeCoordinator(object):
                 ))
             else:
                 raise Exception(
-                    'extra_data only supports str or cdecimal.Decimal types',
+                    'extra_data only supports str or decimal.Decimal types',
                 )
 
         return datums

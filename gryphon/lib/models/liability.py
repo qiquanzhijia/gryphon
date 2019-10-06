@@ -15,7 +15,7 @@ from datetime import datetime
 import json
 import uuid
 
-from cdecimal import Decimal
+from decimal import Decimal
 from delorean import Delorean
 
 from sqlalchemy import Column, Integer, Unicode, DateTime, UnicodeText, Numeric

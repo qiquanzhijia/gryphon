@@ -2,7 +2,7 @@ import pyximport; pyximport.install()
 
 import unittest
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib.exchange.bitstamp_eth_btc import BitstampETHBTCExchange
 from gryphon.lib.money import Money

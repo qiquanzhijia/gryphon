@@ -1,26 +1,28 @@
-from __future__ import absolute_import
-
-import gryphon.lib; gryphon.lib.monkeypatch_decimal_to_cdecimal()
+# import gryphon.lib; gryphon.lib.monkeypatch_decimal_to_decimal()
 
 from gryphon.lib.forex import USDCurrencyConverter
 
 import json
 import decimal
+from decimal import Decimal
 # need absolute_import from above so that this doesn't load our current file
-import money as super_money
+from gryphon.lib.moneys import money as super_money
 
 
 class Money(super_money.Money):
     FIAT_CURRENCIES = ["USD", "CAD", "EUR"]
     CRYPTO_CURRENCIES = ["BTC", "BCH", "ETH", "LTC", "XRP", "ZEC"]
     CURRENCIES = FIAT_CURRENCIES + CRYPTO_CURRENCIES
+    # amount = ""
+    # currency = ""
 
     def __init__(self, amount="0", currency=None):
         if isinstance(amount, str):
             amount = amount.replace(",", "")
 
         try:
-            self.amount = decimal.Decimal(amount)
+            print(decimal.Decimal(amount))
+            self.amount = Decimal(amount)
         except decimal.InvalidOperation:
             raise ValueError(
                 "amount value could not be converted to Decimal(): '{}'".format(amount),

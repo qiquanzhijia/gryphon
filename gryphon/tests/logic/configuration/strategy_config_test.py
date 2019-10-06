@@ -5,7 +5,7 @@ import pyximport; pyximport.install()
 import unittest
 import mock
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib.money import Money
 from gryphon.execution.strategies.builtin.simple_market_making import SimpleMarketMaking

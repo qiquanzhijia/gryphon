@@ -18,7 +18,7 @@ import json
 import os
 from socket import error as SocketError
 
-from cdecimal import Decimal
+from decimal import Decimal
 from delorean import Delorean, epoch
 import termcolor as tc
 import requests

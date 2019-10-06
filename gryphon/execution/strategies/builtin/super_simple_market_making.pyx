@@ -14,7 +14,7 @@ maximum if it were filled.
 This strategy is just an example, and should not be used for real trading.
 """
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.execution.strategies.base import Strategy
 from gryphon.lib import market_making as mm

@@ -2,7 +2,7 @@ import pyximport; pyximport.install()
 
 import unittest
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib.exchange.kraken_btc_cad import KrakenBTCCADExchange
 from gryphon.lib.money import Money

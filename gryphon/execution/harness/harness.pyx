@@ -15,7 +15,7 @@ from sets import Set
 import termcolor as tc
 import time
 
-from cdecimal import ROUND_UP, ROUND_DOWN
+from decimal import ROUND_UP, ROUND_DOWN
 from delorean import Delorean
 from sqlalchemy.orm import joinedload
 

@@ -7,7 +7,7 @@ from collections import defaultdict
 import configparser
 from io import StringIO
 
-from cdecimal import Decimal, InvalidOperation
+from decimal import Decimal, InvalidOperation
 
 from gryphon.lib.money import Money
 

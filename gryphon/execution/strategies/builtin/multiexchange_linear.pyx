@@ -2,7 +2,7 @@
 A non-trivial market making strategy.
 """
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.execution.strategies.base import Strategy
 from gryphon.execution.strategies.builtin.fundamental_value import native as native_midpoint

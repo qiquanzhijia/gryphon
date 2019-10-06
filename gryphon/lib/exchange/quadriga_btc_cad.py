@@ -5,7 +5,7 @@ import datetime
 import hmac
 import hashlib
 
-from cdecimal import *
+from decimal import *
 from delorean import Delorean
 from collections import OrderedDict, defaultdict
 

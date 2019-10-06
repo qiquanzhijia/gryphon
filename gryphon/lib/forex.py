@@ -2,7 +2,7 @@ import json
 import os
 import requests
 
-from cdecimal import *
+from decimal import *
 from delorean import Delorean, epoch
 
 from gryphon.lib.session import get_a_redis_connection

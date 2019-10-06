@@ -9,7 +9,7 @@ import hashlib
 import base64
 import json
 import math
-from cdecimal import *
+from decimal import *
 from delorean import Delorean
 from collections import OrderedDict
 

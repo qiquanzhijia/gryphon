@@ -5,7 +5,7 @@ import pyximport; pyximport.install()
 import os
 import time
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.execution.lib import config_helper
 from gryphon.lib.money import Money

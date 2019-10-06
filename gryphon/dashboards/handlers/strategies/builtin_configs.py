@@ -1,7 +1,7 @@
 """
 """
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 BUILTIN_STRAT_CONFIGS = {
     'manual': {

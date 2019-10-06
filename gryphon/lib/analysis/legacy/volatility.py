@@ -35,7 +35,7 @@ TODO:
 import datetime
 import math
 
-from cdecimal import Decimal
+from decimal import Decimal
 from delorean import Delorean
 import numpy
 from sqlalchemy import extract, func

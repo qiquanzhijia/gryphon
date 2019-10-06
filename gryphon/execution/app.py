@@ -6,7 +6,7 @@ import os
 from os.path import join, dirname
 import shlex
 
-from cdecimal import Decimal
+from decimal import Decimal
 from cement.core import foundation, controller, handler
 from cement.ext.ext_argparse import ArgparseArgumentHandler
 from dotenv import load_dotenv

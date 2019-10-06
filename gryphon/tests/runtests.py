@@ -3,7 +3,7 @@ A simple script that allows us to run our test-suite from an installed console e
 point.
 """
 
-import pyximport;
+import pyximport
 
 pyximport.install()
 
@@ -14,7 +14,7 @@ import sys
 
 import nose
 
-import money
+from gryphon.lib.money import Money
 
 
 def main():

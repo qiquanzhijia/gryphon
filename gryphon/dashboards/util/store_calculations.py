@@ -1,7 +1,7 @@
-import cdecimal
+import decimal
 import functools
 import simplejson as json
-from cdecimal import Decimal
+from decimal import Decimal
 from delorean import Delorean
 from gryphon.lib import gryphon_json_serialize
 from gryphon.lib.logger import get_logger
@@ -37,21 +37,21 @@ def store_calculation_result(function):
         # keys in redis are a stringifying of the function name and
         # arguments.
         key = '%s:%s:%s' % (
-            function.__name__, 
-            str(key_args), 
+            function.__name__,
+            str(key_args),
             str(kwargs),
         )
-  
+
         redis = redis = get_a_redis_connection()
 
         if not handler.should_recalculate_stored_results:
             redis_result = redis.get(key)
 
-            if redis_result:    
+            if redis_result:
                 return parse_value_from_redis(redis_result)
 
         calculated_value = function(*args, **kwargs)
-  
+
         redis.set(key, prepare_value_for_redis(calculated_value))
 
         return calculated_value
@@ -64,5 +64,3 @@ def prepare_value_for_redis(value):
 
 def parse_value_from_redis(value):
     return json.loads(value, parse_float=Decimal)
-
-

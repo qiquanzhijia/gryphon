@@ -2,7 +2,7 @@ from collections import defaultdict
 import json
 
 from autobahn.twisted.websocket import connectWS, WebSocketClientFactory
-from cdecimal import Decimal
+from decimal import Decimal
 from twisted.internet import defer, reactor, ssl
 
 import gryphon.data_service.consts as consts

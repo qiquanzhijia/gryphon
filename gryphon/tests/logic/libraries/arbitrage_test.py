@@ -14,7 +14,7 @@ import gryphon.lib; gryphon.lib.prepare()
 import unittest
 import sure
 
-from cdecimal import Decimal, ROUND_TRUNC
+from decimal import Decimal, ROUND_TRUNC
 
 from gryphon.lib import arbitrage
 from gryphon.lib.models.emeraldhavoc.orderbook import Orderbook

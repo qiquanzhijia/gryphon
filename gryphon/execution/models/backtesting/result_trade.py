@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from cdecimal import *
+from decimal import *
 from datetime import datetime, date, timedelta
 import json
 import os

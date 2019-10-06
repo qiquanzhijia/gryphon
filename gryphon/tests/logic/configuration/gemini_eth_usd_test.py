@@ -2,7 +2,7 @@ import pyximport; pyximport.install()
 
 import unittest
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib.exchange.gemini_eth_usd import GeminiETHUSDExchange
 from gryphon.lib.money import Money

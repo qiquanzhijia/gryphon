@@ -8,7 +8,7 @@ import math
 import os
 from socket import error as SocketError
 
-from cdecimal import *
+from decimal import *
 from delorean import Delorean, epoch
 import termcolor as tc
 import requests

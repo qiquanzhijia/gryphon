@@ -1,5 +1,5 @@
 import pyximport; pyximport.install()
-from cdecimal import Decimal
+from decimal import Decimal
 import inspect
 import os
 import signal

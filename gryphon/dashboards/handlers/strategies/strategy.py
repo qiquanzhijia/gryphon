@@ -3,7 +3,7 @@ from collections import defaultdict
 import datetime
 import logging
 
-from cdecimal import Decimal
+from decimal import Decimal
 from delorean import Delorean
 import tornado.web
 

@@ -4,7 +4,7 @@ from datetime import datetime
 import json
 import uuid
 
-from cdecimal import Decimal
+from decimal import Decimal
 from sqlalchemy import ForeignKey, Column, Integer, Unicode, DateTime, UnicodeText, Numeric, desc, UniqueConstraint
 from sqlalchemy.dialects.mysql import DATETIME
 

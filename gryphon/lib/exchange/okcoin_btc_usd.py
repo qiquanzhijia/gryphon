@@ -2,8 +2,8 @@
 from collections import OrderedDict
 import hashlib
 
-import cdecimal
-from cdecimal import Decimal
+import decimal
+from decimal import Decimal
 from delorean import Delorean, parse
 # 
 
@@ -112,12 +112,12 @@ class OKCoinBTCUSDExchange(ExchangeAPIWrapper):
         if m.currency == 'USD':
             return m.round_to_decimal_places(
                 4,
-                rounding=cdecimal.ROUND_HALF_EVEN,
+                rounding=decimal.ROUND_HALF_EVEN,
             )
         elif m.currency == 'BTC':
             return m.round_to_decimal_places(
                 8,
-                rounding=cdecimal.ROUND_HALF_EVEN,
+                rounding=decimal.ROUND_HALF_EVEN,
             )
 
     def ticker_req(self, verify=True):
@@ -509,7 +509,7 @@ class OKCoinBTCUSDExchange(ExchangeAPIWrapper):
         # OkCoin truncates to 6 decimal places in their API, so we want do the same
         # to our stored balance before comparing them.
         if db_balance.currency == 'BTC':
-            db_balance = db_balance.round_to_decimal_places(6, cdecimal.ROUND_HALF_EVEN)
+            db_balance = db_balance.round_to_decimal_places(6, decimal.ROUND_HALF_EVEN)
 
         return db_balance
 

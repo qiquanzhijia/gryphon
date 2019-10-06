@@ -7,16 +7,16 @@ mklink /d "C:\Program Files (x86)\MySQL\MySQL Connector C 6.0.2\include" "C:\Pro
 
 # pylibmc>=1.5.2,<2  python-memcached
 
-# gryphon-cdecimal==2.3 
+# gryphon-decimal==2.3 
 
-http://www.bytereef.org/mpdecimal/doc/cdecimal/index.html
+http://www.bytereef.org/mpdecimal/doc/decimal/index.html
 
-https://www.lfd.uci.edu/~gohlke/pythonlibs/#cdecimal 
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#decimal 
 
 https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python
 
 ```cython
-from cdecimal import *
+from decimal import *
 c = getcontext()               # Global (thread-local) context
 
 c.traps[Inexact] = True        # Trap the Inexact signal

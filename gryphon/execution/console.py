@@ -19,7 +19,7 @@ import pyximport; pyximport.install()
 from datetime import datetime, timedelta
 import logging
 
-from cdecimal import *
+from decimal import *
 
 from gryphon.lib import environment
 from gryphon.lib import session

@@ -5,7 +5,7 @@ random period and checks their results are the same.
 
 import pyximport; pyximport.install()
 
-from cdecimal import *
+from decimal import *
 from datetime import datetime, timedelta
 import os
 import random

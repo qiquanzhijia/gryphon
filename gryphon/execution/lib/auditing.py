@@ -3,7 +3,7 @@ Functions that run checks on an exchange account to verify that our ledger is co
 with the exchange state.
 """
 
-from cdecimal import Decimal
+from decimal import Decimal
 import termcolor as tc
 
 from sqlalchemy.orm import joinedload

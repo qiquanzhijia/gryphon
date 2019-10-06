@@ -14,7 +14,7 @@ IMPORTANT:
 from collections import defaultdict
 import itertools
 
-from cdecimal import Decimal
+from decimal import Decimal
 
 from gryphon.lib.logger import get_logger
 from gryphon.lib.models.emeraldhavoc.orderbook import Orderbook

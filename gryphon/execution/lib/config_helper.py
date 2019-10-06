@@ -17,7 +17,7 @@ The rule is:
 import configparser
 import argparse
 
-from cdecimal import Decimal, InvalidOperation
+from decimal import Decimal, InvalidOperation
 
 from gryphon.lib import configuration
 from gryphon.lib.money import Money

@@ -2,6 +2,7 @@
 Money classes
 """
 import decimal
+from decimal import Decimal
 import re
 
 from .exchange import xrates
@@ -27,7 +28,7 @@ class Money(object):
     
     def __init__(self, amount="0", currency=None):
         try:
-            self.amount = decimal.Decimal(amount)
+            self.amount = Decimal(amount)
         except decimal.InvalidOperation:
             raise ValueError("amount value could not be converted to "
                              "Decimal(): '{}'".format(amount)) from None
@@ -249,7 +250,13 @@ class Money(object):
     def loads(cls, s):
         """Parse from a string representation (repr)"""
         try:
-            currency, amount = s.strip().split(' ')
+            currency0, amount0 = s.strip().split(' ')
+            if REGEX_CURRENCY_CODE.match(currency0):
+                amount = amount0
+                currency = currency0
+            else:
+                amount = currency0
+                currency = amount0
             return cls(amount, currency)
         except ValueError as err:
             raise ValueError("failed to parse string '{}': "

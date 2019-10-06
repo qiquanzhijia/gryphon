@@ -10,7 +10,7 @@ import requests
 import time
 import urllib
 import decimal
-from cdecimal import *
+from decimal import *
 from collections import OrderedDict
 from delorean import Delorean, parse
 from urllib import urlencode

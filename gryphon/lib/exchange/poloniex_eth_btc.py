@@ -7,7 +7,7 @@ import hmac
 import json
 import time
 
-from cdecimal import *
+from decimal import *
 
 from base import *
 # from exceptions import *
