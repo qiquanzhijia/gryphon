@@ -19,7 +19,7 @@ def read_config_from_file(config_filename):
 
     Section titles of the form [x:y] are parsed into sub-dictionaries under the key x.
     """
-    parser = configparser.Rawconfigparser()
+    parser = configparser.RawConfigParser()
     parser.read(config_filename)
 
     configuration = parse_sections(parser)
@@ -31,9 +31,9 @@ def _get_parser_for_string_config(string_config):
     """
     This should only be used for unit testing.
     """
-    buf = StringIO.StringIO(string_config)
-    parser = configparser.configparser()
-    parser.readfp(buf)
+    buf = StringIO(string_config)
+    parser = configparser.ConfigParser()
+    parser.read_file(buf)
 
     return parser
 

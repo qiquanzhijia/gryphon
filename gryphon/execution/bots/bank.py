@@ -4,7 +4,7 @@ import time
 
 import termcolor as tc
 
-from gryphon.execution.lib.heartbeat import heartbeat
+from gryphon.execution.lib.heartbeat import Heartbeat
 from gryphon.execution.bots import shoebox
 from gryphon.lib import session
 from gryphon.lib.exchange import exchange_factory
@@ -285,4 +285,4 @@ def load_accounts_map():
 
 def success(name):
     logger.info(tc.colored('%s passed the audit' % name, 'green'))
-    heartbeat(BANK_AUDIT_HEARTBEAT_KEY % name)
+    Heartbeat(BANK_AUDIT_HEARTBEAT_KEY % name)

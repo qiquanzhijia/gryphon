@@ -7,7 +7,7 @@ metadata = Base.metadata
 def unicode_string(self):
     return str(self).encode('utf-8')
 
-Base.__str__ == unicode_string   
+# Base.__str__ == unicode_string
 
 
 # How to migrate a database

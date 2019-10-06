@@ -10,13 +10,11 @@ from sqlalchemy import func
 from sqlalchemy.ext.mutable import Mutable
 from sqlalchemy.orm import relationship, reconstructor, Session
 from sqlalchemy.types import TypeDecorator, UnicodeText
-
+from gryphon.lib.models.trade import Trade
 from gryphon.lib import gryphon_json_serialize
 from gryphon.lib.exchange.exchange_factory import make_exchange_from_key
 from gryphon.lib.logger import get_logger
 from gryphon.lib.models.base import Base
-from gryphon.lib.models.order import Order
-from gryphon.lib.models.trade import Trade
 from gryphon.lib.models.transaction import Transaction
 from gryphon.lib.money import Money
 
@@ -304,6 +302,8 @@ class Exchange(Base):
     def trades(self):
         session = Session.object_session(self)
 
+
+        from gryphon.lib.models.order import Order
         return session.query(Trade)\
             .join(Order)\
             .filter(Order._exchange_name.in_(self.all_pair_names))

@@ -65,7 +65,7 @@ def warm_shutdown(harness, db, sentry, execute):
         sentry.captureException()
 
         logger.exception(tc.colored(
-            '[%s] %s' % (e.__class__.__name__, e.message),
+            '[%s] %s' % (e.__class__.__name__, e),
             'red',
         ))
 

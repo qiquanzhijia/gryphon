@@ -21,9 +21,6 @@ decorator==4.3.0
 Delorean==1.0.0
 enum34==1.1.6
 futures==3.2.0
-gryphon-cdecimal==2.3
-gryphon-money==1.2.1
-gryphon-pusherclient==0.2.1
 humanize==0.5.1
 hyperlink==18.0.0
 idna==2.7

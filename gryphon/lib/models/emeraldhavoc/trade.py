@@ -3,13 +3,9 @@ import os
 from gryphon.lib.models.emeraldhavoc.base import EmeraldHavocBase
 import json
 import uuid
-from decimal import *
-from collections import defaultdict
 
 from gryphon.lib.money import Money
-from gryphon.lib.exchange.consts import Consts
-from gryphon.lib.exchange.exchange_factory import make_exchange_from_key
-from gryphon.lib import gryphon_json_serialize
+
 from datetime import datetime, date, timedelta
 from sqlalchemy import ForeignKey, Column, Integer, Unicode, DateTime, UnicodeText, Numeric, UniqueConstraint
 from sqlalchemy.orm import relationship, backref

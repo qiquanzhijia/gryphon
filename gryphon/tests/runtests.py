@@ -3,7 +3,9 @@ A simple script that allows us to run our test-suite from an installed console e
 point.
 """
 
-import pyximport; pyximport.install()
+import pyximport;
+
+pyximport.install()
 
 import logging
 import os
@@ -13,6 +15,7 @@ import sys
 import nose
 
 import money
+
 
 def main():
     test_dir = resource_filename('gryphon', 'tests/logic')
@@ -34,3 +37,7 @@ def main():
         sys.exit(0)
     else:
         sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()

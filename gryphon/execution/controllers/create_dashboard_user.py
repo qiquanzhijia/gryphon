@@ -70,4 +70,3 @@ def main(execute):
         print(tc.colored(SUCCESS_MESSAGE, 'green'))
     else:
         print(SUCCESS_NO_EXECUTE_MESSAGE)
-     

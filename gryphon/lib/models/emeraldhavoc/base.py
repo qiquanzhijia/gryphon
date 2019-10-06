@@ -9,10 +9,11 @@ from sqlalchemy.ext.declarative import declarative_base
 EmeraldHavocBase = declarative_base()
 metadata = EmeraldHavocBase.metadata
 
+
 def unicode_string(self):
     return str(self).encode('utf-8')
 
-EmeraldHavocBase.__str__ == unicode_string   
+# EmeraldHavocBase.__str__ == unicode_string
 
 
 # How to migrate a database

@@ -8,7 +8,7 @@ logger = get_logger(__name__)
 def get_config_var(filepath, section, key):
     print(filepath)
 
-    config = configparser.Rawconfigparser()
+    config = configparser.RawConfigParser()
     config.read(filepath)
     section_dict = dict(config.items('live'))
 

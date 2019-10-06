@@ -5,19 +5,15 @@ import json
 import os
 import uuid
 
-from decimal import *
 from delorean import epoch
 from sqlalchemy import ForeignKey, Column, Integer, Unicode, DateTime, UnicodeText, Numeric, Index
 from sqlalchemy.orm import relationship, backref
-from sqlalchemy.ext.declarative import declarative_base
 
 from gryphon.lib.money import Money
-from gryphon.lib import gryphon_json_serialize
 from gryphon.lib.exchange.exchange_factory import make_exchange_from_key
 from gryphon.lib.models.base import Base
 from gryphon.lib.models.basic_order import BasicOrder
-from gryphon.lib.models.datum import Datum
-from gryphon.lib.models.trade import Trade
+
 
 metadata = Base.metadata
 
@@ -92,6 +88,7 @@ class Order(Base, BasicOrder):
 
     def set_trades(self, trades):
         self.trades = []
+        from gryphon.lib.models.trade import Trade  #sqlalchemy circular import
         for trade in trades:
             new_trade = Trade(
                 self.order_type,
@@ -102,6 +99,7 @@ class Order(Base, BasicOrder):
                 self)
 
             new_trade.time_created = epoch(trade['time']).datetime
+            # https://github.com/garethdmm/gryphon/issues/44  todo
 
     # returns position change
     def was_eaten(self, order_details):

@@ -6,7 +6,7 @@ from delorean import Delorean
 from sqlalchemy import func
 from sqlalchemy.orm import joinedload
 
-from gryphon.execution.lib.heartbeat import heartbeat
+from gryphon.execution.lib.heartbeat import Heartbeat
 from gryphon.lib import assets
 from gryphon.lib import session
 from gryphon.lib.exchange.exchange_factory import ALL_EXCHANGE_KEYS

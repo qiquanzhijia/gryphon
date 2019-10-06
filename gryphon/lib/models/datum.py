@@ -4,6 +4,7 @@ import json
 import uuid
 
 from cdecimal import Decimal
+from gryphon.lib.session import commit_mysql_session
 from sqlalchemy import ForeignKey, Column, Integer, Unicode, DateTime, UnicodeText, Numeric, desc
 
 from gryphon.lib.models.base import Base

@@ -154,8 +154,8 @@ class Trade(Base):
         Ex: db.query(func.sum(Trade.fee_in_usd)).join(Order).scalar()
         This gives decimal results, since we don't have our Money objects in SQL
         """
+        # https://blog.csdn.net/iehadoop/article/details/83018858 todo circular import
         from gryphon.lib.models.order import Order
-
         exchange_rate_to_usd = expression.case(
             [(cls._fee_currency == 'BTC', Order._fundamental_value * Order.exchange_rate)],
             else_=Order.exchange_rate,
@@ -177,7 +177,7 @@ class Trade(Base):
         return self.calc_position()
 
     def calc_position(self, include_fees=True):
-        from gryphon.lib.models.exchange import Position
+        from gryphon.lib.models.exchange import Position  # 循环引用？
         position = Position()
 
         if self.trade_type == self.BID:

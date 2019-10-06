@@ -7,7 +7,7 @@ from delorean import Delorean
 import pygerduty
 from sqlalchemy.orm import joinedload
 
-from gryphon.execution.lib.heartbeat import heartbeat
+from gryphon.execution.lib.heartbeat import Heartbeat
 from gryphon.lib import hackernewsie
 from gryphon.lib import redditor
 from gryphon.lib import session
