@@ -17,6 +17,7 @@ from setuptools import (
     Command,
 )
 import versioneer
+import numpy as np
 
 class LazyBuildExtCommandClass(dict):
     """
@@ -26,8 +27,8 @@ class LazyBuildExtCommandClass(dict):
 
     def __contains__(self, key):
         return (
-            key == 'build_ext'
-            or super(LazyBuildExtCommandClass, self).__contains__(key)
+                key == 'build_ext'
+                or super(LazyBuildExtCommandClass, self).__contains__(key)
         )
 
     def __setitem__(self, key, value):
@@ -65,42 +66,214 @@ class LazyBuildExtCommandClass(dict):
 
         return build_ext
 
-
-# def window_specialization(typename):
-#     """Make an extension for an AdjustedArrayWindow specialization."""
-#     return Extension(
-#         'catalyst.lib._{name}window'.format(name=typename),
-#         ['catalyst/lib/_{name}window.pyx'.format(name=typename)],
-#         depends=['catalyst/lib/_windowtemplate.pxi'],
-#     )
-
-class CleanCommand(Command):
-    """
-    Custom clean command to tidy up the project root, because even
-        python setup.py clean --all
-    doesn't remove build/dist and egg-info directories, which can and have caused
-    install problems in the past.
-    """
-    user_options = []
-
-    def initialize_options(self):
-        pass
-
-    def finalize_options(self):
-        pass
-
-    def run(self):
-        os.system('rm -vrf ./build ./dist ./*.pyc ./*.tgz ./*.egg-info')
-
-
 with open('README.md', 'r') as f:
     long_description = f.read()
 
+def window_specialization(typename):
+    """Make an extension for an AdjustedArrayWindow specialization."""
+    return Extension(
+        'gryphon.libc._{name}window'.format(name=typename),
+        ['gryphon/libc/_{name}window.pyx'.format(name=typename)],
+        depends=['gryphon/libc/_windowtemplate.pxi'],
+    )
+
+
+ext_modules = [
+    Extension('gryphon.lib.models.exchange', ['gryphon/lib/models/exchange.pyx']),
+    Extension('gryphon.lib.models.order', ['gryphon/lib/models/order.pyx']),
+    Extension('gryphon.lib.models.flag', ['gryphon/lib/models/flag.pyx']),
+    Extension('gryphon.lib.models.trade', ['gryphon/lib/models/trade.pyx']),
+    Extension('gryphon.lib.models.base', ['gryphon/lib/models/base.pyx']),
+    Extension('gryphon.lib.models.basic_order', ['gryphon/lib/models/basic_order.pyx']),
+    # Extension('gryphon.assets._assets', ['gryphon/assets/_assets.pyx']),
+    # Extension('gryphon.assets.continuous_futures',
+    #           ['gryphon/assets/continuous_futures.pyx']),
+    Extension('gryphon.libc.adjustment', ['gryphon/lib/adjustment.pyx']),
+    Extension('gryphon.libc._factorize', ['gryphon/lib/_factorize.pyx']),
+    window_specialization('float64'),
+    window_specialization('int64'),
+    window_specialization('int64'),
+    window_specialization('uint8'),
+    window_specialization('label'),
+
+
+    # Extension('gryphon.data._equities', ['gryphon/data/_equities.pyx']),
+    # Extension('gryphon.data._adjustments',
+    #           ['gryphon/data/_adjustments.pyx']),
+    # Extension('gryphon._protocol', ['gryphon/_protocol.pyx']),
+    # Extension('gryphon.gens.sim_engine', ['gryphon/gens/sim_engine.pyx']),
+    # Extension(
+    #     'gryphon.data._minute_bar_internal',
+    #     ['gryphon/data/_minute_bar_internal.pyx']
+    # ),
+    # Extension(
+    #     'gryphon.utils.calendars._calendar_helpers',
+    #     ['gryphon/utils/calendars/_calendar_helpers.pyx']
+    # ),
+    # Extension(
+    #     'gryphon.data._resample',
+    #     ['gryphon/data/_resample.pyx']
+    # ),
+]
+
+STR_TO_CMP = {
+    '<': lt,
+    '<=': le,
+    '=': eq,
+    '==': eq,
+    '>': gt,
+    '>=': ge,
+}
+
+
 SYS_VERSION = '.'.join(list(map(str, sys.version_info[:3])))
+
+def _filter_requirements(lines_iter, filter_names=None,
+                         filter_sys_version=False):
+    for line in lines_iter:
+        line = line.strip()
+        if not line or line.startswith('#'):
+            continue
+
+        match = REQ_PATTERN.match(line)
+        if match is None:
+            raise AssertionError(
+                "Could not parse requirement: '%s'" % line)
+
+        name = match.group('name')
+        if filter_names is not None and name not in filter_names:
+            continue
+
+        if filter_sys_version and match.group('pyspec'):
+            pycomp, pyspec = match.group('pycomp', 'pyspec')
+            comp = STR_TO_CMP[pycomp]
+            pyver_spec = StrictVersion(pyspec)
+            if comp(SYS_VERSION, pyver_spec):
+                # pip install -r understands lines with ;python_version<'3.0',
+                # but pip install -e does not.  Filter here, removing the
+                # env marker.
+                yield line.split(';')[0]
+            continue
+
+        yield line
+
+
+REQ_UPPER_BOUNDS = {
+    'pandas': '<0.20',
+    'empyrical': '<0.2.2',
+}
+
+def _with_bounds(req):
+    try:
+        req, lower = req.split('==')
+    except ValueError:
+        return req
+    else:
+        with_bounds = [req, '>=', lower]
+        upper = REQ_UPPER_BOUNDS.get(req)
+        if upper:
+            with_bounds.extend([',', upper])
+        return ''.join(with_bounds)
+
+
+REQ_PATTERN = re.compile("(?P<name>[^=<>]+)(?P<comp>[<=>]{1,2})(?P<spec>[^;]+)"
+                         "(?:(;\W*python_version\W*(?P<pycomp>[<=>]{1,2})\W*"
+                         "(?P<pyspec>[0-9\.]+)))?")
+
+def _conda_format(req):
+    def _sub(m):
+        name = m.group('name').lower()
+        if name == 'numpy':
+            return 'numpy x.x'
+        if name == 'tables':
+            name = 'pytables'
+
+        formatted = '%s %s%s' % ((name,) + m.group('comp', 'spec'))
+        pycomp, pyspec = m.group('pycomp', 'pyspec')
+        if pyspec:
+            # Compare the two-digit string versions as ints.
+            selector = ' # [int(py) %s int(%s)]' % (
+                pycomp, ''.join(pyspec.split('.')[:2]).ljust(2, '0')
+            )
+            return formatted + selector
+
+        return formatted
+
+    return REQ_PATTERN.sub(_sub, req, 1)
+
+def read_requirements(path,
+                      strict_bounds,
+                      conda_format=False,
+                      filter_names=None):
+    """
+    Read a requirements.txt file, expressed as a path relative to gryphon root.
+
+    Returns requirements with the pinned versions as lower bounds
+    if `strict_bounds` is falsey.
+    """
+    real_path = join(dirname(abspath(__file__)), path)
+    with open(real_path) as f:
+        reqs = _filter_requirements(f.readlines(), filter_names=filter_names,
+                                    filter_sys_version=not conda_format)
+
+        if not strict_bounds:
+            reqs = map(_with_bounds, reqs)
+
+        if conda_format:
+            reqs = map(_conda_format, reqs)
+
+        return list(reqs)
+
+def install_requires(strict_bounds=False, conda_format=False):
+    return read_requirements('requirements/gryphon-base.txt',
+                             strict_bounds=strict_bounds,
+                             conda_format=conda_format)
+
+def extras_requires(conda_format=False):
+    extras = {
+        extra: read_requirements('requirements/gryphon{0}.txt'.format(extra),
+                                 strict_bounds=True,
+                                 conda_format=conda_format)
+        for extra in ('+gds', '+dashboards')
+    }
+    extras['all'] = [req for reqs in extras.values() for req in reqs]
+
+    return extras
+
+
+def setup_requirements(requirements_path, module_names, strict_bounds,
+                       conda_format=False):
+    module_names = set(module_names)
+    module_lines = read_requirements(requirements_path,
+                                     strict_bounds=strict_bounds,
+                                     conda_format=conda_format,
+                                     filter_names=module_names)
+
+    if len(set(module_lines)) != len(module_names):
+        raise AssertionError(
+            "Missing requirements. Looking for %s, but found %s."
+            % (module_names, module_lines)
+        )
+    return module_lines
+
+conda_build = os.path.basename(sys.argv[0]) in ('conda-build',  # unix
+                                                'conda-build-script.py')  # win
+
+setup_requires = setup_requirements(
+    'requirements/gryphon-base.txt',
+    ('Cython', 'numpy'),
+    # ('numpy'),
+    strict_bounds=conda_build,
+    conda_format=conda_build,
+)
+
+conditional_arguments = {
+    'setup_requires' if not conda_build else 'build_requires': setup_requires,
+}
 
 setup(
     name='gryphon',
-    packages=find_packages(),
+    # packages=find_packages(),
     version=versioneer.get_version(),
     author='MacLeod & Robinson, Inc.',
     author_email='hello@tinkercorp.com',
@@ -108,6 +281,8 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='http://www.gryphonframework.org',
+    packages=find_packages(include=['gryphon', 'gryphon.*']),  # build_ext need
+    ext_modules=ext_modules,
     classifiers=(
         'Programming Language :: Python :: 2.7',
         'Operating System :: OS Independent',
@@ -121,63 +296,15 @@ setup(
             'gryphon-dashboards=gryphon.dashboards.app:main',
         ],
     },
+    include_dirs=[np.get_include()],
     include_package_data=True,
-    install_requires=[
-        'alembic==0.6.0',
-        'Babel==2.6.0',
-        'backports.shutil-get-terminal-size==1.0.0',
-        'cement==2.10.12',
-        'certifi==2018.4.16',
-        'chardet==3.0.4',
-        'coinbase==1.0.4',
-        'contextlib2==0.5.5',
-        'Cython==0.20.1',
-        'decorator==4.3.0',
-        'Delorean>=1.0.0,<2',
-        'enum34==1.1.6',
-        'futures==3.2.0',
-        # 'decimal==2.3',
-        'idna==2.7',
-        'ipython==5.7.0',
-        'ipython-genutils==0.2.0',
-        'line-profiler==2.1.2',
-        'Mako==1.0.7',
-        'MarkupSafe==1.0',
-        'mock==3.0.5',
-        'more-itertools>=4.2.0,<5',
-        # 'MySQL-python==1.2.5',
-        'nose==1.3.7',
-        'pathlib2==2.3.2',
-        'pexpect==4.6.0',
-        'pickleshare==0.7.4',
-        'prompt-toolkit==1.0.15',
-        'ptyprocess==0.6.0',
-        'Pygments==2.2.0',
-        # 'pylibmc>=1.5.2,<2',
-        'python-dotenv==0.10.3',
-        'pytz==2018.5',
-        'raven==6.9.0',
-        'rednose>=1.3.0,<2',
-        'redis==2.10.6',
-        'requests==2.22.0',
-        'requests-futures==0.9.7',
-        'requests-toolbelt==0.8.0',
-        'retrying==1.3.3',
-        'scandir==1.7',
-        'simplegeneric==0.8.1',
-        'six==1.12.0',
-        'sure==1.4.11',
-        'SQLAlchemy>=1.2.18',
-        'termcolor==1.1.0',
-        'traitlets==4.3.2',
-        'tzlocal==2.0.0',
-        'urllib3==1.23',
-        'wcwidth==0.1.7',
-        'websocket-client==0.48.0',
-    ],
+    package_data={root.replace(os.sep, '.'):
+                      ['*.pyi', '*.pyx', '*.pxi', '*.pxd']
+                  for root, dirnames, filenames in os.walk('gryphon')
+                  if '__pycache__' not in root},
+    install_requires=install_requires(strict_bounds=True,
+                                      conda_format=conda_build),
     cmdclass=LazyBuildExtCommandClass(versioneer.get_cmdclass()),
-    # cmdclass={
-    #     'clean': CleanCommand,
-    #     'build_ext': build_ext,
-    # },
+    extras_require=extras_requires(conda_format=conda_build),
+    **conditional_arguments
 )
