@@ -1,0 +1,2 @@
+in wondows，用调试可能通不过，需要在cmd或powershell中执行，更可能加载好环境。
+python.exe "C:\Program Files\JetBrains\PyCharm Professional Edition with Anaconda plugin 2019.2.1\helpers\pycharm\_jb_pytest_runner.py" --path D:/optionfamily/gryphon/gryphon/gryphon/tests/logic/models/order_test.py

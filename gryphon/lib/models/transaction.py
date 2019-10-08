@@ -84,7 +84,7 @@ class Transaction(Base):
             'transaction_id':self.transaction_id,
             'transaction_type':self.transaction_type,
             'transaction_status':self.transaction_status,
-            'time_created':unicode(self.time_created),
+            'time_created':str(self.time_created),
             'unique_id':self.unique_id,
             'exchange':self.exchange.name,
             'amount':self.amount,

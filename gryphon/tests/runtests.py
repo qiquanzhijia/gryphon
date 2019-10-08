@@ -11,7 +11,7 @@ import logging
 import os
 from pkg_resources import resource_filename
 import sys
-
+# cython: language_level=3
 import nose
 
 from gryphon.lib.money import Money

@@ -42,6 +42,7 @@ class TestOrder(unittest.TestCase):
         pass
 
     def test_position(self):
+        # assert self.order.position.keys()
         self.order.position.should.have.key('USD')
         self.order.position.should.have.key('BTC')
         self.order.position['USD'].should.equal(Money(-77, "USD"))

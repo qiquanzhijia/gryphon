@@ -32,11 +32,11 @@ class Order(Base, BasicOrder):
     time_created = Column(DateTime, nullable=False)
     time_executed = Column(DateTime)
 
-    _exchange_name = Column('exchange_name', str(64))
+    _exchange_name = Column('exchange_name', Unicode(64))
     _price = Column('price', Numeric(precision=20, scale=10))
-    _price_currency = Column('price_currency', str(64))
+    _price_currency = Column('price_currency', Unicode(64))
     _volume = Column('volume', Numeric(precision=20, scale=10))
-    _volume_currency = Column('volume_currency', str(64))
+    _volume_currency = Column('volume_currency', Unicode(64))
     _fundamental_value = Column('fundamental_value', Numeric(precision=20, scale=10))
     _fundamental_value_currency = Column('fundamental_value_currency', Unicode(3))
     _competitiveness = Column('competitiveness', Numeric(precision=20, scale=10))
@@ -45,7 +45,7 @@ class Order(Base, BasicOrder):
     _spread_currency = Column('spread_currency', Unicode(3))
     
     trades = relationship('Trade', cascade="all,delete-orphan", backref='order')
-    datums = relationship("Datum",  backref='order')
+    # datums = relationship("Datum",  backref='order')  # todo
     
     __table_args__ = (Index('idx_exchange_order_id_exchange_name', exchange_order_id, _exchange_name),
                       Index('idx_status', status),)

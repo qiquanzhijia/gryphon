@@ -1,5 +1,5 @@
 import pyximport; pyximport.install()
-
+# cython: language_level=3
 import unittest
 
 from decimal import Decimal

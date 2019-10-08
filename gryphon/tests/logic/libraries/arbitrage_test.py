@@ -13,9 +13,9 @@ import gryphon.lib; gryphon.lib.prepare()
 
 import unittest
 import sure
-
-from decimal import Decimal, ROUND_TRUNC
-
+import decimal
+from decimal import Decimal
+# cython: language_level=3
 from gryphon.lib import arbitrage
 from gryphon.lib.models.emeraldhavoc.orderbook import Orderbook
 from gryphon.lib.money import Money
@@ -562,7 +562,9 @@ class TestArbLib(unittest.TestCase):
 
         result = arbitrage.max_buy_volume(Money('599', 'USD'), self.basic_ob_1())
 
-        result.round_to_decimal_places(3, ROUND_TRUNC).should.equal(
+        #  ROUND_TRUNC cdecimal todo
+
+        result.round_to_decimal_places(3, decimal.ROUND_05UP).should.equal(
             Money('0.909', 'BTC'),
         )
 

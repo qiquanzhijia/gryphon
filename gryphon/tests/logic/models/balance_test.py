@@ -30,7 +30,7 @@ class TestBalance(unittest.TestCase):
             'USD': Money("50", "USD"),
             'BTC': Money("2", "BTC")
         })
-        new_balance = self.balance + balance2
+        new_balance = self.balance + balance2["USD"] + balance2["BTC"]  # TODO this is not good
         new_balance['USD'].should.equal(Money("150", "USD"))
         new_balance['BTC'].should.equal(Money("3", "BTC"))
 
@@ -51,6 +51,7 @@ class TestBalance(unittest.TestCase):
     def test_add_result_mutability(self):
         m = Money(2, 'BTC')
         new_balance = self.balance + m #  => USD 100, BTC 3
+        assert new_balance['BTC'] == Money("3", "BTC")
         new_balance['USD'].should.equal(Money("100", "USD"))
 
         self.balance['USD'].amount += 10 # USD 110

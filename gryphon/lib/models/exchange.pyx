@@ -1,4 +1,15 @@
 # -*- coding: utf-8 -*-
+cimport cython
+from cpython.number cimport PyNumber_Index
+from cpython.object cimport (
+    Py_EQ,
+    Py_NE,
+    Py_GE,
+    Py_LE,
+    Py_GT,
+    Py_LT,
+)
+from cpython cimport bool
 import copy
 import json
 import uuid
@@ -10,7 +21,7 @@ from sqlalchemy import func
 from sqlalchemy.ext.mutable import Mutable
 from sqlalchemy.orm import relationship, reconstructor, Session
 from sqlalchemy.types import TypeDecorator, UnicodeText
-from gryphon.lib.models.trade import Trade
+# from gryphon.lib.models.trade import Trade
 from gryphon.lib import gryphon_json_serialize
 from gryphon.lib.exchange.exchange_factory import make_exchange_from_key
 from gryphon.lib.logger import get_logger
@@ -304,6 +315,8 @@ class Exchange(Base):
 
 
         from gryphon.lib.models.order import Order
+
+        from gryphon.lib.models.trade import Trade
         return session.query(Trade)\
             .join(Order)\
             .filter(Order._exchange_name.in_(self.all_pair_names))
@@ -327,6 +340,7 @@ class Exchange(Base):
                 'end_time must be later than %s' % assets.EARLIEST_CORRECT_LEDGER_DATE,
             )
 
+        from gryphon.lib.models.trade import Trade
         trades_query = self.trades\
             .order_by(Trade.time_created.desc())
 

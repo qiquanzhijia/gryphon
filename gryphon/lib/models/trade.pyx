@@ -177,7 +177,7 @@ class Trade(Base):
         return self.calc_position()
 
     def calc_position(self, include_fees=True):
-        from gryphon.lib.models.exchange import Position  # 循环引用？
+        from gryphon.lib.models.exchange import Position  # circle? todo
         position = Position()
 
         if self.trade_type == self.BID:

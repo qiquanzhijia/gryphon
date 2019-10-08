@@ -1,4 +1,4 @@
-from kraken_orderbook_poller import KrakenOrderbook
+# from kraken_orderbook_poller import KrakenOrderbook
 
 
 class KrakenCADOrderbook(KrakenOrderbook):

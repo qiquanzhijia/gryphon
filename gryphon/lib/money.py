@@ -21,7 +21,6 @@ class Money(super_money.Money):
             amount = amount.replace(",", "")
 
         try:
-            print(decimal.Decimal(amount))
             self.amount = Decimal(amount)
         except decimal.InvalidOperation:
             raise ValueError(

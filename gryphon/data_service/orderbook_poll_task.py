@@ -13,9 +13,9 @@ from gryphon.data_service.pollers.orderbook.gemini_eth_btc_orderbook_poller impo
 from gryphon.data_service.pollers.orderbook.gemini_eth_usd_orderbook_poller import GeminiETHUSDOrderbook
 from gryphon.data_service.pollers.orderbook.gemini_orderbook_poller import GeminiOrderbook
 from gryphon.data_service.pollers.orderbook.itbit_orderbook_poller import ItbitOrderbook
-from gryphon.data_service.pollers.orderbook.kraken_cad_orderbook_poller import KrakenCADOrderbook
-from gryphon.data_service.pollers.orderbook.kraken_orderbook_poller import KrakenOrderbook
-from gryphon.data_service.pollers.orderbook.kraken_usd_orderbook_poller import KrakenUSDOrderbook
+# from gryphon.data_service.pollers.orderbook.kraken_cad_orderbook_poller import KrakenCADOrderbook
+# from gryphon.data_service.pollers.orderbook.kraken_orderbook_poller import KrakenOrderbook
+# from gryphon.data_service.pollers.orderbook.kraken_usd_orderbook_poller import KrakenUSDOrderbook
 from gryphon.data_service.pollers.orderbook.okcoin_orderbook_poller import OkCoinOrderbook
 from gryphon.data_service.pollers.orderbook.poloniex_eth_btc_orderbook_poller import PoloniexETHBTCOrderbook
 from gryphon.data_service.pollers.orderbook.quadriga_orderbook_poller import QuadrigaOrderbook

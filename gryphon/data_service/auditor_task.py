@@ -28,11 +28,8 @@ class AuditorTask(Task):
         else:
             self.auditors = exchange_orderbook_auditors.values()
 
-        self.auditors.extend([
-            HeartbeatAuditor(),
-            PerformanceAuditor(),
-            TradesAuditor(exchanges=exchanges)
-        ])
+        list(self.auditors).extend([HeartbeatAuditor(), PerformanceAuditor(), TradesAuditor(exchanges=exchanges)])
+        # In Python3 dict.values() returns "views" instead of lists:
 
     def start_task(self):
         for auditor in self.auditors:
