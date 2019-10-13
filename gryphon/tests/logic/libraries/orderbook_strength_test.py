@@ -71,8 +71,8 @@ class TestLiquidityFunction(unittest.TestCase):
             Money('2', 'USD'),
         )
 
-        bid_strength.should.equal(Decimal('10'))
-        ask_strength.should.equal(Decimal('10'))
+        assert bid_strength == (Decimal('10'))
+        assert ask_strength == (Decimal('10'))
 
     def test_strength_normal(self):
         """
@@ -95,6 +95,6 @@ class TestLiquidityFunction(unittest.TestCase):
             Money('20', 'USD'),
         )
 
-        bid_strength.should.equal(Decimal('20'))
-        ask_strength.should.equal(Decimal('110'))
+        assert bid_strength == (Decimal('20'))
+        assert ask_strength == (Decimal('110'))
 

@@ -287,7 +287,7 @@ def balance_equality(balance_a, balance_b):
     are fixing it here with the intention of a later fix to the core lib.
     """
 
-    currencies = set(balance_a.keys() + balance_b.keys())
+    currencies = set(list(balance_a.keys()) + list(balance_b.keys()))
 
     for currency in currencies:
         if currency in balance_a and currency in balance_b:

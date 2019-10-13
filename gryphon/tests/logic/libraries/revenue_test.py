@@ -13,7 +13,7 @@ from gryphon.lib.models.trade import Trade
 from gryphon.lib.money import Money
 
 
-class TestProfit():
+class TestProfit(unittest.TestCase):
     def setUp(self):
         self.order = mock.MagicMock()
         self.order.exchange_rate = Decimal('0.80')
@@ -117,10 +117,10 @@ class TestProfit():
         # expect to match all of #1 with #2
         # with no remaining position
         matched_trades.should.have.length_of(2)
-        matched_trades[0].volume.should.equal(Money('1', 'BTC'))
-        matched_trades[1].volume.should.equal(Money('1', 'BTC'))
+        assert matched_trades[0].volume == (Money('1', 'BTC'))
+        assert matched_trades[1].volume == (Money('1', 'BTC'))
 
-        position_trades.should.be.empty
+        assert position_trades == []
 
     def test_profit_units(self):
         self.bid.price = Money('90', 'USD')

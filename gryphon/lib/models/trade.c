@@ -1247,6 +1247,7 @@ static const char __pyx_k_date[] = "date";
 static const char __pyx_k_else[] = "else_";
 static const char __pyx_k_func[] = "func";
 static const char __pyx_k_init[] = "__init__";
+static const char __pyx_k_iter[] = "__iter__";
 static const char __pyx_k_json[] = "json";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "name";
@@ -1323,6 +1324,7 @@ static const char __pyx_k_gryphon_lib[] = "gryphon.lib";
 static const char __pyx_k_primary_key[] = "primary_key";
 static const char __pyx_k_BTC_Exchange[] = " BTC, Exchange:";
 static const char __pyx_k_Trade___init[] = "Trade.__init__";
+static const char __pyx_k_Trade___iter[] = "Trade.__iter__";
 static const char __pyx_k_Trade___repr[] = "Trade.__repr__";
 static const char __pyx_k_Trade_volume[] = "Trade.volume";
 static const char __pyx_k_ensure_ascii[] = "ensure_ascii";
@@ -1405,6 +1407,7 @@ static PyObject *__pyx_kp_u_Price;
 static PyObject *__pyx_kp_u_TRADE;
 static PyObject *__pyx_n_s_Trade;
 static PyObject *__pyx_n_s_Trade___init;
+static PyObject *__pyx_n_s_Trade___iter;
 static PyObject *__pyx_n_s_Trade___repr;
 static PyObject *__pyx_n_s_Trade___unicode;
 static PyObject *__pyx_n_s_Trade_calc_position;
@@ -1484,6 +1487,7 @@ static PyObject *__pyx_n_s_hybrid_property;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_include_fees;
 static PyObject *__pyx_n_s_init;
+static PyObject *__pyx_n_s_iter;
 static PyObject *__pyx_n_s_json;
 static PyObject *__pyx_n_s_length;
 static PyObject *__pyx_n_s_main;
@@ -1543,29 +1547,30 @@ static PyObject *__pyx_n_s_volume_currency;
 static PyObject *__pyx_n_s_volume_currency_2;
 static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade___defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
 static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_trade_type, PyObject *__pyx_v_price, PyObject *__pyx_v_fee, PyObject *__pyx_v_volume, PyObject *__pyx_v_exchange_trade_id, PyObject *__pyx_v_order, PyObject *__pyx_v_meta_data); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__repr__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6to_json(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_10volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_14price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_22fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28has_outstanding_btc_fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_btc_fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_include_fees); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_amount, PyObject *__pyx_v_currency); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_currency); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_currency); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__iter__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__unicode__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6__repr__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8to_json(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_10volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_14price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20price_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_22fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28fee_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_btc_fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32has_outstanding_btc_fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36calc_position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_include_fees); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38exchange_rate(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42exchange_name(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44convert_to_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_amount, PyObject *__pyx_v_currency); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46price_in_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_currency); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_48fee_in_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_currency); /* proto */
 static PyObject *__pyx_int_3;
 static PyObject *__pyx_int_14;
 static PyObject *__pyx_int_24;
@@ -1592,12 +1597,13 @@ static PyObject *__pyx_tuple__34;
 static PyObject *__pyx_tuple__36;
 static PyObject *__pyx_tuple__38;
 static PyObject *__pyx_tuple__40;
-static PyObject *__pyx_tuple__41;
+static PyObject *__pyx_tuple__42;
 static PyObject *__pyx_tuple__43;
 static PyObject *__pyx_tuple__45;
 static PyObject *__pyx_tuple__47;
 static PyObject *__pyx_tuple__49;
 static PyObject *__pyx_tuple__51;
+static PyObject *__pyx_tuple__53;
 static PyObject *__pyx_codeobj__5;
 static PyObject *__pyx_codeobj__7;
 static PyObject *__pyx_codeobj__9;
@@ -1616,12 +1622,13 @@ static PyObject *__pyx_codeobj__33;
 static PyObject *__pyx_codeobj__35;
 static PyObject *__pyx_codeobj__37;
 static PyObject *__pyx_codeobj__39;
-static PyObject *__pyx_codeobj__42;
+static PyObject *__pyx_codeobj__41;
 static PyObject *__pyx_codeobj__44;
 static PyObject *__pyx_codeobj__46;
 static PyObject *__pyx_codeobj__48;
 static PyObject *__pyx_codeobj__50;
 static PyObject *__pyx_codeobj__52;
+static PyObject *__pyx_codeobj__54;
 /* Late includes */
 
 /* "gryphon/lib/models/trade.pyx":56
@@ -1934,7 +1941,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade___init__(CYTHON_UN
  *         self.order = order
  *         self.meta_data = json.dumps(meta_data)             # <<<<<<<<<<<<<<
  * 
- *     def __unicode__(self):
+ *     def __iter__(self):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_json); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1985,26 +1992,80 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade___init__(CYTHON_UN
 /* "gryphon/lib/models/trade.pyx":67
  *         self.meta_data = json.dumps(meta_data)
  * 
- *     def __unicode__(self):             # <<<<<<<<<<<<<<
- *         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (
- *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         return self
+ * 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_3__unicode__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_3__unicode__ = {"__unicode__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_3__unicode__, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_3__unicode__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_3__iter__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_3__iter__ = {"__iter__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_3__iter__, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_3__iter__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__unicode__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(__pyx_self, ((PyObject *)__pyx_v_self));
+  __Pyx_RefNannySetupContext("__iter__ (wrapper)", 0);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__iter__(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__iter__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__iter__", 0);
+
+  /* "gryphon/lib/models/trade.pyx":68
+ * 
+ *     def __iter__(self):
+ *         return self             # <<<<<<<<<<<<<<
+ * 
+ *     def __unicode__(self):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(__pyx_v_self);
+  __pyx_r = __pyx_v_self;
+  goto __pyx_L0;
+
+  /* "gryphon/lib/models/trade.pyx":67
+ *         self.meta_data = json.dumps(meta_data)
+ * 
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         return self
+ * 
+ */
+
+  /* function exit code */
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "gryphon/lib/models/trade.pyx":70
+ *         return self
+ * 
+ *     def __unicode__(self):             # <<<<<<<<<<<<<<
+ *         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (
+ *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_5__unicode__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_5__unicode__ = {"__unicode__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_5__unicode__, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_5__unicode__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__unicode__ (wrapper)", 0);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__unicode__(__pyx_self, ((PyObject *)__pyx_v_self));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__unicode__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2014,7 +2075,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("__unicode__", 0);
 
-  /* "gryphon/lib/models/trade.pyx":68
+  /* "gryphon/lib/models/trade.pyx":71
  * 
  *     def __unicode__(self):
  *         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (             # <<<<<<<<<<<<<<
@@ -2022,7 +2083,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = 0;
   __pyx_t_3 = 127;
@@ -2031,16 +2092,16 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
   __Pyx_GIVEREF(__pyx_kp_u_TRADE);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_TRADE);
 
-  /* "gryphon/lib/models/trade.pyx":69
+  /* "gryphon/lib/models/trade.pyx":72
  *     def __unicode__(self):
  *         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (
  *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)             # <<<<<<<<<<<<<<
  * 
  *     def __repr__(self):
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trade_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trade_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -2052,9 +2113,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
   __pyx_t_2 += 8;
   __Pyx_GIVEREF(__pyx_kp_u_Order);
   PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u_Order);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
@@ -2066,9 +2127,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
   __pyx_t_2 += 8;
   __Pyx_GIVEREF(__pyx_kp_u_Price);
   PyTuple_SET_ITEM(__pyx_t_1, 4, __pyx_kp_u_Price);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -2080,9 +2141,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
   __pyx_t_2 += 9;
   __Pyx_GIVEREF(__pyx_kp_u_Volume);
   PyTuple_SET_ITEM(__pyx_t_1, 6, __pyx_kp_u_Volume);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
@@ -2094,15 +2155,15 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
   __pyx_t_2 += 15;
   __Pyx_GIVEREF(__pyx_kp_u_BTC_Exchange);
   PyTuple_SET_ITEM(__pyx_t_1, 8, __pyx_kp_u_BTC_Exchange);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_exchange); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_exchange); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -2111,22 +2172,22 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
   PyTuple_SET_ITEM(__pyx_t_1, 9, __pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":68
+  /* "gryphon/lib/models/trade.pyx":71
  * 
  *     def __unicode__(self):
  *         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (             # <<<<<<<<<<<<<<
  *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
  * 
  */
-  __pyx_t_5 = __Pyx_PyUnicode_Join(__pyx_t_1, 10, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyUnicode_Join(__pyx_t_1, 10, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":67
- *         self.meta_data = json.dumps(meta_data)
+  /* "gryphon/lib/models/trade.pyx":70
+ *         return self
  * 
  *     def __unicode__(self):             # <<<<<<<<<<<<<<
  *         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (
@@ -2146,7 +2207,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":71
+/* "gryphon/lib/models/trade.pyx":74
  *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -2155,20 +2216,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_2__unicode__(CYTHO
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_5__repr__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_5__repr__ = {"__repr__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_5__repr__, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_5__repr__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_7__repr__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_7__repr__ = {"__repr__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_7__repr__, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_7__repr__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__repr__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__repr__(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6__repr__(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__repr__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6__repr__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2176,7 +2237,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__repr__(CYTHON_U
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "gryphon/lib/models/trade.pyx":72
+  /* "gryphon/lib/models/trade.pyx":75
  * 
  *     def __repr__(self):
  *         return self.to_json()             # <<<<<<<<<<<<<<
@@ -2184,7 +2245,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__repr__(CYTHON_U
  *     def to_json(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_to_json); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_to_json); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2198,14 +2259,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__repr__(CYTHON_U
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":71
+  /* "gryphon/lib/models/trade.pyx":74
  *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -2226,7 +2287,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__repr__(CYTHON_U
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":74
+/* "gryphon/lib/models/trade.pyx":77
  *         return self.to_json()
  * 
  *     def to_json(self):             # <<<<<<<<<<<<<<
@@ -2235,20 +2296,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_4__repr__(CYTHON_U
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_7to_json(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_7to_json = {"to_json", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_7to_json, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_7to_json(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_9to_json(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_9to_json = {"to_json", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_9to_json, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_9to_json(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("to_json (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6to_json(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8to_json(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6to_json(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8to_json(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2257,7 +2318,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6to_json(CYTHON_UN
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("to_json", 0);
 
-  /* "gryphon/lib/models/trade.pyx":75
+  /* "gryphon/lib/models/trade.pyx":78
  * 
  *     def to_json(self):
  *         return json.dumps({             # <<<<<<<<<<<<<<
@@ -2265,157 +2326,157 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6to_json(CYTHON_UN
  *             'trade_type':self.trade_type,
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_json); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_json); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dumps); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dumps); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":76
+  /* "gryphon/lib/models/trade.pyx":79
  *     def to_json(self):
  *         return json.dumps({
  *             'trade_id':self.trade_id,             # <<<<<<<<<<<<<<
  *             'trade_type':self.trade_type,
  *             'time_created':unicode(self.time_created),
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trade_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trade_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_trade_id, __pyx_t_3) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_trade_id, __pyx_t_3) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":77
+  /* "gryphon/lib/models/trade.pyx":80
  *         return json.dumps({
  *             'trade_id':self.trade_id,
  *             'trade_type':self.trade_type,             # <<<<<<<<<<<<<<
  *             'time_created':unicode(self.time_created),
  *             'unique_id':self.unique_id,
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trade_type); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trade_type); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_trade_type, __pyx_t_3) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_trade_type, __pyx_t_3) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":78
+  /* "gryphon/lib/models/trade.pyx":81
  *             'trade_id':self.trade_id,
  *             'trade_type':self.trade_type,
  *             'time_created':unicode(self.time_created),             # <<<<<<<<<<<<<<
  *             'unique_id':self.unique_id,
  *             'exchange_trade_id':self.exchange_trade_id,
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_time_created); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_time_created); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_Unicode(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Unicode(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_time_created, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_time_created, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":79
+  /* "gryphon/lib/models/trade.pyx":82
  *             'trade_type':self.trade_type,
  *             'time_created':unicode(self.time_created),
  *             'unique_id':self.unique_id,             # <<<<<<<<<<<<<<
  *             'exchange_trade_id':self.exchange_trade_id,
  *             'order_id':self.order_id,
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_unique_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_unique_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_unique_id, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_unique_id, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":80
+  /* "gryphon/lib/models/trade.pyx":83
  *             'time_created':unicode(self.time_created),
  *             'unique_id':self.unique_id,
  *             'exchange_trade_id':self.exchange_trade_id,             # <<<<<<<<<<<<<<
  *             'order_id':self.order_id,
  *             'fee':self.fee,
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_trade_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_trade_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_exchange_trade_id, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_exchange_trade_id, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":81
+  /* "gryphon/lib/models/trade.pyx":84
  *             'unique_id':self.unique_id,
  *             'exchange_trade_id':self.exchange_trade_id,
  *             'order_id':self.order_id,             # <<<<<<<<<<<<<<
  *             'fee':self.fee,
  *             'price':self.price,
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_order_id, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_order_id, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":82
+  /* "gryphon/lib/models/trade.pyx":85
  *             'exchange_trade_id':self.exchange_trade_id,
  *             'order_id':self.order_id,
  *             'fee':self.fee,             # <<<<<<<<<<<<<<
  *             'price':self.price,
  *             'volume':self.volume
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_fee, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_fee, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":83
+  /* "gryphon/lib/models/trade.pyx":86
  *             'order_id':self.order_id,
  *             'fee':self.fee,
  *             'price':self.price,             # <<<<<<<<<<<<<<
  *             'volume':self.volume
  *         }, ensure_ascii=False)
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_price, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_price, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":84
+  /* "gryphon/lib/models/trade.pyx":87
  *             'fee':self.fee,
  *             'price':self.price,
  *             'volume':self.volume             # <<<<<<<<<<<<<<
  *         }, ensure_ascii=False)
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_volume, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_volume, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":75
+  /* "gryphon/lib/models/trade.pyx":78
  * 
  *     def to_json(self):
  *         return json.dumps({             # <<<<<<<<<<<<<<
  *             'trade_id':self.trade_id,
  *             'trade_type':self.trade_type,
  */
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":85
+  /* "gryphon/lib/models/trade.pyx":88
  *             'price':self.price,
  *             'volume':self.volume
  *         }, ensure_ascii=False)             # <<<<<<<<<<<<<<
  * 
  *     @property
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_ensure_ascii, Py_False) < 0) __PYX_ERR(0, 85, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_ensure_ascii, Py_False) < 0) __PYX_ERR(0, 88, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":75
+  /* "gryphon/lib/models/trade.pyx":78
  * 
  *     def to_json(self):
  *         return json.dumps({             # <<<<<<<<<<<<<<
  *             'trade_id':self.trade_id,
  *             'trade_type':self.trade_type,
  */
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2424,7 +2485,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6to_json(CYTHON_UN
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":74
+  /* "gryphon/lib/models/trade.pyx":77
  *         return self.to_json()
  * 
  *     def to_json(self):             # <<<<<<<<<<<<<<
@@ -2446,7 +2507,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6to_json(CYTHON_UN
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":88
+/* "gryphon/lib/models/trade.pyx":91
  * 
  *     @property
  *     def volume(self):             # <<<<<<<<<<<<<<
@@ -2455,20 +2516,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_6to_json(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_9volume(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_9volume = {"volume", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_9volume, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_9volume(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_11volume(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_11volume = {"volume", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_11volume, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_11volume(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("volume (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_10volume(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_10volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2480,7 +2541,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNU
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("volume", 0);
 
-  /* "gryphon/lib/models/trade.pyx":89
+  /* "gryphon/lib/models/trade.pyx":92
  *     @property
  *     def volume(self):
  *         return Money(self._volume, self._volume_currency)             # <<<<<<<<<<<<<<
@@ -2488,11 +2549,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNU
  *     @volume.setter
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -2509,7 +2570,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNU
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2519,7 +2580,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNU
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2527,7 +2588,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNU
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 89, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 92, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -2538,7 +2599,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNU
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_4);
     __pyx_t_3 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
@@ -2547,7 +2608,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNU
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":88
+  /* "gryphon/lib/models/trade.pyx":91
  * 
  *     @property
  *     def volume(self):             # <<<<<<<<<<<<<<
@@ -2571,7 +2632,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":92
+/* "gryphon/lib/models/trade.pyx":95
  * 
  *     @volume.setter
  *     def volume(self, value):             # <<<<<<<<<<<<<<
@@ -2580,9 +2641,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_8volume(CYTHON_UNU
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_11volume(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_11volume = {"volume", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_11volume, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_11volume(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_13volume(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_13volume = {"volume", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_13volume, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_13volume(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_value = 0;
   PyObject *__pyx_r = 0;
@@ -2611,11 +2672,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_11volume(PyObject 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("volume", 1, 2, 2, 1); __PYX_ERR(0, 92, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("volume", 1, 2, 2, 1); __PYX_ERR(0, 95, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "volume") < 0)) __PYX_ERR(0, 92, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "volume") < 0)) __PYX_ERR(0, 95, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2628,50 +2689,50 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_11volume(PyObject 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("volume", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 92, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("volume", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 95, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.trade.Trade.volume", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_10volume(__pyx_self, __pyx_v_self, __pyx_v_value);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12volume(__pyx_self, __pyx_v_self, __pyx_v_value);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_10volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("volume", 0);
 
-  /* "gryphon/lib/models/trade.pyx":93
+  /* "gryphon/lib/models/trade.pyx":96
  *     @volume.setter
  *     def volume(self, value):
  *         self._volume = value.amount             # <<<<<<<<<<<<<<
  *         self._volume_currency = value.currency
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_volume_2, __pyx_t_1) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_volume_2, __pyx_t_1) < 0) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":94
+  /* "gryphon/lib/models/trade.pyx":97
  *     def volume(self, value):
  *         self._volume = value.amount
  *         self._volume_currency = value.currency             # <<<<<<<<<<<<<<
  * 
  *     @property
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency, __pyx_t_1) < 0) __PYX_ERR(0, 94, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency, __pyx_t_1) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":92
+  /* "gryphon/lib/models/trade.pyx":95
  * 
  *     @volume.setter
  *     def volume(self, value):             # <<<<<<<<<<<<<<
@@ -2692,7 +2753,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_10volume(CYTHON_UN
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":97
+/* "gryphon/lib/models/trade.pyx":100
  * 
  *     @property
  *     def price(self):             # <<<<<<<<<<<<<<
@@ -2701,20 +2762,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_10volume(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_13price(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_13price = {"price", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_13price, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_13price(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_15price(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_15price = {"price", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_15price, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_15price(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("price (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_14price(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_14price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2726,7 +2787,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNU
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("price", 0);
 
-  /* "gryphon/lib/models/trade.pyx":98
+  /* "gryphon/lib/models/trade.pyx":101
  *     @property
  *     def price(self):
  *         return Money(self._price, self._price_currency)             # <<<<<<<<<<<<<<
@@ -2734,11 +2795,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNU
  *     @price.setter
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -2755,7 +2816,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNU
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2765,7 +2826,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNU
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2773,7 +2834,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNU
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -2784,7 +2845,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNU
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_4);
     __pyx_t_3 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
@@ -2793,7 +2854,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNU
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":97
+  /* "gryphon/lib/models/trade.pyx":100
  * 
  *     @property
  *     def price(self):             # <<<<<<<<<<<<<<
@@ -2817,7 +2878,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":101
+/* "gryphon/lib/models/trade.pyx":104
  * 
  *     @price.setter
  *     def price(self, value):             # <<<<<<<<<<<<<<
@@ -2826,9 +2887,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_12price(CYTHON_UNU
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_15price(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_15price = {"price", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_15price, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_15price(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_17price(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_17price = {"price", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_17price, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_17price(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_value = 0;
   PyObject *__pyx_r = 0;
@@ -2857,11 +2918,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_15price(PyObject *
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("price", 1, 2, 2, 1); __PYX_ERR(0, 101, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("price", 1, 2, 2, 1); __PYX_ERR(0, 104, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "price") < 0)) __PYX_ERR(0, 101, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "price") < 0)) __PYX_ERR(0, 104, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2874,50 +2935,50 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_15price(PyObject *
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("price", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 101, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("price", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 104, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.trade.Trade.price", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_14price(__pyx_self, __pyx_v_self, __pyx_v_value);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price(__pyx_self, __pyx_v_self, __pyx_v_value);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_14price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("price", 0);
 
-  /* "gryphon/lib/models/trade.pyx":102
+  /* "gryphon/lib/models/trade.pyx":105
  *     @price.setter
  *     def price(self, value):
  *         self._price = value.amount             # <<<<<<<<<<<<<<
  *         self._price_currency = value.currency
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_price_2, __pyx_t_1) < 0) __PYX_ERR(0, 102, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_price_2, __pyx_t_1) < 0) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":103
+  /* "gryphon/lib/models/trade.pyx":106
  *     def price(self, value):
  *         self._price = value.amount
  *         self._price_currency = value.currency             # <<<<<<<<<<<<<<
  * 
  *     @hybrid_property
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_price_currency, __pyx_t_1) < 0) __PYX_ERR(0, 103, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_price_currency, __pyx_t_1) < 0) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":101
+  /* "gryphon/lib/models/trade.pyx":104
  * 
  *     @price.setter
  *     def price(self, value):             # <<<<<<<<<<<<<<
@@ -2938,7 +2999,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_14price(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":106
+/* "gryphon/lib/models/trade.pyx":109
  * 
  *     @hybrid_property
  *     def price_in_usd(self):             # <<<<<<<<<<<<<<
@@ -2947,21 +3008,21 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_14price(CYTHON_UNU
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_17price_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static char __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd[] = "\n        Regular property you can call on a loaded trade in python. Returns a USD Money object\n        ";
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_17price_in_usd = {"price_in_usd", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_17price_in_usd, METH_O, __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_17price_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static char __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd[] = "\n        Regular property you can call on a loaded trade in python. Returns a USD Money object\n        ";
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd = {"price_in_usd", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd, METH_O, __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("price_in_usd (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_exchange_rate_to_usd = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -2973,19 +3034,19 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYT
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("price_in_usd", 0);
 
-  /* "gryphon/lib/models/trade.pyx":110
+  /* "gryphon/lib/models/trade.pyx":113
  *         Regular property you can call on a loaded trade in python. Returns a USD Money object
  *         """
  *         exchange_rate_to_usd = self.exchange_rate             # <<<<<<<<<<<<<<
  *         return Money(self._price * exchange_rate_to_usd, 'USD')
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_exchange_rate_to_usd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":111
+  /* "gryphon/lib/models/trade.pyx":114
  *         """
  *         exchange_rate_to_usd = self.exchange_rate
  *         return Money(self._price * exchange_rate_to_usd, 'USD')             # <<<<<<<<<<<<<<
@@ -2993,11 +3054,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYT
  *     @price_in_usd.expression
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyNumber_Multiply(__pyx_t_3, __pyx_v_exchange_rate_to_usd); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_Multiply(__pyx_t_3, __pyx_v_exchange_rate_to_usd); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -3015,7 +3076,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYT
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_4, __pyx_n_s_USD};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3024,14 +3085,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYT
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_4, __pyx_n_s_USD};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   } else
   #endif
   {
-    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (__pyx_t_3) {
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -3042,7 +3103,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYT
     __Pyx_GIVEREF(__pyx_n_s_USD);
     PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_5, __pyx_n_s_USD);
     __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
@@ -3051,7 +3112,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYT
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":106
+  /* "gryphon/lib/models/trade.pyx":109
  * 
  *     @hybrid_property
  *     def price_in_usd(self):             # <<<<<<<<<<<<<<
@@ -3075,7 +3136,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYT
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":114
+/* "gryphon/lib/models/trade.pyx":117
  * 
  *     @price_in_usd.expression
  *     def price_in_usd(cls):             # <<<<<<<<<<<<<<
@@ -3084,21 +3145,21 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_16price_in_usd(CYT
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_cls); /*proto*/
-static char __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd[] = "\n        SQL Expression which lets us calculate and use USD prices in SQL.\n\n        Must have Order joined in queries where it is used.\n        Ex: db.query(func.sum(Trade.price_in_usd)).join(Order).scalar()\n        This gives decimal results, since we don't have our Money objects in SQL\n        ";
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd = {"price_in_usd", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd, METH_O, __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_cls) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_21price_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_cls); /*proto*/
+static char __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_20price_in_usd[] = "\n        SQL Expression which lets us calculate and use USD prices in SQL.\n\n        Must have Order joined in queries where it is used.\n        Ex: db.query(func.sum(Trade.price_in_usd)).join(Order).scalar()\n        This gives decimal results, since we don't have our Money objects in SQL\n        ";
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_21price_in_usd = {"price_in_usd", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_21price_in_usd, METH_O, __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_20price_in_usd};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_21price_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_cls) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("price_in_usd (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(__pyx_self, ((PyObject *)__pyx_v_cls));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20price_in_usd(__pyx_self, ((PyObject *)__pyx_v_cls));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20price_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls) {
   PyObject *__pyx_v_Order = NULL;
   PyObject *__pyx_v_exchange_rate_to_usd = NULL;
   PyObject *__pyx_r = NULL;
@@ -3107,41 +3168,41 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(CYT
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("price_in_usd", 0);
 
-  /* "gryphon/lib/models/trade.pyx":122
+  /* "gryphon/lib/models/trade.pyx":125
  *         This gives decimal results, since we don't have our Money objects in SQL
  *         """
  *         from gryphon.lib.models.order import Order             # <<<<<<<<<<<<<<
  * 
  *         exchange_rate_to_usd = Order.exchange_rate
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_Order_2);
   __Pyx_GIVEREF(__pyx_n_s_Order_2);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_Order_2);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_order, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_order, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Order_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Order_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_t_1);
   __pyx_v_Order = __pyx_t_1;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":124
+  /* "gryphon/lib/models/trade.pyx":127
  *         from gryphon.lib.models.order import Order
  * 
  *         exchange_rate_to_usd = Order.exchange_rate             # <<<<<<<<<<<<<<
  *         return cls._price * exchange_rate_to_usd
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_Order, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_Order, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_exchange_rate_to_usd = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":125
+  /* "gryphon/lib/models/trade.pyx":128
  * 
  *         exchange_rate_to_usd = Order.exchange_rate
  *         return cls._price * exchange_rate_to_usd             # <<<<<<<<<<<<<<
@@ -3149,16 +3210,16 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(CYT
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_price_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_price_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_v_exchange_rate_to_usd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_v_exchange_rate_to_usd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":114
+  /* "gryphon/lib/models/trade.pyx":117
  * 
  *     @price_in_usd.expression
  *     def price_in_usd(cls):             # <<<<<<<<<<<<<<
@@ -3180,7 +3241,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(CYT
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":128
+/* "gryphon/lib/models/trade.pyx":131
  * 
  *     @property
  *     def fee(self):             # <<<<<<<<<<<<<<
@@ -3189,20 +3250,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_18price_in_usd(CYT
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_21fee(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_21fee = {"fee", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_21fee, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_21fee(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_23fee(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_23fee = {"fee", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_23fee, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_23fee(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("fee (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_22fee(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_22fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3214,7 +3275,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSE
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("fee", 0);
 
-  /* "gryphon/lib/models/trade.pyx":129
+  /* "gryphon/lib/models/trade.pyx":132
  *     @property
  *     def fee(self):
  *         return Money(self._fee, self._fee_currency)             # <<<<<<<<<<<<<<
@@ -3222,11 +3283,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSE
  *     @fee.setter
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -3243,7 +3304,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSE
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3253,7 +3314,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSE
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3261,7 +3322,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSE
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -3272,7 +3333,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSE
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_4);
     __pyx_t_3 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
@@ -3281,7 +3342,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSE
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":128
+  /* "gryphon/lib/models/trade.pyx":131
  * 
  *     @property
  *     def fee(self):             # <<<<<<<<<<<<<<
@@ -3305,7 +3366,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":132
+/* "gryphon/lib/models/trade.pyx":135
  * 
  *     @fee.setter
  *     def fee(self, value):             # <<<<<<<<<<<<<<
@@ -3314,9 +3375,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_20fee(CYTHON_UNUSE
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_23fee(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_23fee = {"fee", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_23fee, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_23fee(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_25fee(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_25fee = {"fee", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_25fee, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_25fee(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_value = 0;
   PyObject *__pyx_r = 0;
@@ -3345,11 +3406,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_23fee(PyObject *__
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("fee", 1, 2, 2, 1); __PYX_ERR(0, 132, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("fee", 1, 2, 2, 1); __PYX_ERR(0, 135, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fee") < 0)) __PYX_ERR(0, 132, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fee") < 0)) __PYX_ERR(0, 135, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3362,50 +3423,50 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_23fee(PyObject *__
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("fee", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 132, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("fee", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 135, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.trade.Trade.fee", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_22fee(__pyx_self, __pyx_v_self, __pyx_v_value);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee(__pyx_self, __pyx_v_self, __pyx_v_value);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_22fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("fee", 0);
 
-  /* "gryphon/lib/models/trade.pyx":133
+  /* "gryphon/lib/models/trade.pyx":136
  *     @fee.setter
  *     def fee(self, value):
  *         self._fee = value.amount             # <<<<<<<<<<<<<<
  *         self._fee_currency = value.currency
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fee_2, __pyx_t_1) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fee_2, __pyx_t_1) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":134
+  /* "gryphon/lib/models/trade.pyx":137
  *     def fee(self, value):
  *         self._fee = value.amount
  *         self._fee_currency = value.currency             # <<<<<<<<<<<<<<
  * 
  *     @hybrid_property
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fee_currency, __pyx_t_1) < 0) __PYX_ERR(0, 134, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fee_currency, __pyx_t_1) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":132
+  /* "gryphon/lib/models/trade.pyx":135
  * 
  *     @fee.setter
  *     def fee(self, value):             # <<<<<<<<<<<<<<
@@ -3426,7 +3487,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_22fee(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":137
+/* "gryphon/lib/models/trade.pyx":140
  * 
  *     @hybrid_property
  *     def fee_in_usd(self):             # <<<<<<<<<<<<<<
@@ -3435,21 +3496,21 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_22fee(CYTHON_UNUSE
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_25fee_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static char __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd[] = "\n        Regular property you can call on a loaded trade in python. Returns a USD Money object\n        ";
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_25fee_in_usd = {"fee_in_usd", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_25fee_in_usd, METH_O, __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_25fee_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static char __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd[] = "\n        Regular property you can call on a loaded trade in python. Returns a USD Money object\n        ";
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd = {"fee_in_usd", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd, METH_O, __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("fee_in_usd (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_exchange_rate_to_usd = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -3462,41 +3523,41 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("fee_in_usd", 0);
 
-  /* "gryphon/lib/models/trade.pyx":141
+  /* "gryphon/lib/models/trade.pyx":144
  *         Regular property you can call on a loaded trade in python. Returns a USD Money object
  *         """
  *         if self._fee_currency == 'BTC':             # <<<<<<<<<<<<<<
  *             exchange_rate_to_usd = self.fundamental_value.amount * self.exchange_rate
  *         else:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_t_1, __pyx_n_s_BTC, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_t_1, __pyx_n_s_BTC, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
 
-    /* "gryphon/lib/models/trade.pyx":142
+    /* "gryphon/lib/models/trade.pyx":145
  *         """
  *         if self._fee_currency == 'BTC':
  *             exchange_rate_to_usd = self.fundamental_value.amount * self.exchange_rate             # <<<<<<<<<<<<<<
  *         else:
  *             exchange_rate_to_usd = self.exchange_rate
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_amount); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_amount); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_exchange_rate_to_usd = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "gryphon/lib/models/trade.pyx":141
+    /* "gryphon/lib/models/trade.pyx":144
  *         Regular property you can call on a loaded trade in python. Returns a USD Money object
  *         """
  *         if self._fee_currency == 'BTC':             # <<<<<<<<<<<<<<
@@ -3506,7 +3567,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
     goto __pyx_L3;
   }
 
-  /* "gryphon/lib/models/trade.pyx":144
+  /* "gryphon/lib/models/trade.pyx":147
  *             exchange_rate_to_usd = self.fundamental_value.amount * self.exchange_rate
  *         else:
  *             exchange_rate_to_usd = self.exchange_rate             # <<<<<<<<<<<<<<
@@ -3514,14 +3575,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
  *         return Money(self._fee * exchange_rate_to_usd, 'USD')
  */
   /*else*/ {
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 147, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_exchange_rate_to_usd = __pyx_t_4;
     __pyx_t_4 = 0;
   }
   __pyx_L3:;
 
-  /* "gryphon/lib/models/trade.pyx":146
+  /* "gryphon/lib/models/trade.pyx":149
  *             exchange_rate_to_usd = self.exchange_rate
  * 
  *         return Money(self._fee * exchange_rate_to_usd, 'USD')             # <<<<<<<<<<<<<<
@@ -3529,11 +3590,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
  *     @fee_in_usd.expression
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Money); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Money); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = PyNumber_Multiply(__pyx_t_3, __pyx_v_exchange_rate_to_usd); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Multiply(__pyx_t_3, __pyx_v_exchange_rate_to_usd); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -3551,7 +3612,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_1)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_5, __pyx_n_s_USD};
-    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -3560,14 +3621,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_5, __pyx_n_s_USD};
-    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_3) {
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -3578,7 +3639,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
     __Pyx_GIVEREF(__pyx_n_s_USD);
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_n_s_USD);
     __pyx_t_5 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
@@ -3587,7 +3648,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":137
+  /* "gryphon/lib/models/trade.pyx":140
  * 
  *     @hybrid_property
  *     def fee_in_usd(self):             # <<<<<<<<<<<<<<
@@ -3611,7 +3672,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":149
+/* "gryphon/lib/models/trade.pyx":152
  * 
  *     @fee_in_usd.expression
  *     def fee_in_usd(cls):             # <<<<<<<<<<<<<<
@@ -3620,21 +3681,21 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_24fee_in_usd(CYTHO
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_cls); /*proto*/
-static char __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd[] = "\n        SQL Expression which lets us calculate and use USD fees in SQL (usually for summing).\n\n        Must have Order joined in queries where it is used.\n        Ex: db.query(func.sum(Trade.fee_in_usd)).join(Order).scalar()\n        This gives decimal results, since we don't have our Money objects in SQL\n        ";
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd = {"fee_in_usd", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd, METH_O, __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_cls) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_29fee_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_cls); /*proto*/
+static char __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_28fee_in_usd[] = "\n        SQL Expression which lets us calculate and use USD fees in SQL (usually for summing).\n\n        Must have Order joined in queries where it is used.\n        Ex: db.query(func.sum(Trade.fee_in_usd)).join(Order).scalar()\n        This gives decimal results, since we don't have our Money objects in SQL\n        ";
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_29fee_in_usd = {"fee_in_usd", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_29fee_in_usd, METH_O, __pyx_doc_7gryphon_3lib_6models_5trade_5Trade_28fee_in_usd};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_29fee_in_usd(PyObject *__pyx_self, PyObject *__pyx_v_cls) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("fee_in_usd (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(__pyx_self, ((PyObject *)__pyx_v_cls));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28fee_in_usd(__pyx_self, ((PyObject *)__pyx_v_cls));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28fee_in_usd(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls) {
   PyObject *__pyx_v_Order = NULL;
   PyObject *__pyx_v_exchange_rate_to_usd = NULL;
   PyObject *__pyx_r = NULL;
@@ -3646,61 +3707,61 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHO
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("fee_in_usd", 0);
 
-  /* "gryphon/lib/models/trade.pyx":158
+  /* "gryphon/lib/models/trade.pyx":161
  *         """
  *         # https://blog.csdn.net/iehadoop/article/details/83018858 todo circular import
  *         from gryphon.lib.models.order import Order             # <<<<<<<<<<<<<<
  *         exchange_rate_to_usd = expression.case(
  *             [(cls._fee_currency == 'BTC', Order._fundamental_value * Order.exchange_rate)],
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_Order_2);
   __Pyx_GIVEREF(__pyx_n_s_Order_2);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_Order_2);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_order, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_order, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Order_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Order_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_t_1);
   __pyx_v_Order = __pyx_t_1;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":159
+  /* "gryphon/lib/models/trade.pyx":162
  *         # https://blog.csdn.net/iehadoop/article/details/83018858 todo circular import
  *         from gryphon.lib.models.order import Order
  *         exchange_rate_to_usd = expression.case(             # <<<<<<<<<<<<<<
  *             [(cls._fee_currency == 'BTC', Order._fundamental_value * Order.exchange_rate)],
  *             else_=Order.exchange_rate,
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_expression); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_expression); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_case); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_case); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":160
+  /* "gryphon/lib/models/trade.pyx":163
  *         from gryphon.lib.models.order import Order
  *         exchange_rate_to_usd = expression.case(
  *             [(cls._fee_currency == 'BTC', Order._fundamental_value * Order.exchange_rate)],             # <<<<<<<<<<<<<<
  *             else_=Order.exchange_rate,
  *         )
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_n_s_BTC, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_n_s_BTC, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_Order, __pyx_n_s_fundamental_value_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_Order, __pyx_n_s_fundamental_value_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_Order, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_Order, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyNumber_Multiply(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Multiply(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3);
@@ -3708,47 +3769,47 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHO
   PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_5);
   __pyx_t_3 = 0;
   __pyx_t_5 = 0;
-  __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_4);
   PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":159
+  /* "gryphon/lib/models/trade.pyx":162
  *         # https://blog.csdn.net/iehadoop/article/details/83018858 todo circular import
  *         from gryphon.lib.models.order import Order
  *         exchange_rate_to_usd = expression.case(             # <<<<<<<<<<<<<<
  *             [(cls._fee_currency == 'BTC', Order._fundamental_value * Order.exchange_rate)],
  *             else_=Order.exchange_rate,
  */
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":161
+  /* "gryphon/lib/models/trade.pyx":164
  *         exchange_rate_to_usd = expression.case(
  *             [(cls._fee_currency == 'BTC', Order._fundamental_value * Order.exchange_rate)],
  *             else_=Order.exchange_rate,             # <<<<<<<<<<<<<<
  *         )
  * 
  */
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 161, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_Order, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 161, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_Order, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_else, __pyx_t_3) < 0) __PYX_ERR(0, 161, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_else, __pyx_t_3) < 0) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":159
+  /* "gryphon/lib/models/trade.pyx":162
  *         # https://blog.csdn.net/iehadoop/article/details/83018858 todo circular import
  *         from gryphon.lib.models.order import Order
  *         exchange_rate_to_usd = expression.case(             # <<<<<<<<<<<<<<
  *             [(cls._fee_currency == 'BTC', Order._fundamental_value * Order.exchange_rate)],
  *             else_=Order.exchange_rate,
  */
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3756,7 +3817,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHO
   __pyx_v_exchange_rate_to_usd = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":164
+  /* "gryphon/lib/models/trade.pyx":167
  *         )
  * 
  *         return cls._fee * exchange_rate_to_usd             # <<<<<<<<<<<<<<
@@ -3764,16 +3825,16 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHO
  *     @hybrid_property
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_fee_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_fee_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = PyNumber_Multiply(__pyx_t_3, __pyx_v_exchange_rate_to_usd); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Multiply(__pyx_t_3, __pyx_v_exchange_rate_to_usd); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":149
+  /* "gryphon/lib/models/trade.pyx":152
  * 
  *     @fee_in_usd.expression
  *     def fee_in_usd(cls):             # <<<<<<<<<<<<<<
@@ -3798,7 +3859,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHO
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":167
+/* "gryphon/lib/models/trade.pyx":170
  * 
  *     @hybrid_property
  *     def has_outstanding_btc_fee(self):             # <<<<<<<<<<<<<<
@@ -3807,20 +3868,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_26fee_in_usd(CYTHO
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_29has_outstanding_btc_fee(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_29has_outstanding_btc_fee = {"has_outstanding_btc_fee", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_29has_outstanding_btc_fee, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_29has_outstanding_btc_fee(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee = {"has_outstanding_btc_fee", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("has_outstanding_btc_fee (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28has_outstanding_btc_fee(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_btc_fee(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28has_outstanding_btc_fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_btc_fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3829,7 +3890,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28has_outstanding_
   int __pyx_t_4;
   __Pyx_RefNannySetupContext("has_outstanding_btc_fee", 0);
 
-  /* "gryphon/lib/models/trade.pyx":168
+  /* "gryphon/lib/models/trade.pyx":171
  *     @hybrid_property
  *     def has_outstanding_btc_fee(self):
  *         return self._fee_currency == 'BTC' and self.fee_buyback_transaction_id == None             # <<<<<<<<<<<<<<
@@ -3837,11 +3898,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28has_outstanding_
  *     @has_outstanding_btc_fee.expression
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_n_s_BTC, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_n_s_BTC, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 171, __pyx_L1_error)
   if (__pyx_t_4) {
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
@@ -3850,9 +3911,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28has_outstanding_
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     goto __pyx_L3_bool_binop_done;
   }
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_buyback_transaction_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee_buyback_transaction_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyObject_RichCompare(__pyx_t_3, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_2 = PyObject_RichCompare(__pyx_t_3, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_INCREF(__pyx_t_2);
   __pyx_t_1 = __pyx_t_2;
@@ -3862,7 +3923,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28has_outstanding_
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":167
+  /* "gryphon/lib/models/trade.pyx":170
  * 
  *     @hybrid_property
  *     def has_outstanding_btc_fee(self):             # <<<<<<<<<<<<<<
@@ -3883,7 +3944,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28has_outstanding_
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":171
+/* "gryphon/lib/models/trade.pyx":174
  * 
  *     @has_outstanding_btc_fee.expression
  *     def has_outstanding_btc_fee(cls):             # <<<<<<<<<<<<<<
@@ -3892,20 +3953,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_28has_outstanding_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee(PyObject *__pyx_self, PyObject *__pyx_v_cls); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee = {"has_outstanding_btc_fee", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee(PyObject *__pyx_self, PyObject *__pyx_v_cls) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_33has_outstanding_btc_fee(PyObject *__pyx_self, PyObject *__pyx_v_cls); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_33has_outstanding_btc_fee = {"has_outstanding_btc_fee", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_33has_outstanding_btc_fee, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_33has_outstanding_btc_fee(PyObject *__pyx_self, PyObject *__pyx_v_cls) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("has_outstanding_btc_fee (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_btc_fee(__pyx_self, ((PyObject *)__pyx_v_cls));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32has_outstanding_btc_fee(__pyx_self, ((PyObject *)__pyx_v_cls));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_btc_fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32has_outstanding_btc_fee(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3917,7 +3978,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("has_outstanding_btc_fee", 0);
 
-  /* "gryphon/lib/models/trade.pyx":172
+  /* "gryphon/lib/models/trade.pyx":175
  *     @has_outstanding_btc_fee.expression
  *     def has_outstanding_btc_fee(cls):
  *         return and_(cls._fee_currency == 'BTC', cls.fee_buyback_transaction_id == None)             # <<<<<<<<<<<<<<
@@ -3925,15 +3986,15 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_
  *     # Included for backwards compatibility. New code should call calc_position()
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_and); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_and); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_fee_currency); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyObject_RichCompare(__pyx_t_3, __pyx_n_s_BTC, Py_EQ); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(__pyx_t_3, __pyx_n_s_BTC, Py_EQ); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_fee_buyback_transaction_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_fee_buyback_transaction_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = PyObject_RichCompare(__pyx_t_3, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_5 = PyObject_RichCompare(__pyx_t_3, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
   __pyx_t_6 = 0;
@@ -3950,7 +4011,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_4, __pyx_t_5};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3960,7 +4021,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_4, __pyx_t_5};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3968,7 +4029,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_3) {
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -3979,7 +4040,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_5);
     __pyx_t_4 = 0;
     __pyx_t_5 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
@@ -3988,7 +4049,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":171
+  /* "gryphon/lib/models/trade.pyx":174
  * 
  *     @has_outstanding_btc_fee.expression
  *     def has_outstanding_btc_fee(cls):             # <<<<<<<<<<<<<<
@@ -4012,7 +4073,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":176
+/* "gryphon/lib/models/trade.pyx":179
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property
  *     def position(self):             # <<<<<<<<<<<<<<
@@ -4021,20 +4082,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_30has_outstanding_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_33position(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_33position = {"position", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_33position, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_33position(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_35position(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_35position = {"position", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_35position, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_35position(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("position (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32position(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34position(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4042,7 +4103,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32position(CYTHON_
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("position", 0);
 
-  /* "gryphon/lib/models/trade.pyx":177
+  /* "gryphon/lib/models/trade.pyx":180
  *     @property
  *     def position(self):
  *         return self.calc_position()             # <<<<<<<<<<<<<<
@@ -4050,7 +4111,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32position(CYTHON_
  *     def calc_position(self, include_fees=True):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -4064,14 +4125,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32position(CYTHON_
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":176
+  /* "gryphon/lib/models/trade.pyx":179
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property
  *     def position(self):             # <<<<<<<<<<<<<<
@@ -4092,7 +4153,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32position(CYTHON_
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":179
+/* "gryphon/lib/models/trade.pyx":182
  *         return self.calc_position()
  * 
  *     def calc_position(self, include_fees=True):             # <<<<<<<<<<<<<<
@@ -4101,9 +4162,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_32position(CYTHON_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_35calc_position(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_35calc_position = {"calc_position", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_35calc_position, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_35calc_position(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_37calc_position(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_37calc_position = {"calc_position", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_37calc_position, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_37calc_position(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_include_fees = 0;
   PyObject *__pyx_r = 0;
@@ -4137,7 +4198,7 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_35calc_position(Py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "calc_position") < 0)) __PYX_ERR(0, 179, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "calc_position") < 0)) __PYX_ERR(0, 182, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -4153,20 +4214,20 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_35calc_position(Py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("calc_position", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 179, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("calc_position", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 182, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.trade.Trade.calc_position", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(__pyx_self, __pyx_v_self, __pyx_v_include_fees);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36calc_position(__pyx_self, __pyx_v_self, __pyx_v_include_fees);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_include_fees) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36calc_position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_include_fees) {
   PyObject *__pyx_v_Position = NULL;
   PyObject *__pyx_v_position = NULL;
   PyObject *__pyx_r = NULL;
@@ -4177,29 +4238,29 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CY
   int __pyx_t_4;
   __Pyx_RefNannySetupContext("calc_position", 0);
 
-  /* "gryphon/lib/models/trade.pyx":180
+  /* "gryphon/lib/models/trade.pyx":183
  * 
  *     def calc_position(self, include_fees=True):
  *         from gryphon.lib.models.exchange import Position  # circle? todo             # <<<<<<<<<<<<<<
  *         position = Position()
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_Position);
   __Pyx_GIVEREF(__pyx_n_s_Position);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_Position);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_exchange, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_exchange, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_t_1);
   __pyx_v_Position = __pyx_t_1;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":181
+  /* "gryphon/lib/models/trade.pyx":184
  *     def calc_position(self, include_fees=True):
  *         from gryphon.lib.models.exchange import Position  # circle? todo
  *         position = Position()             # <<<<<<<<<<<<<<
@@ -4219,61 +4280,61 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CY
   }
   __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 181, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 184, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_position = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":183
+  /* "gryphon/lib/models/trade.pyx":186
  *         position = Position()
  * 
  *         if self.trade_type == self.BID:             # <<<<<<<<<<<<<<
  *             position -= self.price
  *             position += self.volume
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trade_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 183, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trade_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_BID); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_BID); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_t_1, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 183, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_t_1, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 183, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
 
-    /* "gryphon/lib/models/trade.pyx":184
+    /* "gryphon/lib/models/trade.pyx":187
  * 
  *         if self.trade_type == self.BID:
  *             position -= self.price             # <<<<<<<<<<<<<<
  *             position += self.volume
  *         else: #ASK
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 184, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 187, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = PyNumber_InPlaceSubtract(__pyx_v_position, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 184, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_InPlaceSubtract(__pyx_v_position, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 187, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_position, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "gryphon/lib/models/trade.pyx":185
+    /* "gryphon/lib/models/trade.pyx":188
  *         if self.trade_type == self.BID:
  *             position -= self.price
  *             position += self.volume             # <<<<<<<<<<<<<<
  *         else: #ASK
  *             position += self.price
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 188, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_v_position, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 185, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_v_position, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 188, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF_SET(__pyx_v_position, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "gryphon/lib/models/trade.pyx":183
+    /* "gryphon/lib/models/trade.pyx":186
  *         position = Position()
  * 
  *         if self.trade_type == self.BID:             # <<<<<<<<<<<<<<
@@ -4283,7 +4344,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CY
     goto __pyx_L3;
   }
 
-  /* "gryphon/lib/models/trade.pyx":187
+  /* "gryphon/lib/models/trade.pyx":190
  *             position += self.volume
  *         else: #ASK
  *             position += self.price             # <<<<<<<<<<<<<<
@@ -4291,24 +4352,24 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CY
  * 
  */
   /*else*/ {
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 187, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 190, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_v_position, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 187, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_v_position, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_position, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "gryphon/lib/models/trade.pyx":188
+    /* "gryphon/lib/models/trade.pyx":191
  *         else: #ASK
  *             position += self.price
  *             position -= self.volume             # <<<<<<<<<<<<<<
  * 
  *         if include_fees:
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 188, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = PyNumber_InPlaceSubtract(__pyx_v_position, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 188, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_InPlaceSubtract(__pyx_v_position, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF_SET(__pyx_v_position, __pyx_t_3);
@@ -4316,32 +4377,32 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CY
   }
   __pyx_L3:;
 
-  /* "gryphon/lib/models/trade.pyx":190
+  /* "gryphon/lib/models/trade.pyx":193
  *             position -= self.volume
  * 
  *         if include_fees:             # <<<<<<<<<<<<<<
  *             position -= self.fee
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_include_fees); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_include_fees); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 193, __pyx_L1_error)
   if (__pyx_t_4) {
 
-    /* "gryphon/lib/models/trade.pyx":191
+    /* "gryphon/lib/models/trade.pyx":194
  * 
  *         if include_fees:
  *             position -= self.fee             # <<<<<<<<<<<<<<
  * 
  *         return position
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 191, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 194, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = PyNumber_InPlaceSubtract(__pyx_v_position, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_InPlaceSubtract(__pyx_v_position, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_position, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "gryphon/lib/models/trade.pyx":190
+    /* "gryphon/lib/models/trade.pyx":193
  *             position -= self.volume
  * 
  *         if include_fees:             # <<<<<<<<<<<<<<
@@ -4350,7 +4411,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CY
  */
   }
 
-  /* "gryphon/lib/models/trade.pyx":193
+  /* "gryphon/lib/models/trade.pyx":196
  *             position -= self.fee
  * 
  *         return position             # <<<<<<<<<<<<<<
@@ -4362,7 +4423,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CY
   __pyx_r = __pyx_v_position;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":179
+  /* "gryphon/lib/models/trade.pyx":182
  *         return self.calc_position()
  * 
  *     def calc_position(self, include_fees=True):             # <<<<<<<<<<<<<<
@@ -4385,7 +4446,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CY
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":199
+/* "gryphon/lib/models/trade.pyx":202
  *     # used in gryphon.lib.gryphonfury.profit:copy_trade()
  *     @property
  *     def exchange_rate(self):             # <<<<<<<<<<<<<<
@@ -4394,20 +4455,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_34calc_position(CY
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_37exchange_rate(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_37exchange_rate = {"exchange_rate", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_37exchange_rate, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_37exchange_rate(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_39exchange_rate(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_39exchange_rate = {"exchange_rate", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_39exchange_rate, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_39exchange_rate(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("exchange_rate (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38exchange_rate(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38exchange_rate(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4415,20 +4476,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CY
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("exchange_rate", 0);
 
-  /* "gryphon/lib/models/trade.pyx":200
+  /* "gryphon/lib/models/trade.pyx":203
  *     @property
  *     def exchange_rate(self):
  *         if self.order:             # <<<<<<<<<<<<<<
  *             return self.order.exchange_rate
  *         elif self._exchange_rate:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 200, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 200, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
 
-    /* "gryphon/lib/models/trade.pyx":201
+    /* "gryphon/lib/models/trade.pyx":204
  *     def exchange_rate(self):
  *         if self.order:
  *             return self.order.exchange_rate             # <<<<<<<<<<<<<<
@@ -4436,16 +4497,16 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CY
  *             return self._exchange_rate
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 204, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/trade.pyx":200
+    /* "gryphon/lib/models/trade.pyx":203
  *     @property
  *     def exchange_rate(self):
  *         if self.order:             # <<<<<<<<<<<<<<
@@ -4454,20 +4515,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CY
  */
   }
 
-  /* "gryphon/lib/models/trade.pyx":202
+  /* "gryphon/lib/models/trade.pyx":205
  *         if self.order:
  *             return self.order.exchange_rate
  *         elif self._exchange_rate:             # <<<<<<<<<<<<<<
  *             return self._exchange_rate
  *         return None
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_2) {
 
-    /* "gryphon/lib/models/trade.pyx":203
+    /* "gryphon/lib/models/trade.pyx":206
  *             return self.order.exchange_rate
  *         elif self._exchange_rate:
  *             return self._exchange_rate             # <<<<<<<<<<<<<<
@@ -4475,13 +4536,13 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CY
  * 
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 203, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/trade.pyx":202
+    /* "gryphon/lib/models/trade.pyx":205
  *         if self.order:
  *             return self.order.exchange_rate
  *         elif self._exchange_rate:             # <<<<<<<<<<<<<<
@@ -4490,7 +4551,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CY
  */
   }
 
-  /* "gryphon/lib/models/trade.pyx":204
+  /* "gryphon/lib/models/trade.pyx":207
  *         elif self._exchange_rate:
  *             return self._exchange_rate
  *         return None             # <<<<<<<<<<<<<<
@@ -4501,7 +4562,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CY
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":199
+  /* "gryphon/lib/models/trade.pyx":202
  *     # used in gryphon.lib.gryphonfury.profit:copy_trade()
  *     @property
  *     def exchange_rate(self):             # <<<<<<<<<<<<<<
@@ -4521,7 +4582,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CY
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":207
+/* "gryphon/lib/models/trade.pyx":210
  * 
  *     @property
  *     def fundamental_value(self):             # <<<<<<<<<<<<<<
@@ -4530,20 +4591,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_36exchange_rate(CY
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_39fundamental_value(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_39fundamental_value = {"fundamental_value", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_39fundamental_value, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_39fundamental_value(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_41fundamental_value(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_41fundamental_value = {"fundamental_value", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_41fundamental_value, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_41fundamental_value(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("fundamental_value (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_value(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40fundamental_value(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4551,20 +4612,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_valu
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("fundamental_value", 0);
 
-  /* "gryphon/lib/models/trade.pyx":208
+  /* "gryphon/lib/models/trade.pyx":211
  *     @property
  *     def fundamental_value(self):
  *         if self.order:             # <<<<<<<<<<<<<<
  *             return self.order.fundamental_value
  *         elif self._fundamental_value:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 208, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
 
-    /* "gryphon/lib/models/trade.pyx":209
+    /* "gryphon/lib/models/trade.pyx":212
  *     def fundamental_value(self):
  *         if self.order:
  *             return self.order.fundamental_value             # <<<<<<<<<<<<<<
@@ -4572,16 +4633,16 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_valu
  *             return self._fundamental_value
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 209, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 212, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/trade.pyx":208
+    /* "gryphon/lib/models/trade.pyx":211
  *     @property
  *     def fundamental_value(self):
  *         if self.order:             # <<<<<<<<<<<<<<
@@ -4590,20 +4651,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_valu
  */
   }
 
-  /* "gryphon/lib/models/trade.pyx":210
+  /* "gryphon/lib/models/trade.pyx":213
  *         if self.order:
  *             return self.order.fundamental_value
  *         elif self._fundamental_value:             # <<<<<<<<<<<<<<
  *             return self._fundamental_value
  *         return None
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_2) {
 
-    /* "gryphon/lib/models/trade.pyx":211
+    /* "gryphon/lib/models/trade.pyx":214
  *             return self.order.fundamental_value
  *         elif self._fundamental_value:
  *             return self._fundamental_value             # <<<<<<<<<<<<<<
@@ -4611,13 +4672,13 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_valu
  * 
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/trade.pyx":210
+    /* "gryphon/lib/models/trade.pyx":213
  *         if self.order:
  *             return self.order.fundamental_value
  *         elif self._fundamental_value:             # <<<<<<<<<<<<<<
@@ -4626,7 +4687,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_valu
  */
   }
 
-  /* "gryphon/lib/models/trade.pyx":212
+  /* "gryphon/lib/models/trade.pyx":215
  *         elif self._fundamental_value:
  *             return self._fundamental_value
  *         return None             # <<<<<<<<<<<<<<
@@ -4637,7 +4698,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_valu
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":207
+  /* "gryphon/lib/models/trade.pyx":210
  * 
  *     @property
  *     def fundamental_value(self):             # <<<<<<<<<<<<<<
@@ -4657,7 +4718,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_valu
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":215
+/* "gryphon/lib/models/trade.pyx":218
  * 
  *     @property
  *     def exchange_name(self):             # <<<<<<<<<<<<<<
@@ -4666,20 +4727,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_38fundamental_valu
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_41exchange_name(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_41exchange_name = {"exchange_name", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_41exchange_name, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_41exchange_name(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_43exchange_name(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_43exchange_name = {"exchange_name", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_43exchange_name, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_43exchange_name(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("exchange_name (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42exchange_name(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42exchange_name(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4687,20 +4748,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CY
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("exchange_name", 0);
 
-  /* "gryphon/lib/models/trade.pyx":216
+  /* "gryphon/lib/models/trade.pyx":219
  *     @property
  *     def exchange_name(self):
  *         if self.order:             # <<<<<<<<<<<<<<
  *             return self.order._exchange_name
  *         elif self._exchange_name:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 219, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 219, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
 
-    /* "gryphon/lib/models/trade.pyx":217
+    /* "gryphon/lib/models/trade.pyx":220
  *     def exchange_name(self):
  *         if self.order:
  *             return self.order._exchange_name             # <<<<<<<<<<<<<<
@@ -4708,16 +4769,16 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CY
  *             return self._exchange_name
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/trade.pyx":216
+    /* "gryphon/lib/models/trade.pyx":219
  *     @property
  *     def exchange_name(self):
  *         if self.order:             # <<<<<<<<<<<<<<
@@ -4726,20 +4787,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CY
  */
   }
 
-  /* "gryphon/lib/models/trade.pyx":218
+  /* "gryphon/lib/models/trade.pyx":221
  *         if self.order:
  *             return self.order._exchange_name
  *         elif self._exchange_name:             # <<<<<<<<<<<<<<
  *             return self._exchange_name
  *         return None
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 218, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 218, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 221, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_2) {
 
-    /* "gryphon/lib/models/trade.pyx":219
+    /* "gryphon/lib/models/trade.pyx":222
  *             return self.order._exchange_name
  *         elif self._exchange_name:
  *             return self._exchange_name             # <<<<<<<<<<<<<<
@@ -4747,13 +4808,13 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CY
  * 
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 219, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 222, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/trade.pyx":218
+    /* "gryphon/lib/models/trade.pyx":221
  *         if self.order:
  *             return self.order._exchange_name
  *         elif self._exchange_name:             # <<<<<<<<<<<<<<
@@ -4762,7 +4823,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CY
  */
   }
 
-  /* "gryphon/lib/models/trade.pyx":220
+  /* "gryphon/lib/models/trade.pyx":223
  *         elif self._exchange_name:
  *             return self._exchange_name
  *         return None             # <<<<<<<<<<<<<<
@@ -4773,7 +4834,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CY
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":215
+  /* "gryphon/lib/models/trade.pyx":218
  * 
  *     @property
  *     def exchange_name(self):             # <<<<<<<<<<<<<<
@@ -4793,7 +4854,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CY
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":222
+/* "gryphon/lib/models/trade.pyx":225
  *         return None
  * 
  *     def convert_to_currency(self, amount, currency):             # <<<<<<<<<<<<<<
@@ -4802,9 +4863,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_40exchange_name(CY
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_43convert_to_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_43convert_to_currency = {"convert_to_currency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_43convert_to_currency, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_43convert_to_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_45convert_to_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_45convert_to_currency = {"convert_to_currency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_45convert_to_currency, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_45convert_to_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_amount = 0;
   PyObject *__pyx_v_currency = 0;
@@ -4836,17 +4897,17 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_43convert_to_curre
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_amount)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("convert_to_currency", 1, 3, 3, 1); __PYX_ERR(0, 222, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("convert_to_currency", 1, 3, 3, 1); __PYX_ERR(0, 225, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_currency)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("convert_to_currency", 1, 3, 3, 2); __PYX_ERR(0, 222, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("convert_to_currency", 1, 3, 3, 2); __PYX_ERR(0, 225, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "convert_to_currency") < 0)) __PYX_ERR(0, 222, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "convert_to_currency") < 0)) __PYX_ERR(0, 225, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -4861,20 +4922,20 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_43convert_to_curre
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("convert_to_currency", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 222, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("convert_to_currency", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 225, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.trade.Trade.convert_to_currency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_currency(__pyx_self, __pyx_v_self, __pyx_v_amount, __pyx_v_currency);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44convert_to_currency(__pyx_self, __pyx_v_self, __pyx_v_amount, __pyx_v_currency);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_amount, PyObject *__pyx_v_currency) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44convert_to_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_amount, PyObject *__pyx_v_currency) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4883,22 +4944,22 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_curre
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("convert_to_currency", 0);
 
-  /* "gryphon/lib/models/trade.pyx":223
+  /* "gryphon/lib/models/trade.pyx":226
  * 
  *     def convert_to_currency(self, amount, currency):
  *         if amount.currency == currency:             # <<<<<<<<<<<<<<
  *             return amount
  *         elif currency == "USD":
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_amount, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_amount, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 226, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_v_currency, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_v_currency, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 226, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 226, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_3) {
 
-    /* "gryphon/lib/models/trade.pyx":224
+    /* "gryphon/lib/models/trade.pyx":227
  *     def convert_to_currency(self, amount, currency):
  *         if amount.currency == currency:
  *             return amount             # <<<<<<<<<<<<<<
@@ -4910,7 +4971,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_curre
     __pyx_r = __pyx_v_amount;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/trade.pyx":223
+    /* "gryphon/lib/models/trade.pyx":226
  * 
  *     def convert_to_currency(self, amount, currency):
  *         if amount.currency == currency:             # <<<<<<<<<<<<<<
@@ -4919,17 +4980,17 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_curre
  */
   }
 
-  /* "gryphon/lib/models/trade.pyx":225
+  /* "gryphon/lib/models/trade.pyx":228
  *         if amount.currency == currency:
  *             return amount
  *         elif currency == "USD":             # <<<<<<<<<<<<<<
  *             return amount.to("USD", exchange_rate_to_usd=self.exchange_rate)
  *         else:
  */
-  __pyx_t_3 = (__Pyx_PyString_Equals(__pyx_v_currency, __pyx_n_s_USD, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 225, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyString_Equals(__pyx_v_currency, __pyx_n_s_USD, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 228, __pyx_L1_error)
   if (likely(__pyx_t_3)) {
 
-    /* "gryphon/lib/models/trade.pyx":226
+    /* "gryphon/lib/models/trade.pyx":229
  *             return amount
  *         elif currency == "USD":
  *             return amount.to("USD", exchange_rate_to_usd=self.exchange_rate)             # <<<<<<<<<<<<<<
@@ -4937,15 +4998,15 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_curre
  *             raise ValueError(
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_amount, __pyx_n_s_to); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 226, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_amount, __pyx_n_s_to); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 229, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 226, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 226, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_rate); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 229, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_exchange_rate_to_usd, __pyx_t_4) < 0) __PYX_ERR(0, 226, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_exchange_rate_to_usd, __pyx_t_4) < 0) __PYX_ERR(0, 229, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple_, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 226, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple_, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 229, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4953,7 +5014,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_curre
     __pyx_t_4 = 0;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/trade.pyx":225
+    /* "gryphon/lib/models/trade.pyx":228
  *         if amount.currency == currency:
  *             return amount
  *         elif currency == "USD":             # <<<<<<<<<<<<<<
@@ -4962,7 +5023,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_curre
  */
   }
 
-  /* "gryphon/lib/models/trade.pyx":228
+  /* "gryphon/lib/models/trade.pyx":231
  *             return amount.to("USD", exchange_rate_to_usd=self.exchange_rate)
  *         else:
  *             raise ValueError(             # <<<<<<<<<<<<<<
@@ -4971,32 +5032,32 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_curre
  */
   /*else*/ {
 
-    /* "gryphon/lib/models/trade.pyx":229
+    /* "gryphon/lib/models/trade.pyx":232
  *         else:
  *             raise ValueError(
  *                 "Cannot to convert trade price into %s (Only USD supported)" % currency,             # <<<<<<<<<<<<<<
  *             )
  * 
  */
-    __pyx_t_4 = __Pyx_PyString_FormatSafe(__pyx_kp_s_Cannot_to_convert_trade_price_in, __pyx_v_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 229, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyString_FormatSafe(__pyx_kp_s_Cannot_to_convert_trade_price_in, __pyx_v_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 232, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
 
-    /* "gryphon/lib/models/trade.pyx":228
+    /* "gryphon/lib/models/trade.pyx":231
  *             return amount.to("USD", exchange_rate_to_usd=self.exchange_rate)
  *         else:
  *             raise ValueError(             # <<<<<<<<<<<<<<
  *                 "Cannot to convert trade price into %s (Only USD supported)" % currency,
  *             )
  */
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 228, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 228, __pyx_L1_error)
+    __PYX_ERR(0, 231, __pyx_L1_error)
   }
 
-  /* "gryphon/lib/models/trade.pyx":222
+  /* "gryphon/lib/models/trade.pyx":225
  *         return None
  * 
  *     def convert_to_currency(self, amount, currency):             # <<<<<<<<<<<<<<
@@ -5017,7 +5078,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_curre
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":232
+/* "gryphon/lib/models/trade.pyx":235
  *             )
  * 
  *     def price_in_currency(self, currency):             # <<<<<<<<<<<<<<
@@ -5026,9 +5087,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_42convert_to_curre
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_45price_in_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_45price_in_currency = {"price_in_currency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_45price_in_currency, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_45price_in_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_47price_in_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_47price_in_currency = {"price_in_currency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_47price_in_currency, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_47price_in_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_currency = 0;
   PyObject *__pyx_r = 0;
@@ -5057,11 +5118,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_45price_in_currenc
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_currency)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("price_in_currency", 1, 2, 2, 1); __PYX_ERR(0, 232, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("price_in_currency", 1, 2, 2, 1); __PYX_ERR(0, 235, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "price_in_currency") < 0)) __PYX_ERR(0, 232, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "price_in_currency") < 0)) __PYX_ERR(0, 235, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5074,20 +5135,20 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_45price_in_currenc
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("price_in_currency", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 232, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("price_in_currency", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 235, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.trade.Trade.price_in_currency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currency(__pyx_self, __pyx_v_self, __pyx_v_currency);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46price_in_currency(__pyx_self, __pyx_v_self, __pyx_v_currency);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_currency) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46price_in_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_currency) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5098,7 +5159,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currenc
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("price_in_currency", 0);
 
-  /* "gryphon/lib/models/trade.pyx":233
+  /* "gryphon/lib/models/trade.pyx":236
  * 
  *     def price_in_currency(self, currency):
  *         return self.convert_to_currency(self.price, currency)             # <<<<<<<<<<<<<<
@@ -5106,9 +5167,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currenc
  *     def fee_in_currency(self, currency):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_convert_to_currency); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 233, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_convert_to_currency); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 233, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -5125,7 +5186,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currenc
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_3, __pyx_v_currency};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 236, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -5134,14 +5195,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currenc
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_3, __pyx_v_currency};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 236, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else
   #endif
   {
-    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 233, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 236, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -5152,7 +5213,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currenc
     __Pyx_GIVEREF(__pyx_v_currency);
     PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_5, __pyx_v_currency);
     __pyx_t_3 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 236, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
@@ -5161,7 +5222,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currenc
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":232
+  /* "gryphon/lib/models/trade.pyx":235
  *             )
  * 
  *     def price_in_currency(self, currency):             # <<<<<<<<<<<<<<
@@ -5184,7 +5245,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currenc
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/trade.pyx":235
+/* "gryphon/lib/models/trade.pyx":238
  *         return self.convert_to_currency(self.price, currency)
  * 
  *     def fee_in_currency(self, currency):             # <<<<<<<<<<<<<<
@@ -5193,9 +5254,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_44price_in_currenc
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_47fee_in_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_47fee_in_currency = {"fee_in_currency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_47fee_in_currency, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_47fee_in_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_49fee_in_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_49fee_in_currency = {"fee_in_currency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_49fee_in_currency, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_49fee_in_currency(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_currency = 0;
   PyObject *__pyx_r = 0;
@@ -5224,11 +5285,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_47fee_in_currency(
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_currency)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("fee_in_currency", 1, 2, 2, 1); __PYX_ERR(0, 235, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("fee_in_currency", 1, 2, 2, 1); __PYX_ERR(0, 238, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fee_in_currency") < 0)) __PYX_ERR(0, 235, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fee_in_currency") < 0)) __PYX_ERR(0, 238, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5241,20 +5302,20 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5trade_5Trade_47fee_in_currency(
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("fee_in_currency", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 235, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("fee_in_currency", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 238, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.trade.Trade.fee_in_currency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(__pyx_self, __pyx_v_self, __pyx_v_currency);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5trade_5Trade_48fee_in_currency(__pyx_self, __pyx_v_self, __pyx_v_currency);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_currency) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_48fee_in_currency(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_currency) {
   PyObject *__pyx_v_fundamental_value = NULL;
   PyObject *__pyx_v_fee = NULL;
   PyObject *__pyx_r = NULL;
@@ -5268,61 +5329,61 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("fee_in_currency", 0);
 
-  /* "gryphon/lib/models/trade.pyx":240
+  /* "gryphon/lib/models/trade.pyx":243
  *         # May 2019, it appears Kraken has shifted to charging fees in the price currency
  *         # in most cases.
  *         if self.fee.currency == "BTC" and currency != "BTC":             # <<<<<<<<<<<<<<
  *             fundamental_value = self.fundamental_value
  *             # converts BTC fee into currency of fundamental_value
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 240, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_currency); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 240, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_currency); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_BTC, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 240, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_BTC, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
   } else {
     __pyx_t_1 = __pyx_t_4;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_4 = (__Pyx_PyString_Equals(__pyx_v_currency, __pyx_n_s_BTC, Py_NE)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 240, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyString_Equals(__pyx_v_currency, __pyx_n_s_BTC, Py_NE)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 243, __pyx_L1_error)
   __pyx_t_1 = __pyx_t_4;
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "gryphon/lib/models/trade.pyx":241
+    /* "gryphon/lib/models/trade.pyx":244
  *         # in most cases.
  *         if self.fee.currency == "BTC" and currency != "BTC":
  *             fundamental_value = self.fundamental_value             # <<<<<<<<<<<<<<
  *             # converts BTC fee into currency of fundamental_value
  *             fee = fundamental_value * self.fee.amount
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 241, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 244, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_fundamental_value = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "gryphon/lib/models/trade.pyx":243
+    /* "gryphon/lib/models/trade.pyx":246
  *             fundamental_value = self.fundamental_value
  *             # converts BTC fee into currency of fundamental_value
  *             fee = fundamental_value * self.fee.amount             # <<<<<<<<<<<<<<
  *         else:
  *             fee = self.fee
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_amount); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_amount); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyNumber_Multiply(__pyx_v_fundamental_value, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Multiply(__pyx_v_fundamental_value, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_fee = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "gryphon/lib/models/trade.pyx":240
+    /* "gryphon/lib/models/trade.pyx":243
  *         # May 2019, it appears Kraken has shifted to charging fees in the price currency
  *         # in most cases.
  *         if self.fee.currency == "BTC" and currency != "BTC":             # <<<<<<<<<<<<<<
@@ -5332,7 +5393,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(
     goto __pyx_L3;
   }
 
-  /* "gryphon/lib/models/trade.pyx":245
+  /* "gryphon/lib/models/trade.pyx":248
  *             fee = fundamental_value * self.fee.amount
  *         else:
  *             fee = self.fee             # <<<<<<<<<<<<<<
@@ -5340,20 +5401,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(
  *         return self.convert_to_currency(fee, currency)
  */
   /*else*/ {
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 245, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fee); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 248, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_fee = __pyx_t_3;
     __pyx_t_3 = 0;
   }
   __pyx_L3:;
 
-  /* "gryphon/lib/models/trade.pyx":247
+  /* "gryphon/lib/models/trade.pyx":250
  *             fee = self.fee
  * 
  *         return self.convert_to_currency(fee, currency)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_convert_to_currency); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 247, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_convert_to_currency); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 250, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -5370,7 +5431,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_v_fee, __pyx_v_currency};
-    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else
@@ -5378,13 +5439,13 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_v_fee, __pyx_v_currency};
-    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 247, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -5395,7 +5456,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(
     __Pyx_INCREF(__pyx_v_currency);
     __Pyx_GIVEREF(__pyx_v_currency);
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_v_currency);
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
@@ -5404,7 +5465,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5trade_5Trade_46fee_in_currency(
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/trade.pyx":235
+  /* "gryphon/lib/models/trade.pyx":238
  *         return self.convert_to_currency(self.price, currency)
  * 
  *     def fee_in_currency(self, currency):             # <<<<<<<<<<<<<<
@@ -5623,6 +5684,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_TRADE, __pyx_k_TRADE, sizeof(__pyx_k_TRADE), 0, 1, 0, 0},
   {&__pyx_n_s_Trade, __pyx_k_Trade, sizeof(__pyx_k_Trade), 0, 0, 1, 1},
   {&__pyx_n_s_Trade___init, __pyx_k_Trade___init, sizeof(__pyx_k_Trade___init), 0, 0, 1, 1},
+  {&__pyx_n_s_Trade___iter, __pyx_k_Trade___iter, sizeof(__pyx_k_Trade___iter), 0, 0, 1, 1},
   {&__pyx_n_s_Trade___repr, __pyx_k_Trade___repr, sizeof(__pyx_k_Trade___repr), 0, 0, 1, 1},
   {&__pyx_n_s_Trade___unicode, __pyx_k_Trade___unicode, sizeof(__pyx_k_Trade___unicode), 0, 0, 1, 1},
   {&__pyx_n_s_Trade_calc_position, __pyx_k_Trade_calc_position, sizeof(__pyx_k_Trade_calc_position), 0, 0, 1, 1},
@@ -5702,6 +5764,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_include_fees, __pyx_k_include_fees, sizeof(__pyx_k_include_fees), 0, 0, 1, 1},
   {&__pyx_n_s_init, __pyx_k_init, sizeof(__pyx_k_init), 0, 0, 1, 1},
+  {&__pyx_n_s_iter, __pyx_k_iter, sizeof(__pyx_k_iter), 0, 0, 1, 1},
   {&__pyx_n_s_json, __pyx_k_json, sizeof(__pyx_k_json), 0, 0, 1, 1},
   {&__pyx_n_s_length, __pyx_k_length, sizeof(__pyx_k_length), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
@@ -5762,8 +5825,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_property = __Pyx_GetBuiltinName(__pyx_n_s_property); if (!__pyx_builtin_property) __PYX_ERR(0, 87, __pyx_L1_error)
-  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(0, 228, __pyx_L1_error)
+  __pyx_builtin_property = __Pyx_GetBuiltinName(__pyx_n_s_property); if (!__pyx_builtin_property) __PYX_ERR(0, 90, __pyx_L1_error)
+  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(0, 231, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -5773,14 +5836,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "gryphon/lib/models/trade.pyx":226
+  /* "gryphon/lib/models/trade.pyx":229
  *             return amount
  *         elif currency == "USD":
  *             return amount.to("USD", exchange_rate_to_usd=self.exchange_rate)             # <<<<<<<<<<<<<<
  *         else:
  *             raise ValueError(
  */
-  __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_USD); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_USD); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
@@ -5810,281 +5873,293 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "gryphon/lib/models/trade.pyx":67
  *         self.meta_data = json.dumps(meta_data)
  * 
- *     def __unicode__(self):             # <<<<<<<<<<<<<<
- *         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (
- *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         return self
+ * 
  */
   __pyx_tuple__6 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
-  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_unicode, 67, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_iter, 67, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 67, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":71
+  /* "gryphon/lib/models/trade.pyx":70
+ *         return self
+ * 
+ *     def __unicode__(self):             # <<<<<<<<<<<<<<
+ *         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (
+ *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
+ */
+  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__8);
+  __Pyx_GIVEREF(__pyx_tuple__8);
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_unicode, 70, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 70, __pyx_L1_error)
+
+  /* "gryphon/lib/models/trade.pyx":74
  *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
  *         return self.to_json()
  * 
  */
-  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 71, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__8);
-  __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_repr, 71, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__10);
+  __Pyx_GIVEREF(__pyx_tuple__10);
+  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_repr, 74, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 74, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":74
+  /* "gryphon/lib/models/trade.pyx":77
  *         return self.to_json()
  * 
  *     def to_json(self):             # <<<<<<<<<<<<<<
  *         return json.dumps({
  *             'trade_id':self.trade_id,
  */
-  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 74, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__10);
-  __Pyx_GIVEREF(__pyx_tuple__10);
-  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_to_json, 74, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__12);
+  __Pyx_GIVEREF(__pyx_tuple__12);
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_to_json, 77, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 77, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":88
+  /* "gryphon/lib/models/trade.pyx":91
  * 
  *     @property
  *     def volume(self):             # <<<<<<<<<<<<<<
  *         return Money(self._volume, self._volume_currency)
  * 
  */
-  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 88, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__12);
-  __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_volume, 88, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__14);
+  __Pyx_GIVEREF(__pyx_tuple__14);
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_volume, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 91, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":92
+  /* "gryphon/lib/models/trade.pyx":95
  * 
  *     @volume.setter
  *     def volume(self, value):             # <<<<<<<<<<<<<<
  *         self._volume = value.amount
  *         self._volume_currency = value.currency
  */
-  __pyx_tuple__14 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 92, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__14);
-  __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_volume, 92, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__16);
+  __Pyx_GIVEREF(__pyx_tuple__16);
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_volume, 95, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 95, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":97
+  /* "gryphon/lib/models/trade.pyx":100
  * 
  *     @property
  *     def price(self):             # <<<<<<<<<<<<<<
  *         return Money(self._price, self._price_currency)
  * 
  */
-  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 97, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__16);
-  __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price, 97, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 100, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__18);
+  __Pyx_GIVEREF(__pyx_tuple__18);
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price, 100, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 100, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":101
+  /* "gryphon/lib/models/trade.pyx":104
  * 
  *     @price.setter
  *     def price(self, value):             # <<<<<<<<<<<<<<
  *         self._price = value.amount
  *         self._price_currency = value.currency
  */
-  __pyx_tuple__18 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 101, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__18);
-  __Pyx_GIVEREF(__pyx_tuple__18);
-  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price, 101, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__20);
+  __Pyx_GIVEREF(__pyx_tuple__20);
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price, 104, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 104, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":106
+  /* "gryphon/lib/models/trade.pyx":109
  * 
  *     @hybrid_property
  *     def price_in_usd(self):             # <<<<<<<<<<<<<<
  *         """
  *         Regular property you can call on a loaded trade in python. Returns a USD Money object
  */
-  __pyx_tuple__20 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_exchange_rate_to_usd); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 106, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__20);
-  __Pyx_GIVEREF(__pyx_tuple__20);
-  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price_in_usd, 106, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_exchange_rate_to_usd); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__22);
+  __Pyx_GIVEREF(__pyx_tuple__22);
+  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price_in_usd, 109, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 109, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":114
+  /* "gryphon/lib/models/trade.pyx":117
  * 
  *     @price_in_usd.expression
  *     def price_in_usd(cls):             # <<<<<<<<<<<<<<
  *         """
  *         SQL Expression which lets us calculate and use USD prices in SQL.
  */
-  __pyx_tuple__22 = PyTuple_Pack(3, __pyx_n_s_cls, __pyx_n_s_Order_2, __pyx_n_s_exchange_rate_to_usd); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 114, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__22);
-  __Pyx_GIVEREF(__pyx_tuple__22);
-  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price_in_usd, 114, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 114, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(3, __pyx_n_s_cls, __pyx_n_s_Order_2, __pyx_n_s_exchange_rate_to_usd); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 117, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__24);
+  __Pyx_GIVEREF(__pyx_tuple__24);
+  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price_in_usd, 117, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 117, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":128
+  /* "gryphon/lib/models/trade.pyx":131
  * 
  *     @property
  *     def fee(self):             # <<<<<<<<<<<<<<
  *         return Money(self._fee, self._fee_currency)
  * 
  */
-  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 128, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__24);
-  __Pyx_GIVEREF(__pyx_tuple__24);
-  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee, 128, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__26);
+  __Pyx_GIVEREF(__pyx_tuple__26);
+  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee, 131, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 131, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":132
+  /* "gryphon/lib/models/trade.pyx":135
  * 
  *     @fee.setter
  *     def fee(self, value):             # <<<<<<<<<<<<<<
  *         self._fee = value.amount
  *         self._fee_currency = value.currency
  */
-  __pyx_tuple__26 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 132, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__26);
-  __Pyx_GIVEREF(__pyx_tuple__26);
-  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee, 132, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_tuple__28 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__28);
+  __Pyx_GIVEREF(__pyx_tuple__28);
+  __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee, 135, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 135, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":137
+  /* "gryphon/lib/models/trade.pyx":140
  * 
  *     @hybrid_property
  *     def fee_in_usd(self):             # <<<<<<<<<<<<<<
  *         """
  *         Regular property you can call on a loaded trade in python. Returns a USD Money object
  */
-  __pyx_tuple__28 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_exchange_rate_to_usd); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 137, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__28);
-  __Pyx_GIVEREF(__pyx_tuple__28);
-  __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee_in_usd, 137, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_tuple__30 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_exchange_rate_to_usd); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__30);
+  __Pyx_GIVEREF(__pyx_tuple__30);
+  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee_in_usd, 140, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 140, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":149
+  /* "gryphon/lib/models/trade.pyx":152
  * 
  *     @fee_in_usd.expression
  *     def fee_in_usd(cls):             # <<<<<<<<<<<<<<
  *         """
  *         SQL Expression which lets us calculate and use USD fees in SQL (usually for summing).
  */
-  __pyx_tuple__30 = PyTuple_Pack(3, __pyx_n_s_cls, __pyx_n_s_Order_2, __pyx_n_s_exchange_rate_to_usd); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 149, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__30);
-  __Pyx_GIVEREF(__pyx_tuple__30);
-  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee_in_usd, 149, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_tuple__32 = PyTuple_Pack(3, __pyx_n_s_cls, __pyx_n_s_Order_2, __pyx_n_s_exchange_rate_to_usd); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 152, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__32);
+  __Pyx_GIVEREF(__pyx_tuple__32);
+  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee_in_usd, 152, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 152, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":167
+  /* "gryphon/lib/models/trade.pyx":170
  * 
  *     @hybrid_property
  *     def has_outstanding_btc_fee(self):             # <<<<<<<<<<<<<<
  *         return self._fee_currency == 'BTC' and self.fee_buyback_transaction_id == None
  * 
  */
-  __pyx_tuple__32 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 167, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__32);
-  __Pyx_GIVEREF(__pyx_tuple__32);
-  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_has_outstanding_btc_fee, 167, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 167, __pyx_L1_error)
+  __pyx_tuple__34 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__34);
+  __Pyx_GIVEREF(__pyx_tuple__34);
+  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_has_outstanding_btc_fee, 170, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 170, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":171
+  /* "gryphon/lib/models/trade.pyx":174
  * 
  *     @has_outstanding_btc_fee.expression
  *     def has_outstanding_btc_fee(cls):             # <<<<<<<<<<<<<<
  *         return and_(cls._fee_currency == 'BTC', cls.fee_buyback_transaction_id == None)
  * 
  */
-  __pyx_tuple__34 = PyTuple_Pack(1, __pyx_n_s_cls); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 171, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__34);
-  __Pyx_GIVEREF(__pyx_tuple__34);
-  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_has_outstanding_btc_fee, 171, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_tuple__36 = PyTuple_Pack(1, __pyx_n_s_cls); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__36);
+  __Pyx_GIVEREF(__pyx_tuple__36);
+  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_has_outstanding_btc_fee, 174, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 174, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":176
+  /* "gryphon/lib/models/trade.pyx":179
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property
  *     def position(self):             # <<<<<<<<<<<<<<
  *         return self.calc_position()
  * 
  */
-  __pyx_tuple__36 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 176, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__36);
-  __Pyx_GIVEREF(__pyx_tuple__36);
-  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_position, 176, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_tuple__38 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__38);
+  __Pyx_GIVEREF(__pyx_tuple__38);
+  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_position, 179, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 179, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":179
+  /* "gryphon/lib/models/trade.pyx":182
  *         return self.calc_position()
  * 
  *     def calc_position(self, include_fees=True):             # <<<<<<<<<<<<<<
  *         from gryphon.lib.models.exchange import Position  # circle? todo
  *         position = Position()
  */
-  __pyx_tuple__38 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_include_fees, __pyx_n_s_Position, __pyx_n_s_position); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 179, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__38);
-  __Pyx_GIVEREF(__pyx_tuple__38);
-  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_calc_position, 179, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 179, __pyx_L1_error)
-  __pyx_tuple__40 = PyTuple_Pack(1, ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_tuple__40 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_include_fees, __pyx_n_s_Position, __pyx_n_s_position); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__40);
   __Pyx_GIVEREF(__pyx_tuple__40);
+  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_calc_position, 182, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_tuple__42 = PyTuple_Pack(1, ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__42);
+  __Pyx_GIVEREF(__pyx_tuple__42);
 
-  /* "gryphon/lib/models/trade.pyx":199
+  /* "gryphon/lib/models/trade.pyx":202
  *     # used in gryphon.lib.gryphonfury.profit:copy_trade()
  *     @property
  *     def exchange_rate(self):             # <<<<<<<<<<<<<<
  *         if self.order:
  *             return self.order.exchange_rate
  */
-  __pyx_tuple__41 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 199, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__41);
-  __Pyx_GIVEREF(__pyx_tuple__41);
-  __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_exchange_rate, 199, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 199, __pyx_L1_error)
+  __pyx_tuple__43 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__43);
+  __Pyx_GIVEREF(__pyx_tuple__43);
+  __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_exchange_rate, 202, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) __PYX_ERR(0, 202, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":207
+  /* "gryphon/lib/models/trade.pyx":210
  * 
  *     @property
  *     def fundamental_value(self):             # <<<<<<<<<<<<<<
  *         if self.order:
  *             return self.order.fundamental_value
  */
-  __pyx_tuple__43 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 207, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__43);
-  __Pyx_GIVEREF(__pyx_tuple__43);
-  __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fundamental_value, 207, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_tuple__45 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__45);
+  __Pyx_GIVEREF(__pyx_tuple__45);
+  __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fundamental_value, 210, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 210, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":215
+  /* "gryphon/lib/models/trade.pyx":218
  * 
  *     @property
  *     def exchange_name(self):             # <<<<<<<<<<<<<<
  *         if self.order:
  *             return self.order._exchange_name
  */
-  __pyx_tuple__45 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 215, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__45);
-  __Pyx_GIVEREF(__pyx_tuple__45);
-  __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_exchange_name_2, 215, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 215, __pyx_L1_error)
+  __pyx_tuple__47 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 218, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__47);
+  __Pyx_GIVEREF(__pyx_tuple__47);
+  __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_exchange_name_2, 218, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) __PYX_ERR(0, 218, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":222
+  /* "gryphon/lib/models/trade.pyx":225
  *         return None
  * 
  *     def convert_to_currency(self, amount, currency):             # <<<<<<<<<<<<<<
  *         if amount.currency == currency:
  *             return amount
  */
-  __pyx_tuple__47 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_amount, __pyx_n_s_currency); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 222, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__47);
-  __Pyx_GIVEREF(__pyx_tuple__47);
-  __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_convert_to_currency, 222, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) __PYX_ERR(0, 222, __pyx_L1_error)
+  __pyx_tuple__49 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_amount, __pyx_n_s_currency); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 225, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__49);
+  __Pyx_GIVEREF(__pyx_tuple__49);
+  __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_convert_to_currency, 225, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) __PYX_ERR(0, 225, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":232
+  /* "gryphon/lib/models/trade.pyx":235
  *             )
  * 
  *     def price_in_currency(self, currency):             # <<<<<<<<<<<<<<
  *         return self.convert_to_currency(self.price, currency)
  * 
  */
-  __pyx_tuple__49 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_currency); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 232, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__49);
-  __Pyx_GIVEREF(__pyx_tuple__49);
-  __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price_in_currency, 232, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) __PYX_ERR(0, 232, __pyx_L1_error)
+  __pyx_tuple__51 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_currency); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__51);
+  __Pyx_GIVEREF(__pyx_tuple__51);
+  __pyx_codeobj__52 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__51, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_price_in_currency, 235, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__52)) __PYX_ERR(0, 235, __pyx_L1_error)
 
-  /* "gryphon/lib/models/trade.pyx":235
+  /* "gryphon/lib/models/trade.pyx":238
  *         return self.convert_to_currency(self.price, currency)
  * 
  *     def fee_in_currency(self, currency):             # <<<<<<<<<<<<<<
  *         # TODO: This code was designed to calculate fees when they are charged in the
  *         # volume currency. I'm not sure if this is true for any supported pairs as of
  */
-  __pyx_tuple__51 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_currency, __pyx_n_s_fundamental_value, __pyx_n_s_fee); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 235, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__51);
-  __Pyx_GIVEREF(__pyx_tuple__51);
-  __pyx_codeobj__52 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__51, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee_in_currency, 235, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__52)) __PYX_ERR(0, 235, __pyx_L1_error)
+  __pyx_tuple__53 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_currency, __pyx_n_s_fundamental_value, __pyx_n_s_fee); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 238, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__53);
+  __Pyx_GIVEREF(__pyx_tuple__53);
+  __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_trade_pyx, __pyx_n_s_fee_in_currency, 238, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 238, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -7747,63 +7822,75 @@ if (!__Pyx_RefNanny) {
   /* "gryphon/lib/models/trade.pyx":67
  *         self.meta_data = json.dumps(meta_data)
  * 
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         return self
+ * 
+ */
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_3__iter__, 0, __pyx_n_s_Trade___iter, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__7)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_10);
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_iter, __pyx_t_10) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+
+  /* "gryphon/lib/models/trade.pyx":70
+ *         return self
+ * 
  *     def __unicode__(self):             # <<<<<<<<<<<<<<
  *         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (
  *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_3__unicode__, 0, __pyx_n_s_Trade___unicode, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__7)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_5__unicode__, 0, __pyx_n_s_Trade___unicode, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_unicode, __pyx_t_10) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_unicode, __pyx_t_10) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":71
+  /* "gryphon/lib/models/trade.pyx":74
  *             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
  *         return self.to_json()
  * 
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_5__repr__, 0, __pyx_n_s_Trade___repr, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_7__repr__, 0, __pyx_n_s_Trade___repr, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_repr, __pyx_t_10) < 0) __PYX_ERR(0, 71, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_repr, __pyx_t_10) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":74
+  /* "gryphon/lib/models/trade.pyx":77
  *         return self.to_json()
  * 
  *     def to_json(self):             # <<<<<<<<<<<<<<
  *         return json.dumps({
  *             'trade_id':self.trade_id,
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_7to_json, 0, __pyx_n_s_Trade_to_json, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_9to_json, 0, __pyx_n_s_Trade_to_json, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_to_json, __pyx_t_10) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_to_json, __pyx_t_10) < 0) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":88
+  /* "gryphon/lib/models/trade.pyx":91
  * 
  *     @property
  *     def volume(self):             # <<<<<<<<<<<<<<
  *         return Money(self._volume, self._volume_currency)
  * 
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_9volume, 0, __pyx_n_s_Trade_volume, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_11volume, 0, __pyx_n_s_Trade_volume, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
 
-  /* "gryphon/lib/models/trade.pyx":87
+  /* "gryphon/lib/models/trade.pyx":90
  *         }, ensure_ascii=False)
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def volume(self):
  *         return Money(self._volume, self._volume_currency)
  */
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 87, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_volume, __pyx_t_5) < 0) __PYX_ERR(0, 88, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_volume, __pyx_t_5) < 0) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":91
+  /* "gryphon/lib/models/trade.pyx":94
  *         return Money(self._volume, self._volume_currency)
  * 
  *     @volume.setter             # <<<<<<<<<<<<<<
@@ -7815,20 +7902,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_volume);
   }
-  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 91, __pyx_L1_error)
+  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_setter); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_setter); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":92
+  /* "gryphon/lib/models/trade.pyx":95
  * 
  *     @volume.setter
  *     def volume(self, value):             # <<<<<<<<<<<<<<
  *         self._volume = value.amount
  *         self._volume_currency = value.currency
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_11volume, 0, __pyx_n_s_Trade_volume, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_13volume, 0, __pyx_n_s_Trade_volume, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -7843,36 +7930,36 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_8, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_10);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 91, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_volume, __pyx_t_5) < 0) __PYX_ERR(0, 92, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_volume, __pyx_t_5) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":97
+  /* "gryphon/lib/models/trade.pyx":100
  * 
  *     @property
  *     def price(self):             # <<<<<<<<<<<<<<
  *         return Money(self._price, self._price_currency)
  * 
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_13price, 0, __pyx_n_s_Trade_price, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_15price, 0, __pyx_n_s_Trade_price, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "gryphon/lib/models/trade.pyx":96
+  /* "gryphon/lib/models/trade.pyx":99
  *         self._volume_currency = value.currency
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def price(self):
  *         return Money(self._price, self._price_currency)
  */
-  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 96, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price, __pyx_t_6) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price, __pyx_t_6) < 0) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":100
+  /* "gryphon/lib/models/trade.pyx":103
  *         return Money(self._price, self._price_currency)
  * 
  *     @price.setter             # <<<<<<<<<<<<<<
@@ -7884,20 +7971,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_price);
   }
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 100, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_setter); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 100, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_setter); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":101
+  /* "gryphon/lib/models/trade.pyx":104
  * 
  *     @price.setter
  *     def price(self, value):             # <<<<<<<<<<<<<<
  *         self._price = value.amount
  *         self._price_currency = value.currency
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_15price, 0, __pyx_n_s_Trade_price, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_17price, 0, __pyx_n_s_Trade_price, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_10))) {
@@ -7912,30 +7999,30 @@ if (!__Pyx_RefNanny) {
   __pyx_t_6 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_8, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 100, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price, __pyx_t_6) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price, __pyx_t_6) < 0) __PYX_ERR(0, 104, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":105
+  /* "gryphon/lib/models/trade.pyx":108
  *         self._price_currency = value.currency
  * 
  *     @hybrid_property             # <<<<<<<<<<<<<<
  *     def price_in_usd(self):
  *         """
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_hybrid_property); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 105, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_hybrid_property); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
 
-  /* "gryphon/lib/models/trade.pyx":106
+  /* "gryphon/lib/models/trade.pyx":109
  * 
  *     @hybrid_property
  *     def price_in_usd(self):             # <<<<<<<<<<<<<<
  *         """
  *         Regular property you can call on a loaded trade in python. Returns a USD Money object
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_17price_in_usd, 0, __pyx_n_s_Trade_price_in_usd, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd, 0, __pyx_n_s_Trade_price_in_usd, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_10))) {
@@ -7950,13 +8037,13 @@ if (!__Pyx_RefNanny) {
   __pyx_t_6 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_8, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 105, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price_in_usd, __pyx_t_6) < 0) __PYX_ERR(0, 106, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price_in_usd, __pyx_t_6) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":113
+  /* "gryphon/lib/models/trade.pyx":116
  *         return Money(self._price * exchange_rate_to_usd, 'USD')
  * 
  *     @price_in_usd.expression             # <<<<<<<<<<<<<<
@@ -7968,20 +8055,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_price_in_usd);
   }
-  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 113, __pyx_L1_error)
+  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_expression); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_expression); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":114
+  /* "gryphon/lib/models/trade.pyx":117
  * 
  *     @price_in_usd.expression
  *     def price_in_usd(cls):             # <<<<<<<<<<<<<<
  *         """
  *         SQL Expression which lets us calculate and use USD prices in SQL.
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_19price_in_usd, 0, __pyx_n_s_Trade_price_in_usd, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 114, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_21price_in_usd, 0, __pyx_n_s_Trade_price_in_usd, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -7996,36 +8083,36 @@ if (!__Pyx_RefNanny) {
   __pyx_t_6 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_8, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_10);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 113, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price_in_usd, __pyx_t_6) < 0) __PYX_ERR(0, 114, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price_in_usd, __pyx_t_6) < 0) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":128
+  /* "gryphon/lib/models/trade.pyx":131
  * 
  *     @property
  *     def fee(self):             # <<<<<<<<<<<<<<
  *         return Money(self._fee, self._fee_currency)
  * 
  */
-  __pyx_t_6 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_21fee, 0, __pyx_n_s_Trade_fee, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_23fee, 0, __pyx_n_s_Trade_fee, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
 
-  /* "gryphon/lib/models/trade.pyx":127
+  /* "gryphon/lib/models/trade.pyx":130
  *         return cls._price * exchange_rate_to_usd
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def fee(self):
  *         return Money(self._fee, self._fee_currency)
  */
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee, __pyx_t_5) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee, __pyx_t_5) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":131
+  /* "gryphon/lib/models/trade.pyx":134
  *         return Money(self._fee, self._fee_currency)
  * 
  *     @fee.setter             # <<<<<<<<<<<<<<
@@ -8037,20 +8124,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_fee);
   }
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_setter); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_setter); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":132
+  /* "gryphon/lib/models/trade.pyx":135
  * 
  *     @fee.setter
  *     def fee(self, value):             # <<<<<<<<<<<<<<
  *         self._fee = value.amount
  *         self._fee_currency = value.currency
  */
-  __pyx_t_6 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_23fee, 0, __pyx_n_s_Trade_fee, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_25fee, 0, __pyx_n_s_Trade_fee, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_10))) {
@@ -8065,30 +8152,30 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_8, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee, __pyx_t_5) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee, __pyx_t_5) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":136
+  /* "gryphon/lib/models/trade.pyx":139
  *         self._fee_currency = value.currency
  * 
  *     @hybrid_property             # <<<<<<<<<<<<<<
  *     def fee_in_usd(self):
  *         """
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_hybrid_property); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_hybrid_property); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
 
-  /* "gryphon/lib/models/trade.pyx":137
+  /* "gryphon/lib/models/trade.pyx":140
  * 
  *     @hybrid_property
  *     def fee_in_usd(self):             # <<<<<<<<<<<<<<
  *         """
  *         Regular property you can call on a loaded trade in python. Returns a USD Money object
  */
-  __pyx_t_6 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_25fee_in_usd, 0, __pyx_n_s_Trade_fee_in_usd, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd, 0, __pyx_n_s_Trade_fee_in_usd, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_10))) {
@@ -8103,13 +8190,13 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_8, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 136, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee_in_usd, __pyx_t_5) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee_in_usd, __pyx_t_5) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":148
+  /* "gryphon/lib/models/trade.pyx":151
  *         return Money(self._fee * exchange_rate_to_usd, 'USD')
  * 
  *     @fee_in_usd.expression             # <<<<<<<<<<<<<<
@@ -8121,20 +8208,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_fee_in_usd);
   }
-  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 148, __pyx_L1_error)
+  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_expression); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 148, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_expression); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":149
+  /* "gryphon/lib/models/trade.pyx":152
  * 
  *     @fee_in_usd.expression
  *     def fee_in_usd(cls):             # <<<<<<<<<<<<<<
  *         """
  *         SQL Expression which lets us calculate and use USD fees in SQL (usually for summing).
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_27fee_in_usd, 0, __pyx_n_s_Trade_fee_in_usd, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_29fee_in_usd, 0, __pyx_n_s_Trade_fee_in_usd, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -8149,30 +8236,30 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_8, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_10);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee_in_usd, __pyx_t_5) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee_in_usd, __pyx_t_5) < 0) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":166
+  /* "gryphon/lib/models/trade.pyx":169
  *         return cls._fee * exchange_rate_to_usd
  * 
  *     @hybrid_property             # <<<<<<<<<<<<<<
  *     def has_outstanding_btc_fee(self):
  *         return self._fee_currency == 'BTC' and self.fee_buyback_transaction_id == None
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_hybrid_property); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_hybrid_property); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
 
-  /* "gryphon/lib/models/trade.pyx":167
+  /* "gryphon/lib/models/trade.pyx":170
  * 
  *     @hybrid_property
  *     def has_outstanding_btc_fee(self):             # <<<<<<<<<<<<<<
  *         return self._fee_currency == 'BTC' and self.fee_buyback_transaction_id == None
  * 
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_29has_outstanding_btc_fee, 0, __pyx_n_s_Trade_has_outstanding_btc_fee, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 167, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee, 0, __pyx_n_s_Trade_has_outstanding_btc_fee, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 170, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -8187,13 +8274,13 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_8, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_10);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 166, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_has_outstanding_btc_fee, __pyx_t_5) < 0) __PYX_ERR(0, 167, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_has_outstanding_btc_fee, __pyx_t_5) < 0) __PYX_ERR(0, 170, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":170
+  /* "gryphon/lib/models/trade.pyx":173
  *         return self._fee_currency == 'BTC' and self.fee_buyback_transaction_id == None
  * 
  *     @has_outstanding_btc_fee.expression             # <<<<<<<<<<<<<<
@@ -8205,20 +8292,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_has_outstanding_btc_fee);
   }
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 170, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_expression); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_expression); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":171
+  /* "gryphon/lib/models/trade.pyx":174
  * 
  *     @has_outstanding_btc_fee.expression
  *     def has_outstanding_btc_fee(cls):             # <<<<<<<<<<<<<<
  *         return and_(cls._fee_currency == 'BTC', cls.fee_buyback_transaction_id == None)
  * 
  */
-  __pyx_t_6 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_31has_outstanding_btc_fee, 0, __pyx_n_s_Trade_has_outstanding_btc_fee, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_33has_outstanding_btc_fee, 0, __pyx_n_s_Trade_has_outstanding_btc_fee, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_10))) {
@@ -8233,151 +8320,151 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_8, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 170, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_has_outstanding_btc_fee, __pyx_t_5) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_has_outstanding_btc_fee, __pyx_t_5) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":176
+  /* "gryphon/lib/models/trade.pyx":179
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property
  *     def position(self):             # <<<<<<<<<<<<<<
  *         return self.calc_position()
  * 
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_33position, 0, __pyx_n_s_Trade_position, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_35position, 0, __pyx_n_s_Trade_position, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "gryphon/lib/models/trade.pyx":175
+  /* "gryphon/lib/models/trade.pyx":178
  * 
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property             # <<<<<<<<<<<<<<
  *     def position(self):
  *         return self.calc_position()
  */
-  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_position, __pyx_t_10) < 0) __PYX_ERR(0, 176, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_position, __pyx_t_10) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":179
+  /* "gryphon/lib/models/trade.pyx":182
  *         return self.calc_position()
  * 
  *     def calc_position(self, include_fees=True):             # <<<<<<<<<<<<<<
  *         from gryphon.lib.models.exchange import Position  # circle? todo
  *         position = Position()
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_35calc_position, 0, __pyx_n_s_Trade_calc_position, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_37calc_position, 0, __pyx_n_s_Trade_calc_position, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_10, __pyx_tuple__40);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_calc_position, __pyx_t_10) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_10, __pyx_tuple__42);
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_calc_position, __pyx_t_10) < 0) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":199
+  /* "gryphon/lib/models/trade.pyx":202
  *     # used in gryphon.lib.gryphonfury.profit:copy_trade()
  *     @property
  *     def exchange_rate(self):             # <<<<<<<<<<<<<<
  *         if self.order:
  *             return self.order.exchange_rate
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_37exchange_rate, 0, __pyx_n_s_Trade_exchange_rate, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 199, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_39exchange_rate, 0, __pyx_n_s_Trade_exchange_rate, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
 
-  /* "gryphon/lib/models/trade.pyx":198
+  /* "gryphon/lib/models/trade.pyx":201
  *     # exchange_rate around without references to their parent order.
  *     # used in gryphon.lib.gryphonfury.profit:copy_trade()
  *     @property             # <<<<<<<<<<<<<<
  *     def exchange_rate(self):
  *         if self.order:
  */
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 198, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 201, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_exchange_rate, __pyx_t_5) < 0) __PYX_ERR(0, 199, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_exchange_rate, __pyx_t_5) < 0) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":207
+  /* "gryphon/lib/models/trade.pyx":210
  * 
  *     @property
  *     def fundamental_value(self):             # <<<<<<<<<<<<<<
  *         if self.order:
  *             return self.order.fundamental_value
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_39fundamental_value, 0, __pyx_n_s_Trade_fundamental_value, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_41fundamental_value, 0, __pyx_n_s_Trade_fundamental_value, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "gryphon/lib/models/trade.pyx":206
+  /* "gryphon/lib/models/trade.pyx":209
  *         return None
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def fundamental_value(self):
  *         if self.order:
  */
-  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 206, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fundamental_value, __pyx_t_10) < 0) __PYX_ERR(0, 207, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fundamental_value, __pyx_t_10) < 0) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":215
+  /* "gryphon/lib/models/trade.pyx":218
  * 
  *     @property
  *     def exchange_name(self):             # <<<<<<<<<<<<<<
  *         if self.order:
  *             return self.order._exchange_name
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_41exchange_name, 0, __pyx_n_s_Trade_exchange_name, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 215, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_43exchange_name, 0, __pyx_n_s_Trade_exchange_name, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__48)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
 
-  /* "gryphon/lib/models/trade.pyx":214
+  /* "gryphon/lib/models/trade.pyx":217
  *         return None
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def exchange_name(self):
  *         if self.order:
  */
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 217, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_exchange_name_2, __pyx_t_5) < 0) __PYX_ERR(0, 215, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_exchange_name_2, __pyx_t_5) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":222
+  /* "gryphon/lib/models/trade.pyx":225
  *         return None
  * 
  *     def convert_to_currency(self, amount, currency):             # <<<<<<<<<<<<<<
  *         if amount.currency == currency:
  *             return amount
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_43convert_to_currency, 0, __pyx_n_s_Trade_convert_to_currency, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__48)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 222, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_45convert_to_currency, 0, __pyx_n_s_Trade_convert_to_currency, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__50)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_convert_to_currency, __pyx_t_5) < 0) __PYX_ERR(0, 222, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_convert_to_currency, __pyx_t_5) < 0) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":232
+  /* "gryphon/lib/models/trade.pyx":235
  *             )
  * 
  *     def price_in_currency(self, currency):             # <<<<<<<<<<<<<<
  *         return self.convert_to_currency(self.price, currency)
  * 
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_45price_in_currency, 0, __pyx_n_s_Trade_price_in_currency, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__50)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 232, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_47price_in_currency, 0, __pyx_n_s_Trade_price_in_currency, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__52)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price_in_currency, __pyx_t_5) < 0) __PYX_ERR(0, 232, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_price_in_currency, __pyx_t_5) < 0) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/trade.pyx":235
+  /* "gryphon/lib/models/trade.pyx":238
  *         return self.convert_to_currency(self.price, currency)
  * 
  *     def fee_in_currency(self, currency):             # <<<<<<<<<<<<<<
  *         # TODO: This code was designed to calculate fees when they are charged in the
  *         # volume currency. I'm not sure if this is true for any supported pairs as of
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_47fee_in_currency, 0, __pyx_n_s_Trade_fee_in_currency, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__52)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 235, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5trade_5Trade_49fee_in_currency, 0, __pyx_n_s_Trade_fee_in_currency, NULL, __pyx_n_s_gryphon_lib_models_trade, __pyx_d, ((PyObject *)__pyx_codeobj__54)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 238, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee_in_currency, __pyx_t_5) < 0) __PYX_ERR(0, 235, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_fee_in_currency, __pyx_t_5) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "gryphon/lib/models/trade.pyx":26

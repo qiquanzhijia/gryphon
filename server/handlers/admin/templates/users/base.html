@@ -1,0 +1,17 @@
+{% extends "../base.html" %}
+
+{% block vars %}
+{% set navbar = 'users' %}
+{% set navleft = 'index' %}
+{% end %}
+
+{% block left_nva %}
+<ul class="nav flex-column nav-pills mt-2">
+  <li class="nav-item">
+    <a class="nav-link  {% if navleft=='index' %}active{% end %}" href="/admin/users">用户账号</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link {% if navleft=='infos' %}active{% end %}" href="/admin/users/infos">用户详情</a>
+  </li>
+</ul>
+{% end %}

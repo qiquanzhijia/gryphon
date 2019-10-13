@@ -1283,6 +1283,7 @@ static const char __pyx_k_OPEN[] = "OPEN";
 static const char __pyx_k_date[] = "date";
 static const char __pyx_k_fiat[] = "fiat";
 static const char __pyx_k_init[] = "__init__";
+static const char __pyx_k_iter[] = "__iter__";
 static const char __pyx_k_json[] = "json";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_mode[] = "mode";
@@ -1372,6 +1373,7 @@ static const char __pyx_k_collections[] = "collections";
 static const char __pyx_k_defaultdict[] = "defaultdict";
 static const char __pyx_k_primary_key[] = "primary_key";
 static const char __pyx_k_Order___init[] = "Order.__init__";
+static const char __pyx_k_Order___iter[] = "Order.__iter__";
 static const char __pyx_k_Order___repr[] = "Order.__repr__";
 static const char __pyx_k_Order_spread[] = "Order.spread";
 static const char __pyx_k_Order_volume[] = "Order.volume";
@@ -1451,6 +1453,7 @@ static PyObject *__pyx_n_s_OPEN;
 static PyObject *__pyx_kp_u_ORDER;
 static PyObject *__pyx_n_s_Order;
 static PyObject *__pyx_n_s_Order___init;
+static PyObject *__pyx_n_s_Order___iter;
 static PyObject *__pyx_n_s_Order___repr;
 static PyObject *__pyx_n_s_Order___unicode;
 static PyObject *__pyx_n_s_Order_calc_position;
@@ -1523,6 +1526,7 @@ static PyObject *__pyx_n_s_idx_status;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_include_fees;
 static PyObject *__pyx_n_s_init;
+static PyObject *__pyx_n_s_iter;
 static PyObject *__pyx_n_s_json;
 static PyObject *__pyx_n_s_lower;
 static PyObject *__pyx_n_s_main;
@@ -1599,29 +1603,30 @@ static PyObject *__pyx_n_s_volume_remaining;
 static PyObject *__pyx_n_s_was_eaten;
 static PyObject *__pyx_n_s_was_partially_eaten;
 static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_actor, PyObject *__pyx_v_mode, PyObject *__pyx_v_volume, PyObject *__pyx_v_price, PyObject *__pyx_v_exchange, PyObject *__pyx_v_exchange_order_id); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_4__repr__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_trades); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_order_details); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_eaten(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_order_details); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14reverse(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_18exchange(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_22volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_26price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_30competitiveness(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_34fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_38spread(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_remaining(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_44position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46calc_position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_include_fees); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__iter__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_4__unicode__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6__repr__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8to_json(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10set_trades(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_trades); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_eaten(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_order_details); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14was_partially_eaten(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_order_details); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16reverse(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_18exchange(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20exchange(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_22volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_26price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_30competitiveness(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32competitiveness(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_34fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_38spread(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40spread(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_filled(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_44volume_remaining(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_48calc_position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_include_fees); /* proto */
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_3;
 static PyObject *__pyx_int_10;
@@ -1654,6 +1659,7 @@ static PyObject *__pyx_tuple__45;
 static PyObject *__pyx_tuple__47;
 static PyObject *__pyx_tuple__49;
 static PyObject *__pyx_tuple__51;
+static PyObject *__pyx_tuple__53;
 static PyObject *__pyx_codeobj__4;
 static PyObject *__pyx_codeobj__6;
 static PyObject *__pyx_codeobj__8;
@@ -1678,6 +1684,7 @@ static PyObject *__pyx_codeobj__44;
 static PyObject *__pyx_codeobj__46;
 static PyObject *__pyx_codeobj__48;
 static PyObject *__pyx_codeobj__50;
+static PyObject *__pyx_codeobj__52;
 /* Late includes */
 
 /* "gryphon/lib/models/order.pyx":53
@@ -2013,7 +2020,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order___init__(CYTHON_UN
  *         self.exchange_order_id = exchange_order_id
  *         self.currency = self.exchange.currency             # <<<<<<<<<<<<<<
  * 
- *     def __unicode__(self):
+ *     def __iter__(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2049,26 +2056,80 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order___init__(CYTHON_UN
 /* "gryphon/lib/models/order.pyx":67
  *         self.currency = self.exchange.currency
  * 
- *     def __unicode__(self):             # <<<<<<<<<<<<<<
- *         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (
- *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         return self
+ * 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_3__unicode__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_3__unicode__ = {"__unicode__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_3__unicode__, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_3__unicode__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_3__iter__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_3__iter__ = {"__iter__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_3__iter__, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_3__iter__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__unicode__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(__pyx_self, ((PyObject *)__pyx_v_self));
+  __Pyx_RefNannySetupContext("__iter__ (wrapper)", 0);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_2__iter__(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__iter__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__iter__", 0);
+
+  /* "gryphon/lib/models/order.pyx":68
+ * 
+ *     def __iter__(self):
+ *         return self             # <<<<<<<<<<<<<<
+ * 
+ *     def __unicode__(self):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(__pyx_v_self);
+  __pyx_r = __pyx_v_self;
+  goto __pyx_L0;
+
+  /* "gryphon/lib/models/order.pyx":67
+ *         self.currency = self.exchange.currency
+ * 
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         return self
+ * 
+ */
+
+  /* function exit code */
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "gryphon/lib/models/order.pyx":70
+ *         return self
+ * 
+ *     def __unicode__(self):             # <<<<<<<<<<<<<<
+ *         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (
+ *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_5__unicode__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_5__unicode__ = {"__unicode__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_5__unicode__, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_5__unicode__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__unicode__ (wrapper)", 0);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_4__unicode__(__pyx_self, ((PyObject *)__pyx_v_self));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_4__unicode__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2078,7 +2139,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("__unicode__", 0);
 
-  /* "gryphon/lib/models/order.pyx":68
+  /* "gryphon/lib/models/order.pyx":71
  * 
  *     def __unicode__(self):
  *         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (             # <<<<<<<<<<<<<<
@@ -2086,7 +2147,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = 0;
   __pyx_t_3 = 127;
@@ -2095,16 +2156,16 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
   __Pyx_GIVEREF(__pyx_kp_u_ORDER);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_ORDER);
 
-  /* "gryphon/lib/models/order.pyx":69
+  /* "gryphon/lib/models/order.pyx":72
  *     def __unicode__(self):
  *         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (
  *             self.order_type, self.exchange.name, self.status, self.price, self.volume)             # <<<<<<<<<<<<<<
  * 
  *     def __repr__(self):
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -2116,12 +2177,12 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
   __pyx_t_2 += 1;
   __Pyx_GIVEREF(__pyx_kp_u_);
   PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u_);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -2133,9 +2194,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
   __pyx_t_2 += 9;
   __Pyx_GIVEREF(__pyx_kp_u_Status);
   PyTuple_SET_ITEM(__pyx_t_1, 4, __pyx_kp_u_Status);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_status); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_status); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
@@ -2147,9 +2208,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
   __pyx_t_2 += 8;
   __Pyx_GIVEREF(__pyx_kp_u_Price);
   PyTuple_SET_ITEM(__pyx_t_1, 6, __pyx_kp_u_Price);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -2161,9 +2222,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
   __pyx_t_2 += 9;
   __Pyx_GIVEREF(__pyx_kp_u_Volume);
   PyTuple_SET_ITEM(__pyx_t_1, 8, __pyx_kp_u_Volume);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
@@ -2176,22 +2237,22 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
   __Pyx_GIVEREF(__pyx_kp_u_BTC);
   PyTuple_SET_ITEM(__pyx_t_1, 10, __pyx_kp_u_BTC);
 
-  /* "gryphon/lib/models/order.pyx":68
+  /* "gryphon/lib/models/order.pyx":71
  * 
  *     def __unicode__(self):
  *         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (             # <<<<<<<<<<<<<<
  *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
  * 
  */
-  __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_1, 11, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_1, 11, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_4;
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":67
- *         self.currency = self.exchange.currency
+  /* "gryphon/lib/models/order.pyx":70
+ *         return self
  * 
  *     def __unicode__(self):             # <<<<<<<<<<<<<<
  *         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (
@@ -2211,7 +2272,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":71
+/* "gryphon/lib/models/order.pyx":74
  *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -2220,20 +2281,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_2__unicode__(CYTHO
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_5__repr__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_5__repr__ = {"__repr__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_5__repr__, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_5__repr__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_7__repr__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_7__repr__ = {"__repr__", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_7__repr__, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_7__repr__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__repr__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_4__repr__(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_6__repr__(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_4__repr__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6__repr__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2241,7 +2302,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_4__repr__(CYTHON_U
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "gryphon/lib/models/order.pyx":72
+  /* "gryphon/lib/models/order.pyx":75
  * 
  *     def __repr__(self):
  *         return self.to_json()             # <<<<<<<<<<<<<<
@@ -2249,7 +2310,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_4__repr__(CYTHON_U
  *     def to_json(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_to_json); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_to_json); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2263,14 +2324,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_4__repr__(CYTHON_U
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":71
+  /* "gryphon/lib/models/order.pyx":74
  *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -2291,7 +2352,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_4__repr__(CYTHON_U
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":74
+/* "gryphon/lib/models/order.pyx":77
  *         return self.to_json()
  * 
  *     def to_json(self):             # <<<<<<<<<<<<<<
@@ -2300,20 +2361,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_4__repr__(CYTHON_U
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_7to_json(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_7to_json = {"to_json", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_7to_json, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_7to_json(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_9to_json(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_9to_json = {"to_json", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_9to_json, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_9to_json(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("to_json (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_8to_json(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8to_json(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_t = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -2328,7 +2389,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UN
   PyObject *__pyx_t_9 = NULL;
   __Pyx_RefNannySetupContext("to_json", 0);
 
-  /* "gryphon/lib/models/order.pyx":75
+  /* "gryphon/lib/models/order.pyx":78
  * 
  *     def to_json(self):
  *         return json.dumps({             # <<<<<<<<<<<<<<
@@ -2336,161 +2397,161 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UN
  *             'unique_id':self.unique_id,
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_json); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_json); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dumps); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dumps); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":76
+  /* "gryphon/lib/models/order.pyx":79
  *     def to_json(self):
  *         return json.dumps({
  *             'order_id':self.order_id,             # <<<<<<<<<<<<<<
  *             'unique_id':self.unique_id,
  *             'exchange_order_id':self.exchange_order_id,
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_order_id, __pyx_t_3) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_order_id, __pyx_t_3) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/order.pyx":77
+  /* "gryphon/lib/models/order.pyx":80
  *         return json.dumps({
  *             'order_id':self.order_id,
  *             'unique_id':self.unique_id,             # <<<<<<<<<<<<<<
  *             'exchange_order_id':self.exchange_order_id,
  *             'time_created':unicode(self.time_created),
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_unique_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_unique_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_unique_id, __pyx_t_3) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_unique_id, __pyx_t_3) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/order.pyx":78
+  /* "gryphon/lib/models/order.pyx":81
  *             'order_id':self.order_id,
  *             'unique_id':self.unique_id,
  *             'exchange_order_id':self.exchange_order_id,             # <<<<<<<<<<<<<<
  *             'time_created':unicode(self.time_created),
  *             'time_executed':unicode(self.time_executed),
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_order_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_order_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_exchange_order_id, __pyx_t_3) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_exchange_order_id, __pyx_t_3) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/order.pyx":79
+  /* "gryphon/lib/models/order.pyx":82
  *             'unique_id':self.unique_id,
  *             'exchange_order_id':self.exchange_order_id,
  *             'time_created':unicode(self.time_created),             # <<<<<<<<<<<<<<
  *             'time_executed':unicode(self.time_executed),
  *             'exchange':self.exchange.name,
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_time_created); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_time_created); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_Unicode(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Unicode(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_time_created, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_time_created, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/order.pyx":80
+  /* "gryphon/lib/models/order.pyx":83
  *             'exchange_order_id':self.exchange_order_id,
  *             'time_created':unicode(self.time_created),
  *             'time_executed':unicode(self.time_executed),             # <<<<<<<<<<<<<<
  *             'exchange':self.exchange.name,
  *             'status':self.status,
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_time_executed); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_time_executed); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_Unicode(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Unicode(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_time_executed, __pyx_t_3) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_time_executed, __pyx_t_3) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/order.pyx":81
+  /* "gryphon/lib/models/order.pyx":84
  *             'time_created':unicode(self.time_created),
  *             'time_executed':unicode(self.time_executed),
  *             'exchange':self.exchange.name,             # <<<<<<<<<<<<<<
  *             'status':self.status,
  *             'order_type': self.order_type,
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_exchange, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_exchange, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/order.pyx":82
+  /* "gryphon/lib/models/order.pyx":85
  *             'time_executed':unicode(self.time_executed),
  *             'exchange':self.exchange.name,
  *             'status':self.status,             # <<<<<<<<<<<<<<
  *             'order_type': self.order_type,
  *             'price':self.price,
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_status); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_status); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_status, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_status, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/order.pyx":83
+  /* "gryphon/lib/models/order.pyx":86
  *             'exchange':self.exchange.name,
  *             'status':self.status,
  *             'order_type': self.order_type,             # <<<<<<<<<<<<<<
  *             'price':self.price,
  *             'volume':self.volume,
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_order_type, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_order_type, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/order.pyx":84
+  /* "gryphon/lib/models/order.pyx":87
  *             'status':self.status,
  *             'order_type': self.order_type,
  *             'price':self.price,             # <<<<<<<<<<<<<<
  *             'volume':self.volume,
  *             'trades': ["%s @ %s" % (t.volume, t.price) for t in self.trades]
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_price, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_price, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/order.pyx":85
+  /* "gryphon/lib/models/order.pyx":88
  *             'order_type': self.order_type,
  *             'price':self.price,
  *             'volume':self.volume,             # <<<<<<<<<<<<<<
  *             'trades': ["%s @ %s" % (t.volume, t.price) for t in self.trades]
  *         }, ensure_ascii=False)
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_volume, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_volume, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/order.pyx":86
+  /* "gryphon/lib/models/order.pyx":89
  *             'price':self.price,
  *             'volume':self.volume,
  *             'trades': ["%s @ %s" % (t.volume, t.price) for t in self.trades]             # <<<<<<<<<<<<<<
  *         }, ensure_ascii=False)
  * 
  */
-  __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trades); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trades); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
     __pyx_t_5 = __pyx_t_3; __Pyx_INCREF(__pyx_t_5); __pyx_t_6 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 86, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 86, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 89, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -2498,17 +2559,17 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UN
       if (likely(PyList_CheckExact(__pyx_t_5))) {
         if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_5)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 86, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 89, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 86, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 89, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -2518,7 +2579,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UN
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 86, __pyx_L1_error)
+          else __PYX_ERR(0, 89, __pyx_L1_error)
         }
         break;
       }
@@ -2526,11 +2587,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UN
     }
     __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_volume); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_volume); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_price); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 86, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_price); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 86, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_3);
@@ -2538,48 +2599,48 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UN
     PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_8);
     __pyx_t_3 = 0;
     __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyString_Format(__pyx_kp_s_s_s, __pyx_t_9); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 86, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyString_Format(__pyx_kp_s_s_s, __pyx_t_9); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_4, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 86, __pyx_L1_error)
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_4, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_trades, __pyx_t_4) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_trades, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/order.pyx":75
+  /* "gryphon/lib/models/order.pyx":78
  * 
  *     def to_json(self):
  *         return json.dumps({             # <<<<<<<<<<<<<<
  *             'order_id':self.order_id,
  *             'unique_id':self.unique_id,
  */
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":87
+  /* "gryphon/lib/models/order.pyx":90
  *             'volume':self.volume,
  *             'trades': ["%s @ %s" % (t.volume, t.price) for t in self.trades]
  *         }, ensure_ascii=False)             # <<<<<<<<<<<<<<
  * 
  *     def set_trades(self, trades):
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_ensure_ascii, Py_False) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_ensure_ascii, Py_False) < 0) __PYX_ERR(0, 90, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":75
+  /* "gryphon/lib/models/order.pyx":78
  * 
  *     def to_json(self):
  *         return json.dumps({             # <<<<<<<<<<<<<<
  *             'order_id':self.order_id,
  *             'unique_id':self.unique_id,
  */
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2588,7 +2649,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UN
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":74
+  /* "gryphon/lib/models/order.pyx":77
  *         return self.to_json()
  * 
  *     def to_json(self):             # <<<<<<<<<<<<<<
@@ -2614,18 +2675,18 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_6to_json(CYTHON_UN
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":89
+/* "gryphon/lib/models/order.pyx":92
  *         }, ensure_ascii=False)
  * 
  *     def set_trades(self, trades):             # <<<<<<<<<<<<<<
  *         self.trades = []
- *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import
+ *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import todo
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_9set_trades(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_9set_trades = {"set_trades", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_9set_trades, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_9set_trades(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_11set_trades(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_11set_trades = {"set_trades", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_11set_trades, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_11set_trades(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_trades = 0;
   PyObject *__pyx_r = 0;
@@ -2654,11 +2715,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_9set_trades(PyObje
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_trades)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("set_trades", 1, 2, 2, 1); __PYX_ERR(0, 89, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("set_trades", 1, 2, 2, 1); __PYX_ERR(0, 92, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "set_trades") < 0)) __PYX_ERR(0, 89, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "set_trades") < 0)) __PYX_ERR(0, 92, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2671,20 +2732,20 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_9set_trades(PyObje
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("set_trades", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 89, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("set_trades", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 92, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.set_trades", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(__pyx_self, __pyx_v_self, __pyx_v_trades);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_10set_trades(__pyx_self, __pyx_v_self, __pyx_v_trades);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_trades) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10set_trades(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_trades) {
   PyObject *__pyx_v_Trade = NULL;
   PyObject *__pyx_v_trade = NULL;
   PyObject *__pyx_v_new_trade = NULL;
@@ -2705,43 +2766,43 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
   PyObject *__pyx_t_13 = NULL;
   __Pyx_RefNannySetupContext("set_trades", 0);
 
-  /* "gryphon/lib/models/order.pyx":90
+  /* "gryphon/lib/models/order.pyx":93
  * 
  *     def set_trades(self, trades):
  *         self.trades = []             # <<<<<<<<<<<<<<
- *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import
+ *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import todo
  *         for trade in trades:
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 90, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_trades, __pyx_t_1) < 0) __PYX_ERR(0, 90, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_trades, __pyx_t_1) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":91
+  /* "gryphon/lib/models/order.pyx":94
  *     def set_trades(self, trades):
  *         self.trades = []
- *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import             # <<<<<<<<<<<<<<
+ *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import todo             # <<<<<<<<<<<<<<
  *         for trade in trades:
  *             new_trade = Trade(
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_Trade);
   __Pyx_GIVEREF(__pyx_n_s_Trade);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_Trade);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_trade, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_trade, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Trade); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Trade); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_t_1);
   __pyx_v_Trade = __pyx_t_1;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/order.pyx":92
+  /* "gryphon/lib/models/order.pyx":95
  *         self.trades = []
- *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import
+ *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import todo
  *         for trade in trades:             # <<<<<<<<<<<<<<
  *             new_trade = Trade(
  *                 self.order_type,
@@ -2750,26 +2811,26 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
     __pyx_t_2 = __pyx_v_trades; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
     __pyx_t_4 = NULL;
   } else {
-    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_trades); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
+    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_trades); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 95, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
+    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_4)) {
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 92, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 95, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 92, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 95, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -2779,7 +2840,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 92, __pyx_L1_error)
+          else __PYX_ERR(0, 95, __pyx_L1_error)
         }
         break;
       }
@@ -2788,46 +2849,46 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
     __Pyx_XDECREF_SET(__pyx_v_trade, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "gryphon/lib/models/order.pyx":94
+    /* "gryphon/lib/models/order.pyx":97
  *         for trade in trades:
  *             new_trade = Trade(
  *                 self.order_type,             # <<<<<<<<<<<<<<
  *                 trade['fiat'],
  *                 trade['fee'],
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 94, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_order_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
 
-    /* "gryphon/lib/models/order.pyx":95
+    /* "gryphon/lib/models/order.pyx":98
  *             new_trade = Trade(
  *                 self.order_type,
  *                 trade['fiat'],             # <<<<<<<<<<<<<<
  *                 trade['fee'],
  *                 trade[self._volume_currency.lower()],
  */
-    __pyx_t_6 = __Pyx_PyObject_Dict_GetItem(__pyx_v_trade, __pyx_n_s_fiat); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 95, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Dict_GetItem(__pyx_v_trade, __pyx_n_s_fiat); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 98, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
 
-    /* "gryphon/lib/models/order.pyx":96
+    /* "gryphon/lib/models/order.pyx":99
  *                 self.order_type,
  *                 trade['fiat'],
  *                 trade['fee'],             # <<<<<<<<<<<<<<
  *                 trade[self._volume_currency.lower()],
  *                 trade['trade_id'],
  */
-    __pyx_t_7 = __Pyx_PyObject_Dict_GetItem(__pyx_v_trade, __pyx_n_s_fee); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 96, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_Dict_GetItem(__pyx_v_trade, __pyx_n_s_fee); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
 
-    /* "gryphon/lib/models/order.pyx":97
+    /* "gryphon/lib/models/order.pyx":100
  *                 trade['fiat'],
  *                 trade['fee'],
  *                 trade[self._volume_currency.lower()],             # <<<<<<<<<<<<<<
  *                 trade['trade_id'],
  *                 self)
  */
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 97, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 100, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_lower); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 97, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_lower); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 100, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_t_9 = NULL;
@@ -2842,24 +2903,24 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
     }
     __pyx_t_8 = (__pyx_t_9) ? __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_9) : __Pyx_PyObject_CallNoArg(__pyx_t_10);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 97, __pyx_L1_error)
+    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 100, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __pyx_t_10 = __Pyx_PyObject_GetItem(__pyx_v_trade, __pyx_t_8); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 97, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetItem(__pyx_v_trade, __pyx_t_8); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 100, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "gryphon/lib/models/order.pyx":98
+    /* "gryphon/lib/models/order.pyx":101
  *                 trade['fee'],
  *                 trade[self._volume_currency.lower()],
  *                 trade['trade_id'],             # <<<<<<<<<<<<<<
  *                 self)
  * 
  */
-    __pyx_t_8 = __Pyx_PyObject_Dict_GetItem(__pyx_v_trade, __pyx_n_s_trade_id); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_Dict_GetItem(__pyx_v_trade, __pyx_n_s_trade_id); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
 
-    /* "gryphon/lib/models/order.pyx":99
+    /* "gryphon/lib/models/order.pyx":102
  *                 trade[self._volume_currency.lower()],
  *                 trade['trade_id'],
  *                 self)             # <<<<<<<<<<<<<<
@@ -2882,7 +2943,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_9)) {
       PyObject *__pyx_temp[7] = {__pyx_t_11, __pyx_t_5, __pyx_t_6, __pyx_t_7, __pyx_t_10, __pyx_t_8, __pyx_v_self};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_12, 6+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_12, 6+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -2895,7 +2956,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
       PyObject *__pyx_temp[7] = {__pyx_t_11, __pyx_t_5, __pyx_t_6, __pyx_t_7, __pyx_t_10, __pyx_t_8, __pyx_v_self};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_12, 6+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_12, 6+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -2906,7 +2967,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
     } else
     #endif
     {
-      __pyx_t_13 = PyTuple_New(6+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 93, __pyx_L1_error)
+      __pyx_t_13 = PyTuple_New(6+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 96, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
       if (__pyx_t_11) {
         __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_11); __pyx_t_11 = NULL;
@@ -2929,7 +2990,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
       __pyx_t_7 = 0;
       __pyx_t_10 = 0;
       __pyx_t_8 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     }
@@ -2937,16 +2998,16 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
     __Pyx_XDECREF_SET(__pyx_v_new_trade, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "gryphon/lib/models/order.pyx":101
+    /* "gryphon/lib/models/order.pyx":104
  *                 self)
  * 
  *             new_trade.time_created = epoch(trade['time']).datetime             # <<<<<<<<<<<<<<
  *             # https://github.com/garethdmm/gryphon/issues/44  todo
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_epoch); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 101, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_epoch); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 104, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_13 = __Pyx_PyObject_Dict_GetItem(__pyx_v_trade, __pyx_n_s_time); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 101, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_Dict_GetItem(__pyx_v_trade, __pyx_n_s_time); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 104, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_13);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_9))) {
@@ -2961,18 +3022,18 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
     __pyx_t_1 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_8, __pyx_t_13) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_13);
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 104, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_datetime); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 101, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_datetime); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 104, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_new_trade, __pyx_n_s_time_created, __pyx_t_9) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_new_trade, __pyx_n_s_time_created, __pyx_t_9) < 0) __PYX_ERR(0, 104, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-    /* "gryphon/lib/models/order.pyx":92
+    /* "gryphon/lib/models/order.pyx":95
  *         self.trades = []
- *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import
+ *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import todo
  *         for trade in trades:             # <<<<<<<<<<<<<<
  *             new_trade = Trade(
  *                 self.order_type,
@@ -2980,12 +3041,12 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/order.pyx":89
+  /* "gryphon/lib/models/order.pyx":92
  *         }, ensure_ascii=False)
  * 
  *     def set_trades(self, trades):             # <<<<<<<<<<<<<<
  *         self.trades = []
- *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import
+ *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import todo
  */
 
   /* function exit code */
@@ -3013,7 +3074,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":105
+/* "gryphon/lib/models/order.pyx":108
  * 
  *     # returns position change
  *     def was_eaten(self, order_details):             # <<<<<<<<<<<<<<
@@ -3022,9 +3083,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_8set_trades(CYTHON
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_11was_eaten(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_11was_eaten = {"was_eaten", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_11was_eaten, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_11was_eaten(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_13was_eaten(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_13was_eaten = {"was_eaten", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_13was_eaten, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_13was_eaten(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_order_details = 0;
   PyObject *__pyx_r = 0;
@@ -3053,11 +3114,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_11was_eaten(PyObje
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_order_details)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("was_eaten", 1, 2, 2, 1); __PYX_ERR(0, 105, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("was_eaten", 1, 2, 2, 1); __PYX_ERR(0, 108, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "was_eaten") < 0)) __PYX_ERR(0, 105, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "was_eaten") < 0)) __PYX_ERR(0, 108, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3070,20 +3131,20 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_11was_eaten(PyObje
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("was_eaten", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 105, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("was_eaten", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 108, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.was_eaten", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(__pyx_self, __pyx_v_self, __pyx_v_order_details);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_eaten(__pyx_self, __pyx_v_self, __pyx_v_order_details);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_order_details) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_eaten(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_order_details) {
   PyObject *__pyx_v_old_position = NULL;
   PyObject *__pyx_v_old_position_no_fees = NULL;
   PyObject *__pyx_v_position_change = NULL;
@@ -3097,14 +3158,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("was_eaten", 0);
 
-  /* "gryphon/lib/models/order.pyx":106
+  /* "gryphon/lib/models/order.pyx":109
  *     # returns position change
  *     def was_eaten(self, order_details):
  *         old_position = self.calc_position()             # <<<<<<<<<<<<<<
  *         old_position_no_fees = self.calc_position(include_fees=False)
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -3118,41 +3179,41 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_old_position = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":107
+  /* "gryphon/lib/models/order.pyx":110
  *     def was_eaten(self, order_details):
  *         old_position = self.calc_position()
  *         old_position_no_fees = self.calc_position(include_fees=False)             # <<<<<<<<<<<<<<
  * 
  *         self.time_executed = datetime.utcnow()
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_include_fees, Py_False) < 0) __PYX_ERR(0, 107, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_include_fees, Py_False) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_old_position_no_fees = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/order.pyx":109
+  /* "gryphon/lib/models/order.pyx":112
  *         old_position_no_fees = self.calc_position(include_fees=False)
  * 
  *         self.time_executed = datetime.utcnow()             # <<<<<<<<<<<<<<
  * 
  *         if order_details['%s_total' % self._volume_currency.lower()] <= 0:
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_datetime); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_datetime); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_utcnow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_utcnow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -3167,22 +3228,22 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
   }
   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_time_executed, __pyx_t_3) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_time_executed, __pyx_t_3) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/order.pyx":111
+  /* "gryphon/lib/models/order.pyx":114
  *         self.time_executed = datetime.utcnow()
  * 
  *         if order_details['%s_total' % self._volume_currency.lower()] <= 0:             # <<<<<<<<<<<<<<
  *             self.status = Order.CANCELLED
  *         else:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_1 = NULL;
@@ -3197,37 +3258,37 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
   }
   __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 111, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyString_FormatSafe(__pyx_kp_s_s_total, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyString_FormatSafe(__pyx_kp_s_s_total, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_order_details, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_order_details, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyObject_RichCompare(__pyx_t_3, __pyx_int_0, Py_LE); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_2 = PyObject_RichCompare(__pyx_t_3, __pyx_int_0, Py_LE); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_4) {
 
-    /* "gryphon/lib/models/order.pyx":112
+    /* "gryphon/lib/models/order.pyx":115
  * 
  *         if order_details['%s_total' % self._volume_currency.lower()] <= 0:
  *             self.status = Order.CANCELLED             # <<<<<<<<<<<<<<
  *         else:
  *             self.status = Order.FILLED
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Order); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Order); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 115, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_CANCELLED); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_CANCELLED); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 115, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_t_3) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_t_3) < 0) __PYX_ERR(0, 115, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "gryphon/lib/models/order.pyx":111
+    /* "gryphon/lib/models/order.pyx":114
  *         self.time_executed = datetime.utcnow()
  * 
  *         if order_details['%s_total' % self._volume_currency.lower()] <= 0:             # <<<<<<<<<<<<<<
@@ -3237,7 +3298,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
     goto __pyx_L3;
   }
 
-  /* "gryphon/lib/models/order.pyx":114
+  /* "gryphon/lib/models/order.pyx":117
  *             self.status = Order.CANCELLED
  *         else:
  *             self.status = Order.FILLED             # <<<<<<<<<<<<<<
@@ -3245,24 +3306,24 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
  *             self.time_executed = datetime.utcnow()
  */
   /*else*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Order); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Order); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_FILLED); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_FILLED); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_t_2) < 0) __PYX_ERR(0, 114, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_t_2) < 0) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "gryphon/lib/models/order.pyx":116
+    /* "gryphon/lib/models/order.pyx":119
  *             self.status = Order.FILLED
  *             # TODO store the volume filled amount in order?
  *             self.time_executed = datetime.utcnow()             # <<<<<<<<<<<<<<
  *             self.set_trades(order_details['trades'])
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_datetime); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_datetime); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_utcnow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_utcnow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = NULL;
@@ -3277,22 +3338,22 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
     }
     __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_time_executed, __pyx_t_2) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_time_executed, __pyx_t_2) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "gryphon/lib/models/order.pyx":117
+    /* "gryphon/lib/models/order.pyx":120
  *             # TODO store the volume filled amount in order?
  *             self.time_executed = datetime.utcnow()
  *             self.set_trades(order_details['trades'])             # <<<<<<<<<<<<<<
  * 
  *         position_change = self.position_change(old_position)
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_trades); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_trades); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_order_details, __pyx_n_s_trades); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_order_details, __pyx_n_s_trades); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -3307,21 +3368,21 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
     __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 117, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
   __pyx_L3:;
 
-  /* "gryphon/lib/models/order.pyx":119
+  /* "gryphon/lib/models/order.pyx":122
  *             self.set_trades(order_details['trades'])
  * 
  *         position_change = self.position_change(old_position)             # <<<<<<<<<<<<<<
  *         position_change_no_fees = self.position_change(
  *             old_position_no_fees,
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -3335,54 +3396,54 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
   }
   __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_3, __pyx_v_old_position) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_old_position);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_position_change = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/order.pyx":120
+  /* "gryphon/lib/models/order.pyx":123
  * 
  *         position_change = self.position_change(old_position)
  *         position_change_no_fees = self.position_change(             # <<<<<<<<<<<<<<
  *             old_position_no_fees,
  *             include_fees=False,
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "gryphon/lib/models/order.pyx":121
+  /* "gryphon/lib/models/order.pyx":124
  *         position_change = self.position_change(old_position)
  *         position_change_no_fees = self.position_change(
  *             old_position_no_fees,             # <<<<<<<<<<<<<<
  *             include_fees=False,
  *         )
  */
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_old_position_no_fees);
   __Pyx_GIVEREF(__pyx_v_old_position_no_fees);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_old_position_no_fees);
 
-  /* "gryphon/lib/models/order.pyx":122
+  /* "gryphon/lib/models/order.pyx":125
  *         position_change_no_fees = self.position_change(
  *             old_position_no_fees,
  *             include_fees=False,             # <<<<<<<<<<<<<<
  *         )
  * 
  */
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_include_fees, Py_False) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_include_fees, Py_False) < 0) __PYX_ERR(0, 125, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":120
+  /* "gryphon/lib/models/order.pyx":123
  * 
  *         position_change = self.position_change(old_position)
  *         position_change_no_fees = self.position_change(             # <<<<<<<<<<<<<<
  *             old_position_no_fees,
  *             include_fees=False,
  */
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -3390,7 +3451,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
   __pyx_v_position_change_no_fees = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/order.pyx":125
+  /* "gryphon/lib/models/order.pyx":128
  *         )
  * 
  *         return position_change, position_change_no_fees             # <<<<<<<<<<<<<<
@@ -3398,7 +3459,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
  *     # returns position change
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_INCREF(__pyx_v_position_change);
   __Pyx_GIVEREF(__pyx_v_position_change);
@@ -3410,7 +3471,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":105
+  /* "gryphon/lib/models/order.pyx":108
  * 
  *     # returns position change
  *     def was_eaten(self, order_details):             # <<<<<<<<<<<<<<
@@ -3436,7 +3497,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":128
+/* "gryphon/lib/models/order.pyx":131
  * 
  *     # returns position change
  *     def was_partially_eaten(self, order_details):             # <<<<<<<<<<<<<<
@@ -3445,9 +3506,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_10was_eaten(CYTHON
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_13was_partially_eaten(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_13was_partially_eaten = {"was_partially_eaten", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_13was_partially_eaten, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_13was_partially_eaten(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_15was_partially_eaten(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_15was_partially_eaten = {"was_partially_eaten", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_15was_partially_eaten, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_15was_partially_eaten(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_order_details = 0;
   PyObject *__pyx_r = 0;
@@ -3476,11 +3537,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_13was_partially_ea
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_order_details)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("was_partially_eaten", 1, 2, 2, 1); __PYX_ERR(0, 128, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("was_partially_eaten", 1, 2, 2, 1); __PYX_ERR(0, 131, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "was_partially_eaten") < 0)) __PYX_ERR(0, 128, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "was_partially_eaten") < 0)) __PYX_ERR(0, 131, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3493,20 +3554,20 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_13was_partially_ea
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("was_partially_eaten", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 128, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("was_partially_eaten", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 131, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.was_partially_eaten", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_eaten(__pyx_self, __pyx_v_self, __pyx_v_order_details);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_14was_partially_eaten(__pyx_self, __pyx_v_self, __pyx_v_order_details);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_eaten(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_order_details) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14was_partially_eaten(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_order_details) {
   PyObject *__pyx_v_old_position = NULL;
   PyObject *__pyx_v_old_position_no_fees = NULL;
   PyObject *__pyx_v_position_change = NULL;
@@ -3519,14 +3580,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_ea
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("was_partially_eaten", 0);
 
-  /* "gryphon/lib/models/order.pyx":129
+  /* "gryphon/lib/models/order.pyx":132
  *     # returns position change
  *     def was_partially_eaten(self, order_details):
  *         old_position = self.calc_position()             # <<<<<<<<<<<<<<
  *         old_position_no_fees = self.calc_position(include_fees=False)
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -3540,41 +3601,41 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_ea
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_old_position = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":130
+  /* "gryphon/lib/models/order.pyx":133
  *     def was_partially_eaten(self, order_details):
  *         old_position = self.calc_position()
  *         old_position_no_fees = self.calc_position(include_fees=False)             # <<<<<<<<<<<<<<
  * 
  *         self.set_trades(order_details['trades'])
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_include_fees, Py_False) < 0) __PYX_ERR(0, 130, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_include_fees, Py_False) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_old_position_no_fees = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/order.pyx":132
+  /* "gryphon/lib/models/order.pyx":135
  *         old_position_no_fees = self.calc_position(include_fees=False)
  * 
  *         self.set_trades(order_details['trades'])             # <<<<<<<<<<<<<<
  * 
  *         position_change = self.position_change(old_position)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_trades); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_trades); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_order_details, __pyx_n_s_trades); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_order_details, __pyx_n_s_trades); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -3589,19 +3650,19 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_ea
   __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/order.pyx":134
+  /* "gryphon/lib/models/order.pyx":137
  *         self.set_trades(order_details['trades'])
  * 
  *         position_change = self.position_change(old_position)             # <<<<<<<<<<<<<<
  *         position_change_no_fees = self.position_change(old_position_no_fees, include_fees=False)
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_1 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -3615,30 +3676,30 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_ea
   }
   __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_1, __pyx_v_old_position) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_old_position);
   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_position_change = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "gryphon/lib/models/order.pyx":135
+  /* "gryphon/lib/models/order.pyx":138
  * 
  *         position_change = self.position_change(old_position)
  *         position_change_no_fees = self.position_change(old_position_no_fees, include_fees=False)             # <<<<<<<<<<<<<<
  * 
  *         return position_change, position_change_no_fees
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_old_position_no_fees);
   __Pyx_GIVEREF(__pyx_v_old_position_no_fees);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_old_position_no_fees);
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_include_fees, Py_False) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_include_fees, Py_False) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -3646,7 +3707,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_ea
   __pyx_v_position_change_no_fees = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "gryphon/lib/models/order.pyx":137
+  /* "gryphon/lib/models/order.pyx":140
  *         position_change_no_fees = self.position_change(old_position_no_fees, include_fees=False)
  * 
  *         return position_change, position_change_no_fees             # <<<<<<<<<<<<<<
@@ -3654,7 +3715,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_ea
  *     # returns position change
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_v_position_change);
   __Pyx_GIVEREF(__pyx_v_position_change);
@@ -3666,7 +3727,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_ea
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":128
+  /* "gryphon/lib/models/order.pyx":131
  * 
  *     # returns position change
  *     def was_partially_eaten(self, order_details):             # <<<<<<<<<<<<<<
@@ -3692,7 +3753,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_ea
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":140
+/* "gryphon/lib/models/order.pyx":143
  * 
  *     # returns position change
  *     def reverse(self):             # <<<<<<<<<<<<<<
@@ -3701,20 +3762,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_12was_partially_ea
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_15reverse(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_15reverse = {"reverse", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_15reverse, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_15reverse(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_17reverse(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_17reverse = {"reverse", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_17reverse, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_17reverse(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("reverse (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_14reverse(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_16reverse(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14reverse(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16reverse(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_old_position = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -3724,43 +3785,43 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14reverse(CYTHON_U
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("reverse", 0);
 
-  /* "gryphon/lib/models/order.pyx":141
+  /* "gryphon/lib/models/order.pyx":144
  *     # returns position change
  *     def reverse(self):
  *         old_position = self.position             # <<<<<<<<<<<<<<
  *         self.status = Order.REVERSED
  *         self.set_trades([])
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_old_position = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":142
+  /* "gryphon/lib/models/order.pyx":145
  *     def reverse(self):
  *         old_position = self.position
  *         self.status = Order.REVERSED             # <<<<<<<<<<<<<<
  *         self.set_trades([])
  *         return self.position_change(old_position)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Order); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_REVERSED); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_REVERSED); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_t_2) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_t_2) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/order.pyx":143
+  /* "gryphon/lib/models/order.pyx":146
  *         old_position = self.position
  *         self.status = Order.REVERSED
  *         self.set_trades([])             # <<<<<<<<<<<<<<
  *         return self.position_change(old_position)
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_trades); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_trades); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -3775,12 +3836,12 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14reverse(CYTHON_U
   __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/order.pyx":144
+  /* "gryphon/lib/models/order.pyx":147
  *         self.status = Order.REVERSED
  *         self.set_trades([])
  *         return self.position_change(old_position)             # <<<<<<<<<<<<<<
@@ -3788,7 +3849,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14reverse(CYTHON_U
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_position_change); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -3802,14 +3863,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14reverse(CYTHON_U
   }
   __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_3, __pyx_v_old_position) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_old_position);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":140
+  /* "gryphon/lib/models/order.pyx":143
  * 
  *     # returns position change
  *     def reverse(self):             # <<<<<<<<<<<<<<
@@ -3832,7 +3893,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14reverse(CYTHON_U
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":147
+/* "gryphon/lib/models/order.pyx":150
  * 
  *     @property
  *     def exchange(self):             # <<<<<<<<<<<<<<
@@ -3841,20 +3902,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_14reverse(CYTHON_U
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_17exchange(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_17exchange = {"exchange", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_17exchange, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_17exchange(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_19exchange(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_19exchange = {"exchange", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_19exchange, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_19exchange(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("exchange (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_18exchange(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_18exchange(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -3865,18 +3926,18 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("exchange", 0);
 
-  /* "gryphon/lib/models/order.pyx":148
+  /* "gryphon/lib/models/order.pyx":151
  *     @property
  *     def exchange(self):
  *         if hasattr(self, '_exchange'):             # <<<<<<<<<<<<<<
  *             return self._exchange
  *         elif self._exchange_name:
  */
-  __pyx_t_1 = __Pyx_HasAttr(__pyx_v_self, __pyx_n_s_exchange_2); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 148, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_HasAttr(__pyx_v_self, __pyx_n_s_exchange_2); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 151, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "gryphon/lib/models/order.pyx":149
+    /* "gryphon/lib/models/order.pyx":152
  *     def exchange(self):
  *         if hasattr(self, '_exchange'):
  *             return self._exchange             # <<<<<<<<<<<<<<
@@ -3884,13 +3945,13 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_
  *             self._exchange = make_exchange_from_key(self._exchange_name)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 149, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 152, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/order.pyx":148
+    /* "gryphon/lib/models/order.pyx":151
  *     @property
  *     def exchange(self):
  *         if hasattr(self, '_exchange'):             # <<<<<<<<<<<<<<
@@ -3899,29 +3960,29 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_
  */
   }
 
-  /* "gryphon/lib/models/order.pyx":150
+  /* "gryphon/lib/models/order.pyx":153
  *         if hasattr(self, '_exchange'):
  *             return self._exchange
  *         elif self._exchange_name:             # <<<<<<<<<<<<<<
  *             self._exchange = make_exchange_from_key(self._exchange_name)
  *             return self._exchange
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_2) {
 
-    /* "gryphon/lib/models/order.pyx":151
+    /* "gryphon/lib/models/order.pyx":154
  *             return self._exchange
  *         elif self._exchange_name:
  *             self._exchange = make_exchange_from_key(self._exchange_name)             # <<<<<<<<<<<<<<
  *             return self._exchange
  *         else:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_make_exchange_from_key); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_make_exchange_from_key); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 154, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 154, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -3936,13 +3997,13 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_
     __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_6, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 154, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2, __pyx_t_3) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2, __pyx_t_3) < 0) __PYX_ERR(0, 154, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "gryphon/lib/models/order.pyx":152
+    /* "gryphon/lib/models/order.pyx":155
  *         elif self._exchange_name:
  *             self._exchange = make_exchange_from_key(self._exchange_name)
  *             return self._exchange             # <<<<<<<<<<<<<<
@@ -3950,13 +4011,13 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_
  *             return None
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 152, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 155, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/order.pyx":150
+    /* "gryphon/lib/models/order.pyx":153
  *         if hasattr(self, '_exchange'):
  *             return self._exchange
  *         elif self._exchange_name:             # <<<<<<<<<<<<<<
@@ -3965,7 +4026,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_
  */
   }
 
-  /* "gryphon/lib/models/order.pyx":154
+  /* "gryphon/lib/models/order.pyx":157
  *             return self._exchange
  *         else:
  *             return None             # <<<<<<<<<<<<<<
@@ -3978,7 +4039,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_
     goto __pyx_L0;
   }
 
-  /* "gryphon/lib/models/order.pyx":147
+  /* "gryphon/lib/models/order.pyx":150
  * 
  *     @property
  *     def exchange(self):             # <<<<<<<<<<<<<<
@@ -4000,7 +4061,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":157
+/* "gryphon/lib/models/order.pyx":160
  * 
  *     @exchange.setter
  *     def exchange(self, value):             # <<<<<<<<<<<<<<
@@ -4009,9 +4070,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_16exchange(CYTHON_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_19exchange(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_19exchange = {"exchange", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_19exchange, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_19exchange(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_21exchange(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_21exchange = {"exchange", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_21exchange, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_21exchange(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_value = 0;
   PyObject *__pyx_r = 0;
@@ -4040,11 +4101,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_19exchange(PyObjec
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("exchange", 1, 2, 2, 1); __PYX_ERR(0, 157, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("exchange", 1, 2, 2, 1); __PYX_ERR(0, 160, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "exchange") < 0)) __PYX_ERR(0, 157, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "exchange") < 0)) __PYX_ERR(0, 160, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4057,51 +4118,51 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_19exchange(PyObjec
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("exchange", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 157, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("exchange", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 160, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.exchange", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_18exchange(__pyx_self, __pyx_v_self, __pyx_v_value);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_20exchange(__pyx_self, __pyx_v_self, __pyx_v_value);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_18exchange(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20exchange(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("exchange", 0);
 
-  /* "gryphon/lib/models/order.pyx":158
+  /* "gryphon/lib/models/order.pyx":161
  *     @exchange.setter
  *     def exchange(self, value):
  *         self._exchange = value             # <<<<<<<<<<<<<<
  *         self._exchange_name = self._exchange.name
  * 
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2, __pyx_v_value) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2, __pyx_v_value) < 0) __PYX_ERR(0, 161, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":159
+  /* "gryphon/lib/models/order.pyx":162
  *     def exchange(self, value):
  *         self._exchange = value
  *         self._exchange_name = self._exchange.name             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exchange_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name, __pyx_t_2) < 0) __PYX_ERR(0, 159, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_exchange_name, __pyx_t_2) < 0) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/order.pyx":157
+  /* "gryphon/lib/models/order.pyx":160
  * 
  *     @exchange.setter
  *     def exchange(self, value):             # <<<<<<<<<<<<<<
@@ -4123,7 +4184,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_18exchange(CYTHON_
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":163
+/* "gryphon/lib/models/order.pyx":166
  * 
  *     @property
  *     def volume(self):             # <<<<<<<<<<<<<<
@@ -4132,20 +4193,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_18exchange(CYTHON_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_21volume(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_21volume = {"volume", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_21volume, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_21volume(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_23volume(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_23volume = {"volume", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_23volume, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_23volume(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("volume (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_22volume(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_22volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4159,21 +4220,21 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
   PyObject *__pyx_t_9 = NULL;
   __Pyx_RefNannySetupContext("volume", 0);
 
-  /* "gryphon/lib/models/order.pyx":164
+  /* "gryphon/lib/models/order.pyx":167
  *     @property
  *     def volume(self):
  *         if not self._volume:             # <<<<<<<<<<<<<<
  *             return None
  *         return Money(self._volume, self._volume_currency)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (__pyx_t_3) {
 
-    /* "gryphon/lib/models/order.pyx":165
+    /* "gryphon/lib/models/order.pyx":168
  *     def volume(self):
  *         if not self._volume:
  *             return None             # <<<<<<<<<<<<<<
@@ -4184,7 +4245,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/order.pyx":164
+    /* "gryphon/lib/models/order.pyx":167
  *     @property
  *     def volume(self):
  *         if not self._volume:             # <<<<<<<<<<<<<<
@@ -4193,7 +4254,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
  */
   }
 
-  /* "gryphon/lib/models/order.pyx":166
+  /* "gryphon/lib/models/order.pyx":169
  *         if not self._volume:
  *             return None
  *         return Money(self._volume, self._volume_currency)             # <<<<<<<<<<<<<<
@@ -4201,11 +4262,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
  *     @volume.setter
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Money); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Money); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = NULL;
   __pyx_t_8 = 0;
@@ -4222,7 +4283,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -4232,7 +4293,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -4240,7 +4301,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
   } else
   #endif
   {
-    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     if (__pyx_t_7) {
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -4251,7 +4312,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
     PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_t_6);
     __pyx_t_5 = 0;
     __pyx_t_6 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
@@ -4260,7 +4321,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":163
+  /* "gryphon/lib/models/order.pyx":166
  * 
  *     @property
  *     def volume(self):             # <<<<<<<<<<<<<<
@@ -4284,7 +4345,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":169
+/* "gryphon/lib/models/order.pyx":172
  * 
  *     @volume.setter
  *     def volume(self, value):             # <<<<<<<<<<<<<<
@@ -4293,9 +4354,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_20volume(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_23volume(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_23volume = {"volume", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_23volume, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_23volume(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_25volume(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_25volume = {"volume", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_25volume, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_25volume(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_value = 0;
   PyObject *__pyx_r = 0;
@@ -4324,11 +4385,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_23volume(PyObject 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("volume", 1, 2, 2, 1); __PYX_ERR(0, 169, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("volume", 1, 2, 2, 1); __PYX_ERR(0, 172, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "volume") < 0)) __PYX_ERR(0, 169, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "volume") < 0)) __PYX_ERR(0, 172, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4341,50 +4402,50 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_23volume(PyObject 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("volume", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 169, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("volume", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 172, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.volume", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_22volume(__pyx_self, __pyx_v_self, __pyx_v_value);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_24volume(__pyx_self, __pyx_v_self, __pyx_v_value);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_22volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24volume(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("volume", 0);
 
-  /* "gryphon/lib/models/order.pyx":170
+  /* "gryphon/lib/models/order.pyx":173
  *     @volume.setter
  *     def volume(self, value):
  *         self._volume = value.amount             # <<<<<<<<<<<<<<
  *         self._volume_currency = value.currency
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_volume_2, __pyx_t_1) < 0) __PYX_ERR(0, 170, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_volume_2, __pyx_t_1) < 0) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":171
+  /* "gryphon/lib/models/order.pyx":174
  *     def volume(self, value):
  *         self._volume = value.amount
  *         self._volume_currency = value.currency             # <<<<<<<<<<<<<<
  * 
  *     @property
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency, __pyx_t_1) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency, __pyx_t_1) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":169
+  /* "gryphon/lib/models/order.pyx":172
  * 
  *     @volume.setter
  *     def volume(self, value):             # <<<<<<<<<<<<<<
@@ -4405,7 +4466,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_22volume(CYTHON_UN
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":174
+/* "gryphon/lib/models/order.pyx":177
  * 
  *     @property
  *     def price(self):             # <<<<<<<<<<<<<<
@@ -4414,20 +4475,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_22volume(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_25price(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_25price = {"price", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_25price, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_25price(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_27price(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_27price = {"price", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_27price, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_27price(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("price (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_26price(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_26price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4441,21 +4502,21 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
   PyObject *__pyx_t_9 = NULL;
   __Pyx_RefNannySetupContext("price", 0);
 
-  /* "gryphon/lib/models/order.pyx":175
+  /* "gryphon/lib/models/order.pyx":178
  *     @property
  *     def price(self):
  *         if not self._price:             # <<<<<<<<<<<<<<
  *             return None
  *         return Money(self._price, self._price_currency)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (__pyx_t_3) {
 
-    /* "gryphon/lib/models/order.pyx":176
+    /* "gryphon/lib/models/order.pyx":179
  *     def price(self):
  *         if not self._price:
  *             return None             # <<<<<<<<<<<<<<
@@ -4466,7 +4527,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/order.pyx":175
+    /* "gryphon/lib/models/order.pyx":178
  *     @property
  *     def price(self):
  *         if not self._price:             # <<<<<<<<<<<<<<
@@ -4475,7 +4536,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
  */
   }
 
-  /* "gryphon/lib/models/order.pyx":177
+  /* "gryphon/lib/models/order.pyx":180
  *         if not self._price:
  *             return None
  *         return Money(self._price, self._price_currency)             # <<<<<<<<<<<<<<
@@ -4483,11 +4544,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
  *     @price.setter
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Money); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 177, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Money); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 177, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 177, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_price_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = NULL;
   __pyx_t_8 = 0;
@@ -4504,7 +4565,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -4514,7 +4575,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -4522,7 +4583,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
   } else
   #endif
   {
-    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 177, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     if (__pyx_t_7) {
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -4533,7 +4594,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
     PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_t_6);
     __pyx_t_5 = 0;
     __pyx_t_6 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
@@ -4542,7 +4603,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":174
+  /* "gryphon/lib/models/order.pyx":177
  * 
  *     @property
  *     def price(self):             # <<<<<<<<<<<<<<
@@ -4566,7 +4627,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":180
+/* "gryphon/lib/models/order.pyx":183
  * 
  *     @price.setter
  *     def price(self, value):             # <<<<<<<<<<<<<<
@@ -4575,9 +4636,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_24price(CYTHON_UNU
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_27price(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_27price = {"price", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_27price, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_27price(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_29price(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_29price = {"price", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_29price, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_29price(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_value = 0;
   PyObject *__pyx_r = 0;
@@ -4606,11 +4667,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_27price(PyObject *
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("price", 1, 2, 2, 1); __PYX_ERR(0, 180, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("price", 1, 2, 2, 1); __PYX_ERR(0, 183, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "price") < 0)) __PYX_ERR(0, 180, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "price") < 0)) __PYX_ERR(0, 183, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4623,50 +4684,50 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_27price(PyObject *
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("price", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 180, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("price", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 183, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.price", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_26price(__pyx_self, __pyx_v_self, __pyx_v_value);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_28price(__pyx_self, __pyx_v_self, __pyx_v_value);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_26price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28price(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("price", 0);
 
-  /* "gryphon/lib/models/order.pyx":181
+  /* "gryphon/lib/models/order.pyx":184
  *     @price.setter
  *     def price(self, value):
  *         self._price = value.amount             # <<<<<<<<<<<<<<
  *         self._price_currency = value.currency
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 184, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_price_2, __pyx_t_1) < 0) __PYX_ERR(0, 181, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_price_2, __pyx_t_1) < 0) __PYX_ERR(0, 184, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":182
+  /* "gryphon/lib/models/order.pyx":185
  *     def price(self, value):
  *         self._price = value.amount
  *         self._price_currency = value.currency             # <<<<<<<<<<<<<<
  * 
  *     @property
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_price_currency, __pyx_t_1) < 0) __PYX_ERR(0, 182, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_price_currency, __pyx_t_1) < 0) __PYX_ERR(0, 185, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":180
+  /* "gryphon/lib/models/order.pyx":183
  * 
  *     @price.setter
  *     def price(self, value):             # <<<<<<<<<<<<<<
@@ -4687,7 +4748,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_26price(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":185
+/* "gryphon/lib/models/order.pyx":188
  * 
  *     @property
  *     def competitiveness(self):             # <<<<<<<<<<<<<<
@@ -4696,20 +4757,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_26price(CYTHON_UNU
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_29competitiveness(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_29competitiveness = {"competitiveness", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_29competitiveness, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_29competitiveness(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_31competitiveness(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_31competitiveness = {"competitiveness", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_31competitiveness, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_31competitiveness(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("competitiveness (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_30competitiveness(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_30competitiveness(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4721,7 +4782,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("competitiveness", 0);
 
-  /* "gryphon/lib/models/order.pyx":186
+  /* "gryphon/lib/models/order.pyx":189
  *     @property
  *     def competitiveness(self):
  *         return Money(self._competitiveness, self._competitiveness_currency)             # <<<<<<<<<<<<<<
@@ -4729,11 +4790,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(
  *     @competitiveness.setter
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_competitiveness); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_competitiveness); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_competitiveness_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_competitiveness_currency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -4750,7 +4811,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -4760,7 +4821,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -4768,7 +4829,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -4779,7 +4840,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_4);
     __pyx_t_3 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
@@ -4788,7 +4849,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":185
+  /* "gryphon/lib/models/order.pyx":188
  * 
  *     @property
  *     def competitiveness(self):             # <<<<<<<<<<<<<<
@@ -4812,7 +4873,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":189
+/* "gryphon/lib/models/order.pyx":192
  * 
  *     @competitiveness.setter
  *     def competitiveness(self, value):             # <<<<<<<<<<<<<<
@@ -4821,9 +4882,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_28competitiveness(
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_31competitiveness(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_31competitiveness = {"competitiveness", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_31competitiveness, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_31competitiveness(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_33competitiveness(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_33competitiveness = {"competitiveness", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_33competitiveness, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_33competitiveness(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_value = 0;
   PyObject *__pyx_r = 0;
@@ -4852,11 +4913,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_31competitiveness(
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("competitiveness", 1, 2, 2, 1); __PYX_ERR(0, 189, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("competitiveness", 1, 2, 2, 1); __PYX_ERR(0, 192, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "competitiveness") < 0)) __PYX_ERR(0, 189, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "competitiveness") < 0)) __PYX_ERR(0, 192, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4869,50 +4930,50 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_31competitiveness(
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("competitiveness", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 189, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("competitiveness", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 192, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.competitiveness", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_30competitiveness(__pyx_self, __pyx_v_self, __pyx_v_value);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_32competitiveness(__pyx_self, __pyx_v_self, __pyx_v_value);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_30competitiveness(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32competitiveness(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("competitiveness", 0);
 
-  /* "gryphon/lib/models/order.pyx":190
+  /* "gryphon/lib/models/order.pyx":193
  *     @competitiveness.setter
  *     def competitiveness(self, value):
  *         self._competitiveness = value.amount             # <<<<<<<<<<<<<<
  *         self._competitiveness_currency = value.currency
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_competitiveness, __pyx_t_1) < 0) __PYX_ERR(0, 190, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_competitiveness, __pyx_t_1) < 0) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":191
+  /* "gryphon/lib/models/order.pyx":194
  *     def competitiveness(self, value):
  *         self._competitiveness = value.amount
  *         self._competitiveness_currency = value.currency             # <<<<<<<<<<<<<<
  * 
  *     @property
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_competitiveness_currency, __pyx_t_1) < 0) __PYX_ERR(0, 191, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_competitiveness_currency, __pyx_t_1) < 0) __PYX_ERR(0, 194, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":189
+  /* "gryphon/lib/models/order.pyx":192
  * 
  *     @competitiveness.setter
  *     def competitiveness(self, value):             # <<<<<<<<<<<<<<
@@ -4933,7 +4994,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_30competitiveness(
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":194
+/* "gryphon/lib/models/order.pyx":197
  * 
  *     @property
  *     def fundamental_value(self):             # <<<<<<<<<<<<<<
@@ -4942,20 +5003,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_30competitiveness(
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_33fundamental_value(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_33fundamental_value = {"fundamental_value", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_33fundamental_value, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_33fundamental_value(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_35fundamental_value(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_35fundamental_value = {"fundamental_value", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_35fundamental_value, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_35fundamental_value(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("fundamental_value (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_value(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_34fundamental_value(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_34fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4969,21 +5030,21 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
   PyObject *__pyx_t_9 = NULL;
   __Pyx_RefNannySetupContext("fundamental_value", 0);
 
-  /* "gryphon/lib/models/order.pyx":195
+  /* "gryphon/lib/models/order.pyx":198
  *     @property
  *     def fundamental_value(self):
  *         if not self._fundamental_value:             # <<<<<<<<<<<<<<
  *             return None
  *         return Money(self._fundamental_value, self._fundamental_value_currency)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 198, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 198, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (__pyx_t_3) {
 
-    /* "gryphon/lib/models/order.pyx":196
+    /* "gryphon/lib/models/order.pyx":199
  *     def fundamental_value(self):
  *         if not self._fundamental_value:
  *             return None             # <<<<<<<<<<<<<<
@@ -4994,7 +5055,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/order.pyx":195
+    /* "gryphon/lib/models/order.pyx":198
  *     @property
  *     def fundamental_value(self):
  *         if not self._fundamental_value:             # <<<<<<<<<<<<<<
@@ -5003,7 +5064,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
  */
   }
 
-  /* "gryphon/lib/models/order.pyx":197
+  /* "gryphon/lib/models/order.pyx":200
  *         if not self._fundamental_value:
  *             return None
  *         return Money(self._fundamental_value, self._fundamental_value_currency)             # <<<<<<<<<<<<<<
@@ -5011,11 +5072,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
  *     @fundamental_value.setter
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Money); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Money); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 200, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 200, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 200, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = NULL;
   __pyx_t_8 = 0;
@@ -5032,7 +5093,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 200, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -5042,7 +5103,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 200, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -5050,7 +5111,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
   } else
   #endif
   {
-    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 197, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 200, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     if (__pyx_t_7) {
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -5061,7 +5122,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
     PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_t_6);
     __pyx_t_5 = 0;
     __pyx_t_6 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 200, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
@@ -5070,7 +5131,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":194
+  /* "gryphon/lib/models/order.pyx":197
  * 
  *     @property
  *     def fundamental_value(self):             # <<<<<<<<<<<<<<
@@ -5094,7 +5155,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":200
+/* "gryphon/lib/models/order.pyx":203
  * 
  *     @fundamental_value.setter
  *     def fundamental_value(self, value):             # <<<<<<<<<<<<<<
@@ -5103,9 +5164,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_32fundamental_valu
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_35fundamental_value(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_35fundamental_value = {"fundamental_value", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_35fundamental_value, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_35fundamental_value(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_37fundamental_value(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_37fundamental_value = {"fundamental_value", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_37fundamental_value, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_37fundamental_value(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_value = 0;
   PyObject *__pyx_r = 0;
@@ -5134,11 +5195,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_35fundamental_valu
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("fundamental_value", 1, 2, 2, 1); __PYX_ERR(0, 200, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("fundamental_value", 1, 2, 2, 1); __PYX_ERR(0, 203, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fundamental_value") < 0)) __PYX_ERR(0, 200, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fundamental_value") < 0)) __PYX_ERR(0, 203, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5151,50 +5212,50 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_35fundamental_valu
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("fundamental_value", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 200, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("fundamental_value", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 203, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.fundamental_value", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_34fundamental_value(__pyx_self, __pyx_v_self, __pyx_v_value);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_36fundamental_value(__pyx_self, __pyx_v_self, __pyx_v_value);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_34fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36fundamental_value(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("fundamental_value", 0);
 
-  /* "gryphon/lib/models/order.pyx":201
+  /* "gryphon/lib/models/order.pyx":204
  *     @fundamental_value.setter
  *     def fundamental_value(self, value):
  *         self._fundamental_value = value.amount             # <<<<<<<<<<<<<<
  *         self._fundamental_value_currency = value.currency
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value, __pyx_t_1) < 0) __PYX_ERR(0, 201, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value, __pyx_t_1) < 0) __PYX_ERR(0, 204, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":202
+  /* "gryphon/lib/models/order.pyx":205
  *     def fundamental_value(self, value):
  *         self._fundamental_value = value.amount
  *         self._fundamental_value_currency = value.currency             # <<<<<<<<<<<<<<
  * 
  *     @property
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value_currency, __pyx_t_1) < 0) __PYX_ERR(0, 202, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fundamental_value_currency, __pyx_t_1) < 0) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":200
+  /* "gryphon/lib/models/order.pyx":203
  * 
  *     @fundamental_value.setter
  *     def fundamental_value(self, value):             # <<<<<<<<<<<<<<
@@ -5215,7 +5276,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_34fundamental_valu
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":205
+/* "gryphon/lib/models/order.pyx":208
  * 
  *     @property
  *     def spread(self):             # <<<<<<<<<<<<<<
@@ -5224,20 +5285,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_34fundamental_valu
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_37spread(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_37spread = {"spread", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_37spread, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_37spread(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_39spread(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_39spread = {"spread", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_39spread, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_39spread(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("spread (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_38spread(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_38spread(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5251,21 +5312,21 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
   PyObject *__pyx_t_9 = NULL;
   __Pyx_RefNannySetupContext("spread", 0);
 
-  /* "gryphon/lib/models/order.pyx":206
+  /* "gryphon/lib/models/order.pyx":209
  *     @property
  *     def spread(self):
  *         if not self._spread:             # <<<<<<<<<<<<<<
  *             return None
  *         return Money(self._spread, self._spread_currency)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_spread); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_spread); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (__pyx_t_3) {
 
-    /* "gryphon/lib/models/order.pyx":207
+    /* "gryphon/lib/models/order.pyx":210
  *     def spread(self):
  *         if not self._spread:
  *             return None             # <<<<<<<<<<<<<<
@@ -5276,7 +5337,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "gryphon/lib/models/order.pyx":206
+    /* "gryphon/lib/models/order.pyx":209
  *     @property
  *     def spread(self):
  *         if not self._spread:             # <<<<<<<<<<<<<<
@@ -5285,7 +5346,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
  */
   }
 
-  /* "gryphon/lib/models/order.pyx":208
+  /* "gryphon/lib/models/order.pyx":211
  *         if not self._spread:
  *             return None
  *         return Money(self._spread, self._spread_currency)             # <<<<<<<<<<<<<<
@@ -5293,11 +5354,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
  *     @spread.setter
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Money); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 208, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Money); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_spread); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 208, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_spread); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_spread_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 208, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_spread_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = NULL;
   __pyx_t_8 = 0;
@@ -5314,7 +5375,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -5324,7 +5385,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -5332,7 +5393,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
   } else
   #endif
   {
-    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 211, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     if (__pyx_t_7) {
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -5343,7 +5404,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
     PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_t_6);
     __pyx_t_5 = 0;
     __pyx_t_6 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
@@ -5352,7 +5413,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":205
+  /* "gryphon/lib/models/order.pyx":208
  * 
  *     @property
  *     def spread(self):             # <<<<<<<<<<<<<<
@@ -5376,7 +5437,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":211
+/* "gryphon/lib/models/order.pyx":214
  * 
  *     @spread.setter
  *     def spread(self, value):             # <<<<<<<<<<<<<<
@@ -5385,9 +5446,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_36spread(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_39spread(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_39spread = {"spread", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_39spread, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_39spread(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_41spread(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_41spread = {"spread", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_41spread, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_41spread(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_value = 0;
   PyObject *__pyx_r = 0;
@@ -5416,11 +5477,11 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_39spread(PyObject 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("spread", 1, 2, 2, 1); __PYX_ERR(0, 211, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("spread", 1, 2, 2, 1); __PYX_ERR(0, 214, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "spread") < 0)) __PYX_ERR(0, 211, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "spread") < 0)) __PYX_ERR(0, 214, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5433,50 +5494,50 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_39spread(PyObject 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("spread", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 211, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("spread", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 214, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.spread", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_38spread(__pyx_self, __pyx_v_self, __pyx_v_value);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_40spread(__pyx_self, __pyx_v_self, __pyx_v_value);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_38spread(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40spread(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("spread", 0);
 
-  /* "gryphon/lib/models/order.pyx":212
+  /* "gryphon/lib/models/order.pyx":215
  *     @spread.setter
  *     def spread(self, value):
  *         self._spread = value.amount             # <<<<<<<<<<<<<<
  *         self._spread_currency = value.currency
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_amount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_spread, __pyx_t_1) < 0) __PYX_ERR(0, 212, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_spread, __pyx_t_1) < 0) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":213
+  /* "gryphon/lib/models/order.pyx":216
  *     def spread(self, value):
  *         self._spread = value.amount
  *         self._spread_currency = value.currency             # <<<<<<<<<<<<<<
  * 
  *     @property
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 213, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_currency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_spread_currency, __pyx_t_1) < 0) __PYX_ERR(0, 213, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_spread_currency, __pyx_t_1) < 0) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "gryphon/lib/models/order.pyx":211
+  /* "gryphon/lib/models/order.pyx":214
  * 
  *     @spread.setter
  *     def spread(self, value):             # <<<<<<<<<<<<<<
@@ -5497,7 +5558,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_38spread(CYTHON_UN
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":216
+/* "gryphon/lib/models/order.pyx":219
  * 
  *     @property
  *     def volume_filled(self):             # <<<<<<<<<<<<<<
@@ -5506,20 +5567,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_38spread(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_41volume_filled(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_41volume_filled = {"volume_filled", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_41volume_filled, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_41volume_filled(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_43volume_filled(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_43volume_filled = {"volume_filled", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_43volume_filled, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_43volume_filled(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("volume_filled (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_filled(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_filled(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_t = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -5534,7 +5595,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
   PyObject *__pyx_t_9 = NULL;
   __Pyx_RefNannySetupContext("volume_filled", 0);
 
-  /* "gryphon/lib/models/order.pyx":217
+  /* "gryphon/lib/models/order.pyx":220
  *     @property
  *     def volume_filled(self):
  *         return sum([t.volume for t in self.trades], Money("0", self._volume_currency))             # <<<<<<<<<<<<<<
@@ -5542,17 +5603,17 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trades); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trades); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
     __pyx_t_3 = __pyx_t_2; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
   } else {
-    __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 220, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   for (;;) {
@@ -5560,17 +5621,17 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
       if (likely(PyList_CheckExact(__pyx_t_3))) {
         if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 217, __pyx_L1_error)
+        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 220, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 220, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       } else {
         if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 217, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 220, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 220, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       }
@@ -5580,7 +5641,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 217, __pyx_L1_error)
+          else __PYX_ERR(0, 220, __pyx_L1_error)
         }
         break;
       }
@@ -5588,15 +5649,15 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
     }
     __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_2);
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_volume); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_volume); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 217, __pyx_L1_error)
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Money); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 217, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_currency); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = NULL;
   __pyx_t_8 = 0;
@@ -5613,7 +5674,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_kp_s_0, __pyx_t_6};
-    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -5622,14 +5683,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_kp_s_0, __pyx_t_6};
-    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   } else
   #endif
   {
-    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     if (__pyx_t_7) {
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -5640,12 +5701,12 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
     __Pyx_GIVEREF(__pyx_t_6);
     PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_t_6);
     __pyx_t_6 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -5653,14 +5714,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_sum, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 217, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_sum, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":216
+  /* "gryphon/lib/models/order.pyx":219
  * 
  *     @property
  *     def volume_filled(self):             # <<<<<<<<<<<<<<
@@ -5685,7 +5746,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":220
+/* "gryphon/lib/models/order.pyx":223
  * 
  *     @property
  *     def volume_remaining(self):             # <<<<<<<<<<<<<<
@@ -5694,20 +5755,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_40volume_filled(CY
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_43volume_remaining(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_43volume_remaining = {"volume_remaining", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_43volume_remaining, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_43volume_remaining(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_45volume_remaining(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_45volume_remaining = {"volume_remaining", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_45volume_remaining, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_45volume_remaining(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("volume_remaining (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_remaining(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_44volume_remaining(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_remaining(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_44volume_remaining(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5715,7 +5776,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_remaining
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("volume_remaining", 0);
 
-  /* "gryphon/lib/models/order.pyx":221
+  /* "gryphon/lib/models/order.pyx":224
  *     @property
  *     def volume_remaining(self):
  *         return self.volume - self.volume_filled             # <<<<<<<<<<<<<<
@@ -5723,11 +5784,11 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_remaining
  *     # Included for backwards compatibility. New code should call calc_position()
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 221, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_filled); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 221, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_volume_filled); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Subtract(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 221, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Subtract(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -5735,7 +5796,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_remaining
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":220
+  /* "gryphon/lib/models/order.pyx":223
  * 
  *     @property
  *     def volume_remaining(self):             # <<<<<<<<<<<<<<
@@ -5756,7 +5817,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_remaining
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":225
+/* "gryphon/lib/models/order.pyx":228
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property
  *     def position(self):             # <<<<<<<<<<<<<<
@@ -5765,20 +5826,20 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_42volume_remaining
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_45position(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_45position = {"position", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_45position, METH_O, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_45position(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_47position(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_47position = {"position", (PyCFunction)__pyx_pw_7gryphon_3lib_6models_5order_5Order_47position, METH_O, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_47position(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("position (wrapper)", 0);
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_44position(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_46position(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_44position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5786,7 +5847,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_44position(CYTHON_
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("position", 0);
 
-  /* "gryphon/lib/models/order.pyx":226
+  /* "gryphon/lib/models/order.pyx":229
  *     @property
  *     def position(self):
  *         return self.calc_position()             # <<<<<<<<<<<<<<
@@ -5794,7 +5855,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_44position(CYTHON_
  *     def calc_position(self, include_fees=True):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -5808,14 +5869,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_44position(CYTHON_
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 226, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":225
+  /* "gryphon/lib/models/order.pyx":228
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property
  *     def position(self):             # <<<<<<<<<<<<<<
@@ -5836,7 +5897,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_44position(CYTHON_
   return __pyx_r;
 }
 
-/* "gryphon/lib/models/order.pyx":228
+/* "gryphon/lib/models/order.pyx":231
  *         return self.calc_position()
  * 
  *     def calc_position(self, include_fees=True):             # <<<<<<<<<<<<<<
@@ -5845,9 +5906,9 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_44position(CYTHON_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_47calc_position(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_47calc_position = {"calc_position", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_47calc_position, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_47calc_position(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_49calc_position(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_7gryphon_3lib_6models_5order_5Order_49calc_position = {"calc_position", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7gryphon_3lib_6models_5order_5Order_49calc_position, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_49calc_position(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_include_fees = 0;
   PyObject *__pyx_r = 0;
@@ -5881,7 +5942,7 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_47calc_position(Py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "calc_position") < 0)) __PYX_ERR(0, 228, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "calc_position") < 0)) __PYX_ERR(0, 231, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -5897,20 +5958,20 @@ static PyObject *__pyx_pw_7gryphon_3lib_6models_5order_5Order_47calc_position(Py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("calc_position", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 228, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("calc_position", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 231, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("gryphon.lib.models.order.Order.calc_position", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_46calc_position(__pyx_self, __pyx_v_self, __pyx_v_include_fees);
+  __pyx_r = __pyx_pf_7gryphon_3lib_6models_5order_5Order_48calc_position(__pyx_self, __pyx_v_self, __pyx_v_include_fees);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46calc_position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_include_fees) {
+static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_48calc_position(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_include_fees) {
   PyObject *__pyx_v_Position = NULL;
   PyObject *__pyx_v_t = NULL;
   PyObject *__pyx_r = NULL;
@@ -5924,44 +5985,44 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46calc_position(CY
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("calc_position", 0);
 
-  /* "gryphon/lib/models/order.pyx":229
+  /* "gryphon/lib/models/order.pyx":232
  * 
  *     def calc_position(self, include_fees=True):
  *         from gryphon.lib.models.exchange import Position             # <<<<<<<<<<<<<<
  *         return sum([t.calc_position(include_fees=include_fees) for t in self.trades], Position())
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_Position);
   __Pyx_GIVEREF(__pyx_n_s_Position);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_Position);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_exchange, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_gryphon_lib_models_exchange, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_t_1);
   __pyx_v_Position = __pyx_t_1;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "gryphon/lib/models/order.pyx":230
+  /* "gryphon/lib/models/order.pyx":233
  *     def calc_position(self, include_fees=True):
  *         from gryphon.lib.models.exchange import Position
  *         return sum([t.calc_position(include_fees=include_fees) for t in self.trades], Position())             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trades); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_trades); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_3 = __pyx_t_1; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
   } else {
-    __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 230, __pyx_L1_error)
+    __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 233, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 230, __pyx_L1_error)
+    __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 233, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -5969,17 +6030,17 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46calc_position(CY
       if (likely(PyList_CheckExact(__pyx_t_3))) {
         if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 230, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 233, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 230, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 233, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -5989,7 +6050,7 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46calc_position(CY
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 230, __pyx_L1_error)
+          else __PYX_ERR(0, 233, __pyx_L1_error)
         }
         break;
       }
@@ -5997,16 +6058,16 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46calc_position(CY
     }
     __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_calc_position); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 230, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 233, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_include_fees, __pyx_v_include_fees) < 0) __PYX_ERR(0, 230, __pyx_L1_error)
-    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 230, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_include_fees, __pyx_v_include_fees) < 0) __PYX_ERR(0, 233, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 233, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_t_7))) __PYX_ERR(0, 230, __pyx_L1_error)
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_t_7))) __PYX_ERR(0, 233, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6023,10 +6084,10 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46calc_position(CY
   }
   __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 230, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_2);
@@ -6034,14 +6095,14 @@ static PyObject *__pyx_pf_7gryphon_3lib_6models_5order_5Order_46calc_position(CY
   PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_t_3);
   __pyx_t_2 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_sum, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_sum, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "gryphon/lib/models/order.pyx":228
+  /* "gryphon/lib/models/order.pyx":231
  *         return self.calc_position()
  * 
  *     def calc_position(self, include_fees=True):             # <<<<<<<<<<<<<<
@@ -6130,6 +6191,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_ORDER, __pyx_k_ORDER, sizeof(__pyx_k_ORDER), 0, 1, 0, 0},
   {&__pyx_n_s_Order, __pyx_k_Order, sizeof(__pyx_k_Order), 0, 0, 1, 1},
   {&__pyx_n_s_Order___init, __pyx_k_Order___init, sizeof(__pyx_k_Order___init), 0, 0, 1, 1},
+  {&__pyx_n_s_Order___iter, __pyx_k_Order___iter, sizeof(__pyx_k_Order___iter), 0, 0, 1, 1},
   {&__pyx_n_s_Order___repr, __pyx_k_Order___repr, sizeof(__pyx_k_Order___repr), 0, 0, 1, 1},
   {&__pyx_n_s_Order___unicode, __pyx_k_Order___unicode, sizeof(__pyx_k_Order___unicode), 0, 0, 1, 1},
   {&__pyx_n_s_Order_calc_position, __pyx_k_Order_calc_position, sizeof(__pyx_k_Order_calc_position), 0, 0, 1, 1},
@@ -6202,6 +6264,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_include_fees, __pyx_k_include_fees, sizeof(__pyx_k_include_fees), 0, 0, 1, 1},
   {&__pyx_n_s_init, __pyx_k_init, sizeof(__pyx_k_init), 0, 0, 1, 1},
+  {&__pyx_n_s_iter, __pyx_k_iter, sizeof(__pyx_k_iter), 0, 0, 1, 1},
   {&__pyx_n_s_json, __pyx_k_json, sizeof(__pyx_k_json), 0, 0, 1, 1},
   {&__pyx_n_s_lower, __pyx_k_lower, sizeof(__pyx_k_lower), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
@@ -6280,8 +6343,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_property = __Pyx_GetBuiltinName(__pyx_n_s_property); if (!__pyx_builtin_property) __PYX_ERR(0, 146, __pyx_L1_error)
-  __pyx_builtin_sum = __Pyx_GetBuiltinName(__pyx_n_s_sum); if (!__pyx_builtin_sum) __PYX_ERR(0, 217, __pyx_L1_error)
+  __pyx_builtin_property = __Pyx_GetBuiltinName(__pyx_n_s_property); if (!__pyx_builtin_property) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_builtin_sum = __Pyx_GetBuiltinName(__pyx_n_s_sum); if (!__pyx_builtin_sum) __PYX_ERR(0, 220, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -6317,281 +6380,293 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "gryphon/lib/models/order.pyx":67
  *         self.currency = self.exchange.currency
  * 
- *     def __unicode__(self):             # <<<<<<<<<<<<<<
- *         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (
- *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         return self
+ * 
  */
   __pyx_tuple__5 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_unicode, 67, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_iter, 67, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 67, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":71
+  /* "gryphon/lib/models/order.pyx":70
+ *         return self
+ * 
+ *     def __unicode__(self):             # <<<<<<<<<<<<<<
+ *         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (
+ *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
+ */
+  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__7);
+  __Pyx_GIVEREF(__pyx_tuple__7);
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_unicode, 70, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 70, __pyx_L1_error)
+
+  /* "gryphon/lib/models/order.pyx":74
  *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
  *         return self.to_json()
  * 
  */
-  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 71, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__7);
-  __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_repr, 71, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__9);
+  __Pyx_GIVEREF(__pyx_tuple__9);
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_repr, 74, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 74, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":74
+  /* "gryphon/lib/models/order.pyx":77
  *         return self.to_json()
  * 
  *     def to_json(self):             # <<<<<<<<<<<<<<
  *         return json.dumps({
  *             'order_id':self.order_id,
  */
-  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_t); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 74, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__9);
-  __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_to_json, 74, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_t); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__11);
+  __Pyx_GIVEREF(__pyx_tuple__11);
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_to_json, 77, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 77, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":89
+  /* "gryphon/lib/models/order.pyx":92
  *         }, ensure_ascii=False)
  * 
  *     def set_trades(self, trades):             # <<<<<<<<<<<<<<
  *         self.trades = []
- *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import
+ *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import todo
  */
-  __pyx_tuple__11 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_trades, __pyx_n_s_Trade, __pyx_n_s_trade, __pyx_n_s_new_trade); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 89, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__11);
-  __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_set_trades, 89, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_trades, __pyx_n_s_Trade, __pyx_n_s_trade, __pyx_n_s_new_trade); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__13);
+  __Pyx_GIVEREF(__pyx_tuple__13);
+  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_set_trades, 92, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 92, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":105
+  /* "gryphon/lib/models/order.pyx":108
  * 
  *     # returns position change
  *     def was_eaten(self, order_details):             # <<<<<<<<<<<<<<
  *         old_position = self.calc_position()
  *         old_position_no_fees = self.calc_position(include_fees=False)
  */
-  __pyx_tuple__13 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_order_details, __pyx_n_s_old_position, __pyx_n_s_old_position_no_fees, __pyx_n_s_position_change, __pyx_n_s_position_change_no_fees); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 105, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__13);
-  __Pyx_GIVEREF(__pyx_tuple__13);
-  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_was_eaten, 105, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 105, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_order_details, __pyx_n_s_old_position, __pyx_n_s_old_position_no_fees, __pyx_n_s_position_change, __pyx_n_s_position_change_no_fees); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__15);
+  __Pyx_GIVEREF(__pyx_tuple__15);
+  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_was_eaten, 108, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 108, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":128
+  /* "gryphon/lib/models/order.pyx":131
  * 
  *     # returns position change
  *     def was_partially_eaten(self, order_details):             # <<<<<<<<<<<<<<
  *         old_position = self.calc_position()
  *         old_position_no_fees = self.calc_position(include_fees=False)
  */
-  __pyx_tuple__15 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_order_details, __pyx_n_s_old_position, __pyx_n_s_old_position_no_fees, __pyx_n_s_position_change, __pyx_n_s_position_change_no_fees); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 128, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__15);
-  __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_was_partially_eaten, 128, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_order_details, __pyx_n_s_old_position, __pyx_n_s_old_position_no_fees, __pyx_n_s_position_change, __pyx_n_s_position_change_no_fees); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__17);
+  __Pyx_GIVEREF(__pyx_tuple__17);
+  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_was_partially_eaten, 131, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 131, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":140
+  /* "gryphon/lib/models/order.pyx":143
  * 
  *     # returns position change
  *     def reverse(self):             # <<<<<<<<<<<<<<
  *         old_position = self.position
  *         self.status = Order.REVERSED
  */
-  __pyx_tuple__17 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_old_position); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 140, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__17);
-  __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_reverse, 140, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_old_position); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__19);
+  __Pyx_GIVEREF(__pyx_tuple__19);
+  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_reverse, 143, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 143, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":147
+  /* "gryphon/lib/models/order.pyx":150
  * 
  *     @property
  *     def exchange(self):             # <<<<<<<<<<<<<<
  *         if hasattr(self, '_exchange'):
  *             return self._exchange
  */
-  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 147, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__19);
-  __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_exchange, 147, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 147, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__21);
+  __Pyx_GIVEREF(__pyx_tuple__21);
+  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_exchange, 150, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 150, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":157
+  /* "gryphon/lib/models/order.pyx":160
  * 
  *     @exchange.setter
  *     def exchange(self, value):             # <<<<<<<<<<<<<<
  *         self._exchange = value
  *         self._exchange_name = self._exchange.name
  */
-  __pyx_tuple__21 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 157, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__21);
-  __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_exchange, 157, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__23);
+  __Pyx_GIVEREF(__pyx_tuple__23);
+  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_exchange, 160, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 160, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":163
+  /* "gryphon/lib/models/order.pyx":166
  * 
  *     @property
  *     def volume(self):             # <<<<<<<<<<<<<<
  *         if not self._volume:
  *             return None
  */
-  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 163, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__23);
-  __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_volume, 163, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __pyx_tuple__25 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__25);
+  __Pyx_GIVEREF(__pyx_tuple__25);
+  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_volume, 166, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 166, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":169
+  /* "gryphon/lib/models/order.pyx":172
  * 
  *     @volume.setter
  *     def volume(self, value):             # <<<<<<<<<<<<<<
  *         self._volume = value.amount
  *         self._volume_currency = value.currency
  */
-  __pyx_tuple__25 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 169, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__25);
-  __Pyx_GIVEREF(__pyx_tuple__25);
-  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_volume, 169, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_tuple__27 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__27);
+  __Pyx_GIVEREF(__pyx_tuple__27);
+  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_volume, 172, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 172, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":174
+  /* "gryphon/lib/models/order.pyx":177
  * 
  *     @property
  *     def price(self):             # <<<<<<<<<<<<<<
  *         if not self._price:
  *             return None
  */
-  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 174, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__27);
-  __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_price, 174, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 177, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__29);
+  __Pyx_GIVEREF(__pyx_tuple__29);
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_price, 177, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 177, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":180
+  /* "gryphon/lib/models/order.pyx":183
  * 
  *     @price.setter
  *     def price(self, value):             # <<<<<<<<<<<<<<
  *         self._price = value.amount
  *         self._price_currency = value.currency
  */
-  __pyx_tuple__29 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 180, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__29);
-  __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_price, 180, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 180, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 183, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__31);
+  __Pyx_GIVEREF(__pyx_tuple__31);
+  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_price, 183, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 183, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":185
+  /* "gryphon/lib/models/order.pyx":188
  * 
  *     @property
  *     def competitiveness(self):             # <<<<<<<<<<<<<<
  *         return Money(self._competitiveness, self._competitiveness_currency)
  * 
  */
-  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 185, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__31);
-  __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_competitiveness_2, 185, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __pyx_tuple__33 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 188, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__33);
+  __Pyx_GIVEREF(__pyx_tuple__33);
+  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_competitiveness_2, 188, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 188, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":189
+  /* "gryphon/lib/models/order.pyx":192
  * 
  *     @competitiveness.setter
  *     def competitiveness(self, value):             # <<<<<<<<<<<<<<
  *         self._competitiveness = value.amount
  *         self._competitiveness_currency = value.currency
  */
-  __pyx_tuple__33 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 189, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__33);
-  __Pyx_GIVEREF(__pyx_tuple__33);
-  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_competitiveness_2, 189, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 189, __pyx_L1_error)
+  __pyx_tuple__35 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__35);
+  __Pyx_GIVEREF(__pyx_tuple__35);
+  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_competitiveness_2, 192, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 192, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":194
+  /* "gryphon/lib/models/order.pyx":197
  * 
  *     @property
  *     def fundamental_value(self):             # <<<<<<<<<<<<<<
  *         if not self._fundamental_value:
  *             return None
  */
-  __pyx_tuple__35 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 194, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__35);
-  __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_fundamental_value_2, 194, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 194, __pyx_L1_error)
+  __pyx_tuple__37 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__37);
+  __Pyx_GIVEREF(__pyx_tuple__37);
+  __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_fundamental_value_2, 197, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(0, 197, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":200
+  /* "gryphon/lib/models/order.pyx":203
  * 
  *     @fundamental_value.setter
  *     def fundamental_value(self, value):             # <<<<<<<<<<<<<<
  *         self._fundamental_value = value.amount
  *         self._fundamental_value_currency = value.currency
  */
-  __pyx_tuple__37 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 200, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__37);
-  __Pyx_GIVEREF(__pyx_tuple__37);
-  __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_fundamental_value_2, 200, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(0, 200, __pyx_L1_error)
+  __pyx_tuple__39 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__39);
+  __Pyx_GIVEREF(__pyx_tuple__39);
+  __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_fundamental_value_2, 203, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 203, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":205
+  /* "gryphon/lib/models/order.pyx":208
  * 
  *     @property
  *     def spread(self):             # <<<<<<<<<<<<<<
  *         if not self._spread:
  *             return None
  */
-  __pyx_tuple__39 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 205, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__39);
-  __Pyx_GIVEREF(__pyx_tuple__39);
-  __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_spread_2, 205, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_tuple__41 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 208, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__41);
+  __Pyx_GIVEREF(__pyx_tuple__41);
+  __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_spread_2, 208, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 208, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":211
+  /* "gryphon/lib/models/order.pyx":214
  * 
  *     @spread.setter
  *     def spread(self, value):             # <<<<<<<<<<<<<<
  *         self._spread = value.amount
  *         self._spread_currency = value.currency
  */
-  __pyx_tuple__41 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 211, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__41);
-  __Pyx_GIVEREF(__pyx_tuple__41);
-  __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_spread_2, 211, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_tuple__43 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_value); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__43);
+  __Pyx_GIVEREF(__pyx_tuple__43);
+  __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_spread_2, 214, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) __PYX_ERR(0, 214, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":216
+  /* "gryphon/lib/models/order.pyx":219
  * 
  *     @property
  *     def volume_filled(self):             # <<<<<<<<<<<<<<
  *         return sum([t.volume for t in self.trades], Money("0", self._volume_currency))
  * 
  */
-  __pyx_tuple__43 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_t); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 216, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__43);
-  __Pyx_GIVEREF(__pyx_tuple__43);
-  __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_volume_filled, 216, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_tuple__45 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_t); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 219, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__45);
+  __Pyx_GIVEREF(__pyx_tuple__45);
+  __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_volume_filled, 219, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 219, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":220
+  /* "gryphon/lib/models/order.pyx":223
  * 
  *     @property
  *     def volume_remaining(self):             # <<<<<<<<<<<<<<
  *         return self.volume - self.volume_filled
  * 
  */
-  __pyx_tuple__45 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 220, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__45);
-  __Pyx_GIVEREF(__pyx_tuple__45);
-  __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_volume_remaining, 220, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 220, __pyx_L1_error)
+  __pyx_tuple__47 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__47);
+  __Pyx_GIVEREF(__pyx_tuple__47);
+  __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_volume_remaining, 223, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) __PYX_ERR(0, 223, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":225
+  /* "gryphon/lib/models/order.pyx":228
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property
  *     def position(self):             # <<<<<<<<<<<<<<
  *         return self.calc_position()
  * 
  */
-  __pyx_tuple__47 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 225, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__47);
-  __Pyx_GIVEREF(__pyx_tuple__47);
-  __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_position, 225, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) __PYX_ERR(0, 225, __pyx_L1_error)
+  __pyx_tuple__49 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 228, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__49);
+  __Pyx_GIVEREF(__pyx_tuple__49);
+  __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_position, 228, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) __PYX_ERR(0, 228, __pyx_L1_error)
 
-  /* "gryphon/lib/models/order.pyx":228
+  /* "gryphon/lib/models/order.pyx":231
  *         return self.calc_position()
  * 
  *     def calc_position(self, include_fees=True):             # <<<<<<<<<<<<<<
  *         from gryphon.lib.models.exchange import Position
  *         return sum([t.calc_position(include_fees=include_fees) for t in self.trades], Position())
  */
-  __pyx_tuple__49 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_include_fees, __pyx_n_s_Position, __pyx_n_s_t); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 228, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__49);
-  __Pyx_GIVEREF(__pyx_tuple__49);
-  __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_calc_position, 228, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) __PYX_ERR(0, 228, __pyx_L1_error)
-  __pyx_tuple__51 = PyTuple_Pack(1, ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 228, __pyx_L1_error)
+  __pyx_tuple__51 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_include_fees, __pyx_n_s_Position, __pyx_n_s_t); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__51);
   __Pyx_GIVEREF(__pyx_tuple__51);
+  __pyx_codeobj__52 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__51, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_gryphon_lib_models_order_pyx, __pyx_n_s_calc_position, 231, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__52)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_tuple__53 = PyTuple_Pack(1, ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__53);
+  __Pyx_GIVEREF(__pyx_tuple__53);
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -8559,111 +8634,123 @@ if (!__Pyx_RefNanny) {
   /* "gryphon/lib/models/order.pyx":67
  *         self.currency = self.exchange.currency
  * 
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         return self
+ * 
+ */
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_3__iter__, 0, __pyx_n_s_Order___iter, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_10);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_iter, __pyx_t_10) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+
+  /* "gryphon/lib/models/order.pyx":70
+ *         return self
+ * 
  *     def __unicode__(self):             # <<<<<<<<<<<<<<
  *         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (
  *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_3__unicode__, 0, __pyx_n_s_Order___unicode, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_5__unicode__, 0, __pyx_n_s_Order___unicode, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_unicode, __pyx_t_10) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_unicode, __pyx_t_10) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":71
+  /* "gryphon/lib/models/order.pyx":74
  *             self.order_type, self.exchange.name, self.status, self.price, self.volume)
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
  *         return self.to_json()
  * 
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_5__repr__, 0, __pyx_n_s_Order___repr, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_7__repr__, 0, __pyx_n_s_Order___repr, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_repr, __pyx_t_10) < 0) __PYX_ERR(0, 71, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_repr, __pyx_t_10) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":74
+  /* "gryphon/lib/models/order.pyx":77
  *         return self.to_json()
  * 
  *     def to_json(self):             # <<<<<<<<<<<<<<
  *         return json.dumps({
  *             'order_id':self.order_id,
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_7to_json, 0, __pyx_n_s_Order_to_json, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_9to_json, 0, __pyx_n_s_Order_to_json, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_to_json, __pyx_t_10) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_to_json, __pyx_t_10) < 0) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":89
+  /* "gryphon/lib/models/order.pyx":92
  *         }, ensure_ascii=False)
  * 
  *     def set_trades(self, trades):             # <<<<<<<<<<<<<<
  *         self.trades = []
- *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import
+ *         from gryphon.lib.models.trade import Trade  #sqlalchemy circular import todo
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_9set_trades, 0, __pyx_n_s_Order_set_trades, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_11set_trades, 0, __pyx_n_s_Order_set_trades, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_set_trades, __pyx_t_10) < 0) __PYX_ERR(0, 89, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_set_trades, __pyx_t_10) < 0) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":105
+  /* "gryphon/lib/models/order.pyx":108
  * 
  *     # returns position change
  *     def was_eaten(self, order_details):             # <<<<<<<<<<<<<<
  *         old_position = self.calc_position()
  *         old_position_no_fees = self.calc_position(include_fees=False)
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_11was_eaten, 0, __pyx_n_s_Order_was_eaten, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 105, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_13was_eaten, 0, __pyx_n_s_Order_was_eaten, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_was_eaten, __pyx_t_10) < 0) __PYX_ERR(0, 105, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_was_eaten, __pyx_t_10) < 0) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":128
+  /* "gryphon/lib/models/order.pyx":131
  * 
  *     # returns position change
  *     def was_partially_eaten(self, order_details):             # <<<<<<<<<<<<<<
  *         old_position = self.calc_position()
  *         old_position_no_fees = self.calc_position(include_fees=False)
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_13was_partially_eaten, 0, __pyx_n_s_Order_was_partially_eaten, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_15was_partially_eaten, 0, __pyx_n_s_Order_was_partially_eaten, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_was_partially_eaten, __pyx_t_10) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_was_partially_eaten, __pyx_t_10) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":140
+  /* "gryphon/lib/models/order.pyx":143
  * 
  *     # returns position change
  *     def reverse(self):             # <<<<<<<<<<<<<<
  *         old_position = self.position
  *         self.status = Order.REVERSED
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_15reverse, 0, __pyx_n_s_Order_reverse, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_17reverse, 0, __pyx_n_s_Order_reverse, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_reverse, __pyx_t_10) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_reverse, __pyx_t_10) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":147
+  /* "gryphon/lib/models/order.pyx":150
  * 
  *     @property
  *     def exchange(self):             # <<<<<<<<<<<<<<
  *         if hasattr(self, '_exchange'):
  *             return self._exchange
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_17exchange, 0, __pyx_n_s_Order_exchange, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 147, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_19exchange, 0, __pyx_n_s_Order_exchange, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__22)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
 
-  /* "gryphon/lib/models/order.pyx":146
+  /* "gryphon/lib/models/order.pyx":149
  *         return self.position_change(old_position)
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def exchange(self):
  *         if hasattr(self, '_exchange'):
  */
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_exchange, __pyx_t_5) < 0) __PYX_ERR(0, 147, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_exchange, __pyx_t_5) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/order.pyx":156
+  /* "gryphon/lib/models/order.pyx":159
  *             return None
  * 
  *     @exchange.setter             # <<<<<<<<<<<<<<
@@ -8675,20 +8762,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_exchange);
   }
-  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 156, __pyx_L1_error)
+  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_setter); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_setter); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":157
+  /* "gryphon/lib/models/order.pyx":160
  * 
  *     @exchange.setter
  *     def exchange(self, value):             # <<<<<<<<<<<<<<
  *         self._exchange = value
  *         self._exchange_name = self._exchange.name
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_19exchange, 0, __pyx_n_s_Order_exchange, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__22)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_21exchange, 0, __pyx_n_s_Order_exchange, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -8703,36 +8790,36 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_7, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_10);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 156, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_exchange, __pyx_t_5) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_exchange, __pyx_t_5) < 0) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/order.pyx":163
+  /* "gryphon/lib/models/order.pyx":166
  * 
  *     @property
  *     def volume(self):             # <<<<<<<<<<<<<<
  *         if not self._volume:
  *             return None
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_21volume, 0, __pyx_n_s_Order_volume, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_23volume, 0, __pyx_n_s_Order_volume, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "gryphon/lib/models/order.pyx":162
+  /* "gryphon/lib/models/order.pyx":165
  * 
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def volume(self):
  *         if not self._volume:
  */
-  __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_volume, __pyx_t_8) < 0) __PYX_ERR(0, 163, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_volume, __pyx_t_8) < 0) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-  /* "gryphon/lib/models/order.pyx":168
+  /* "gryphon/lib/models/order.pyx":171
  *         return Money(self._volume, self._volume_currency)
  * 
  *     @volume.setter             # <<<<<<<<<<<<<<
@@ -8744,20 +8831,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_volume);
   }
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 168, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_setter); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_setter); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/order.pyx":169
+  /* "gryphon/lib/models/order.pyx":172
  * 
  *     @volume.setter
  *     def volume(self, value):             # <<<<<<<<<<<<<<
  *         self._volume = value.amount
  *         self._volume_currency = value.currency
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_23volume, 0, __pyx_n_s_Order_volume, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_25volume, 0, __pyx_n_s_Order_volume, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_10))) {
@@ -8772,36 +8859,36 @@ if (!__Pyx_RefNanny) {
   __pyx_t_8 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_7, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 168, __pyx_L1_error)
+  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_volume, __pyx_t_8) < 0) __PYX_ERR(0, 169, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_volume, __pyx_t_8) < 0) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-  /* "gryphon/lib/models/order.pyx":174
+  /* "gryphon/lib/models/order.pyx":177
  * 
  *     @property
  *     def price(self):             # <<<<<<<<<<<<<<
  *         if not self._price:
  *             return None
  */
-  __pyx_t_8 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_25price, 0, __pyx_n_s_Order_price, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_27price, 0, __pyx_n_s_Order_price, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
 
-  /* "gryphon/lib/models/order.pyx":173
+  /* "gryphon/lib/models/order.pyx":176
  *         self._volume_currency = value.currency
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def price(self):
  *         if not self._price:
  */
-  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_8); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 173, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_8); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_price, __pyx_t_10) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_price, __pyx_t_10) < 0) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":179
+  /* "gryphon/lib/models/order.pyx":182
  *         return Money(self._price, self._price_currency)
  * 
  *     @price.setter             # <<<<<<<<<<<<<<
@@ -8813,20 +8900,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_price);
   }
-  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 179, __pyx_L1_error)
+  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_setter); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_setter); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-  /* "gryphon/lib/models/order.pyx":180
+  /* "gryphon/lib/models/order.pyx":183
  * 
  *     @price.setter
  *     def price(self, value):             # <<<<<<<<<<<<<<
  *         self._price = value.amount
  *         self._price_currency = value.currency
  */
-  __pyx_t_8 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_27price, 0, __pyx_n_s_Order_price, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 180, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_29price, 0, __pyx_n_s_Order_price, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -8841,36 +8928,36 @@ if (!__Pyx_RefNanny) {
   __pyx_t_10 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_7, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_8);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 179, __pyx_L1_error)
+  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_price, __pyx_t_10) < 0) __PYX_ERR(0, 180, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_price, __pyx_t_10) < 0) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":185
+  /* "gryphon/lib/models/order.pyx":188
  * 
  *     @property
  *     def competitiveness(self):             # <<<<<<<<<<<<<<
  *         return Money(self._competitiveness, self._competitiveness_currency)
  * 
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_29competitiveness, 0, __pyx_n_s_Order_competitiveness, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_31competitiveness, 0, __pyx_n_s_Order_competitiveness, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 188, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
 
-  /* "gryphon/lib/models/order.pyx":184
+  /* "gryphon/lib/models/order.pyx":187
  *         self._price_currency = value.currency
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def competitiveness(self):
  *         return Money(self._competitiveness, self._competitiveness_currency)
  */
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 184, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_competitiveness_2, __pyx_t_5) < 0) __PYX_ERR(0, 185, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_competitiveness_2, __pyx_t_5) < 0) __PYX_ERR(0, 188, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/order.pyx":188
+  /* "gryphon/lib/models/order.pyx":191
  *         return Money(self._competitiveness, self._competitiveness_currency)
  * 
  *     @competitiveness.setter             # <<<<<<<<<<<<<<
@@ -8882,20 +8969,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_competitiveness_2);
   }
-  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 188, __pyx_L1_error)
+  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_setter); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 188, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_setter); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":189
+  /* "gryphon/lib/models/order.pyx":192
  * 
  *     @competitiveness.setter
  *     def competitiveness(self, value):             # <<<<<<<<<<<<<<
  *         self._competitiveness = value.amount
  *         self._competitiveness_currency = value.currency
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_31competitiveness, 0, __pyx_n_s_Order_competitiveness, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 189, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_33competitiveness, 0, __pyx_n_s_Order_competitiveness, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -8910,36 +8997,36 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_7, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_10);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 188, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_competitiveness_2, __pyx_t_5) < 0) __PYX_ERR(0, 189, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_competitiveness_2, __pyx_t_5) < 0) __PYX_ERR(0, 192, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/order.pyx":194
+  /* "gryphon/lib/models/order.pyx":197
  * 
  *     @property
  *     def fundamental_value(self):             # <<<<<<<<<<<<<<
  *         if not self._fundamental_value:
  *             return None
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_33fundamental_value, 0, __pyx_n_s_Order_fundamental_value, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 194, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_35fundamental_value, 0, __pyx_n_s_Order_fundamental_value, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__38)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "gryphon/lib/models/order.pyx":193
+  /* "gryphon/lib/models/order.pyx":196
  *         self._competitiveness_currency = value.currency
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def fundamental_value(self):
  *         if not self._fundamental_value:
  */
-  __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 193, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_fundamental_value_2, __pyx_t_8) < 0) __PYX_ERR(0, 194, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_fundamental_value_2, __pyx_t_8) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-  /* "gryphon/lib/models/order.pyx":199
+  /* "gryphon/lib/models/order.pyx":202
  *         return Money(self._fundamental_value, self._fundamental_value_currency)
  * 
  *     @fundamental_value.setter             # <<<<<<<<<<<<<<
@@ -8951,20 +9038,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_fundamental_value_2);
   }
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 199, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_setter); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 199, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_setter); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/order.pyx":200
+  /* "gryphon/lib/models/order.pyx":203
  * 
  *     @fundamental_value.setter
  *     def fundamental_value(self, value):             # <<<<<<<<<<<<<<
  *         self._fundamental_value = value.amount
  *         self._fundamental_value_currency = value.currency
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_35fundamental_value, 0, __pyx_n_s_Order_fundamental_value, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__38)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 200, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_37fundamental_value, 0, __pyx_n_s_Order_fundamental_value, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_10))) {
@@ -8979,36 +9066,36 @@ if (!__Pyx_RefNanny) {
   __pyx_t_8 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_7, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 199, __pyx_L1_error)
+  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_fundamental_value_2, __pyx_t_8) < 0) __PYX_ERR(0, 200, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_fundamental_value_2, __pyx_t_8) < 0) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-  /* "gryphon/lib/models/order.pyx":205
+  /* "gryphon/lib/models/order.pyx":208
  * 
  *     @property
  *     def spread(self):             # <<<<<<<<<<<<<<
  *         if not self._spread:
  *             return None
  */
-  __pyx_t_8 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_37spread, 0, __pyx_n_s_Order_spread, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_39spread, 0, __pyx_n_s_Order_spread, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 208, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
 
-  /* "gryphon/lib/models/order.pyx":204
+  /* "gryphon/lib/models/order.pyx":207
  *         self._fundamental_value_currency = value.currency
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def spread(self):
  *         if not self._spread:
  */
-  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_8); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 204, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_8); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_spread_2, __pyx_t_10) < 0) __PYX_ERR(0, 205, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_spread_2, __pyx_t_10) < 0) __PYX_ERR(0, 208, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":210
+  /* "gryphon/lib/models/order.pyx":213
  *         return Money(self._spread, self._spread_currency)
  * 
  *     @spread.setter             # <<<<<<<<<<<<<<
@@ -9020,20 +9107,20 @@ if (!__Pyx_RefNanny) {
     PyErr_Clear();
     __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_spread_2);
   }
-  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 210, __pyx_L1_error)
+  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_setter); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_setter); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-  /* "gryphon/lib/models/order.pyx":211
+  /* "gryphon/lib/models/order.pyx":214
  * 
  *     @spread.setter
  *     def spread(self, value):             # <<<<<<<<<<<<<<
  *         self._spread = value.amount
  *         self._spread_currency = value.currency
  */
-  __pyx_t_8 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_39spread, 0, __pyx_n_s_Order_spread, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_41spread, 0, __pyx_n_s_Order_spread, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -9048,92 +9135,92 @@ if (!__Pyx_RefNanny) {
   __pyx_t_10 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_7, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_8);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 210, __pyx_L1_error)
+  if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_spread_2, __pyx_t_10) < 0) __PYX_ERR(0, 211, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_spread_2, __pyx_t_10) < 0) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":216
+  /* "gryphon/lib/models/order.pyx":219
  * 
  *     @property
  *     def volume_filled(self):             # <<<<<<<<<<<<<<
  *         return sum([t.volume for t in self.trades], Money("0", self._volume_currency))
  * 
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_41volume_filled, 0, __pyx_n_s_Order_volume_filled, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_43volume_filled, 0, __pyx_n_s_Order_volume_filled, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 219, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
 
-  /* "gryphon/lib/models/order.pyx":215
+  /* "gryphon/lib/models/order.pyx":218
  *         self._spread_currency = value.currency
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def volume_filled(self):
  *         return sum([t.volume for t in self.trades], Money("0", self._volume_currency))
  */
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 215, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_volume_filled, __pyx_t_5) < 0) __PYX_ERR(0, 216, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_volume_filled, __pyx_t_5) < 0) __PYX_ERR(0, 219, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/order.pyx":220
+  /* "gryphon/lib/models/order.pyx":223
  * 
  *     @property
  *     def volume_remaining(self):             # <<<<<<<<<<<<<<
  *         return self.volume - self.volume_filled
  * 
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_43volume_remaining, 0, __pyx_n_s_Order_volume_remaining, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 220, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_45volume_remaining, 0, __pyx_n_s_Order_volume_remaining, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__48)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "gryphon/lib/models/order.pyx":219
+  /* "gryphon/lib/models/order.pyx":222
  *         return sum([t.volume for t in self.trades], Money("0", self._volume_currency))
  * 
  *     @property             # <<<<<<<<<<<<<<
  *     def volume_remaining(self):
  *         return self.volume - self.volume_filled
  */
-  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 219, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 222, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_volume_remaining, __pyx_t_10) < 0) __PYX_ERR(0, 220, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_volume_remaining, __pyx_t_10) < 0) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "gryphon/lib/models/order.pyx":225
+  /* "gryphon/lib/models/order.pyx":228
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property
  *     def position(self):             # <<<<<<<<<<<<<<
  *         return self.calc_position()
  * 
  */
-  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_45position, 0, __pyx_n_s_Order_position, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__48)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 225, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_47position, 0, __pyx_n_s_Order_position, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__50)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 228, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
 
-  /* "gryphon/lib/models/order.pyx":224
+  /* "gryphon/lib/models/order.pyx":227
  * 
  *     # Included for backwards compatibility. New code should call calc_position()
  *     @property             # <<<<<<<<<<<<<<
  *     def position(self):
  *         return self.calc_position()
  */
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 224, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_property, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_position, __pyx_t_5) < 0) __PYX_ERR(0, 225, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_position, __pyx_t_5) < 0) __PYX_ERR(0, 228, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "gryphon/lib/models/order.pyx":228
+  /* "gryphon/lib/models/order.pyx":231
  *         return self.calc_position()
  * 
  *     def calc_position(self, include_fees=True):             # <<<<<<<<<<<<<<
  *         from gryphon.lib.models.exchange import Position
  *         return sum([t.calc_position(include_fees=include_fees) for t in self.trades], Position())
  */
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_47calc_position, 0, __pyx_n_s_Order_calc_position, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__50)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 228, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_7gryphon_3lib_6models_5order_5Order_49calc_position, 0, __pyx_n_s_Order_calc_position, NULL, __pyx_n_s_gryphon_lib_models_order, __pyx_d, ((PyObject *)__pyx_codeobj__52)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_5, __pyx_tuple__51);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_calc_position, __pyx_t_5) < 0) __PYX_ERR(0, 228, __pyx_L1_error)
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_5, __pyx_tuple__53);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_calc_position, __pyx_t_5) < 0) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "gryphon/lib/models/order.pyx":21

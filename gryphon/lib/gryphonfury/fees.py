@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from gryphon.lib.gryphonfury.revenue import get_start_and_end_position, get_start_and_end_position_trades
+# from gryphon.lib.gryphonfury.revenue import get_start_and_end_position, get_start_and_end_position_trades
 from sqlalchemy import func
 
 from gryphon.lib.logger import get_logger
@@ -100,6 +100,7 @@ def get_matched_trading_fees_in_period(db, start_time, end_time):
 
     fees = get_all_fees_in_period_in_usd(db, start_time, end_time)
 
+    from gryphon.lib.gryphonfury.revenue import get_start_and_end_position, get_start_and_end_position_trades
     start_position, end_position = get_start_and_end_position(db, start_time, end_time)
 
     start_open_position_trades, end_open_position_trades = get_start_and_end_position_trades(db, start_time, end_time, start_position, end_position)

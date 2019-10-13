@@ -10,9 +10,9 @@ from operator import attrgetter
 
 from sqlalchemy import func
 from sqlalchemy.orm import joinedload
-
 from gryphon.lib.exchange.consts import Consts
-import gryphon.lib.gryphonfury.fees as fees_lib
+# from gryphon.lib.exchange.consts import Consts
+from gryphon.lib.gryphonfury import fees as fees_lib
 import gryphon.lib.gryphonfury.positions as positions
 from gryphon.lib.logger import get_logger
 from gryphon.lib.models.exchange import Exchange as ExchangeData
@@ -271,6 +271,7 @@ def profit_data(matched_trades, price_currency=None, volume_currency='BTC'):
     volume_currency_fees = Money('0', volume_currency)
 
     for trade in matched_trades:
+
         if trade.trade_type == Consts.ASK:
             position -= trade.volume
             revenue += trade.price_in_currency(price_currency)

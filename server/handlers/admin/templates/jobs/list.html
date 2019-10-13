@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}工作列表-人人教{% end %}
+
+
+
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>创建者</th>
+        <th>方式</th>
+        <th>性别</th>
+        <th>学校</th>
+        <th>最高学历</th>
+        <th>金额</th>
+        <th>区域</th>
+        <th>学科</th>
+        <th>时间</th>
+        <th>创建时间</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for j in jobs %}
+    <tr>
+        <td>{{ j.provider.username }}</td>
+        <td>{{ j.method }}</td>
+        <td>{{ j.gender }}</td>
+        <td>{{ j.school }}</td>
+        <td>{{ j.highest_education }}</td>
+        <td>{{ j.pay }}</td>
+        <td>{{ j.region }}</td>
+        <td>{{ j.subject }}</td>
+        <td>{{ j.time }}</td>
+        <td>{{ j.create_at }}</td>
+    </tr>
+    {% end %}
+    </tbody>
+</table>
+{% end %}

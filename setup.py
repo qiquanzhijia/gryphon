@@ -96,6 +96,7 @@ ext_modules = [
     window_specialization('int64'),
     window_specialization('uint8'),
     window_specialization('label'),
+    Extension('gryphon.lib.exchange.consts', ['gryphon/lib/exchange/consts.pyx']),
 
 
     # Extension('gryphon.data._equities', ['gryphon/data/_equities.pyx']),

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}用户信息列表-人人教{% end %}
+
+{% block vars %}
+{% set navbar = 'users' %}
+{% set navleft = 'infos' %}
+{% end %}
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>账户</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>学历</th>
+        <th>性别</th>
+        <th>自评</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for u in user_infos %}
+    <tr>
+        <td>{{ u.user.username }}</td>
+        <td>{{ u.name }}</td>
+        <td>{{ u.age }}</td>
+        <td>{{ u.education }}</td>
+        <td>{{ u.gender }}</td>
+        <td class="text-truncate">{{ u.self_evaluate }}</td>
+    </tr>
+    {% end %}
+    </tbody>
+</table>
+{% end %}

@@ -30,6 +30,7 @@ class TestOrder(unittest.TestCase):
         fee = Money(1, "USD")
         volume = Money("0.5", "BTC")
         t = Trade(Consts.BID, price, fee, volume, None, None)
+        # t1 = set(t.keys)
         self.order.trades.append(t)
 
         price = Money(25, "USD")
@@ -43,6 +44,8 @@ class TestOrder(unittest.TestCase):
 
     def test_position(self):
         # assert self.order.position.keys()
+        testa = list(self.order.position)
+        # assert testa
         self.order.position.should.have.key('USD')
         self.order.position.should.have.key('BTC')
         self.order.position['USD'].should.equal(Money(-77, "USD"))

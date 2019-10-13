@@ -12,7 +12,7 @@ from collections import defaultdict
 import functools
 import timeit
 
-import monkeypatch_timeit; monkeypatch_timeit.monkeypatch_timeit()
+from gryphon.lib.util import monkeypatch_timeit; monkeypatch_timeit.monkeypatch_timeit()
 from line_profiler import LineProfiler
 
 def do_profile(follow=[]):

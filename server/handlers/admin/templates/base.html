@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="/static/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          href="/static/css/admin.css">
+
+    <title>{% block title %}人人教{% end %}</title>
+</head>
+<body>
+
+{% block body %}
+
+{% block vars %}
+{% set navbar = 'index' %}
+{% end %}
+
+{% block header %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bd-navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/admin">人人教</a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item {% if navbar=='index' %}active{% end %}">
+                <a class="nav-link" href="/admin">主页</a>
+            </li>
+            <li class="nav-item {% if navbar=='questions' %}active{% end %}">
+                <a class="nav-link" href="/admin/questions">问题</a>
+            </li>
+            <li class="nav-item {% if navbar=='jobs' %}active{% end %}">
+                <a class="nav-link" href="/admin/jobs">工作</a>
+            </li>
+            <li class="nav-item {% if navbar=='teachers' %}active{% end %}">
+                <a class="nav-link" href="/admin/teachers">教师</a>
+            </li>
+            <li class="nav-item {% if navbar=='users' %}active{% end %}">
+                <a class="nav-link" href="/admin/users">用户</a>
+            </li>
+            <li class="nav-item dropdown {% if navbar=='sys' %}active{% end %}">
+                <a class="nav-link dropdown-toggle" href="#"
+                   id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    系统信息管理
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/admin/schools">学校管理</a>
+                    <a class="dropdown-item" href="/admin/regions">地区管理</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+{% end %}
+
+<div class="container-fluid row">
+    {% block page %}
+
+    <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+        {% block left_nva %}
+        {% end %}
+    </div>
+
+    <div class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5 bd-content">
+        {% block content %}
+        {% end %}
+    </div>
+
+    {% end %}
+</div>
+
+
+{% block footer %}
+{% end %}
+
+{% end %}
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/static/js/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="/static/js/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="/static/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="/static/js/Chart.bundle.min.js"
+        integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ="
+        crossorigin="anonymous"></script>
+<script src="/static/js/chartjs-plugin-labels.min.js"></script>
+
+{% block script %}
+{% end %}
+</body>
+</html>

@@ -67,7 +67,7 @@ class TestLiquidityFunction(unittest.TestCase):
         except Exception:
             did_throw_exception = True            
 
-        did_throw_exception.should.equal(True)
+        assert did_throw_exception is True
 
     def test_no_overlap(self):
         liquidity = volume_available.volume_available_at_price(
@@ -76,5 +76,5 @@ class TestLiquidityFunction(unittest.TestCase):
             self.basic_book,
         )
 
-        liquidity.should.equal(Money('0', 'BTC'))
+        assert liquidity == (Money('0', 'BTC'))
 

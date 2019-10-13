@@ -13,9 +13,12 @@ it makes sure that our database does not get out of sync with our our account wi
 exchange.
 """
 
-import pyximport; pyximport.install()
+import pyximport;
+from asn1crypto.core import Set
 
-from sets import Set
+pyximport.install()
+
+# from sets import Set
 
 from decimal import Decimal, ROUND_UP, ROUND_DOWN
 from delorean import Delorean

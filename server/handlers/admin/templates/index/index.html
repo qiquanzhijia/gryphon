@@ -1,0 +1,210 @@
+{% extends "../base.html" %}
+
+{% block title %}首页-人人教{% end %}
+
+
+{% block vars %}
+{% set navbar = 'index' %}
+{% end %}
+
+{% block page %}
+
+<div class="ml-2 mt-2 container-fluid">
+    <div class="row mb-5">
+        <div class="col-sm-4">
+            <div class="card">
+                <canvas id="userGrowth" width="200" height="100"></canvas>
+                <div class="card-body">
+                    <p class="card-text">最近7天每天用户增加量</p>
+                    <a href="/admin/users" class="btn btn-primary">查看详情</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <canvas id="questionGrowth" width="200" height="100"></canvas>
+                <div class="card-body">
+                    <p class="card-text">最近7天每天问题增加量</p>
+                    <a href="/admin/questions" class="btn btn-primary">查看详情</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <canvas id="jobGrowth" width="200" height="100"></canvas>
+                <div class="card-body">
+                    <p class="card-text">最近7天每天家教需求增加量</p>
+                    <a href="/admin/jobs" class="btn btn-primary">查看详情</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <canvas id="topEdu" width="200" height="100"></canvas>
+
+                <div class="card-body">
+                    <p class="card-text">受教育程度</p>
+                    <a href="/admin/users/infos" class="btn btn-primary">查看详情</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <canvas id="topGender" width="200" height="100"></canvas>
+
+                <div class="card-body">
+                    <p class="card-text">性别分布</p>
+                    <a href="/admin/users/infos" class="btn btn-primary">查看详情</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <canvas id="topAge" width="200" height="100"></canvas>
+
+                <div class="card-body">
+                    <p class="card-text">年龄分布</p>
+                    <a href="/admin/users/infos" class="btn btn-primary">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% end %}
+
+{% block script %}
+<script>
+    $(function () {
+        Chart.defaults.global.plugins.labels = {
+            render: 'value'
+        };
+
+        var ctx = document.getElementById("userGrowth").getContext('2d');
+        var user_growth_labels = {% raw json_encode(user_growth_labels) %};
+        var user_growth_data = {% raw json_encode(user_growth_data) %};
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: user_growth_labels,
+                datasets: [{
+                    label: '新增用户',
+                    data: user_growth_data,
+                    borderColor: 'rgba(255,99,132,1)',
+                }]
+            }
+        });
+        var ctx = document.getElementById("questionGrowth").getContext('2d');
+        var question_growth_labels = {% raw json_encode(question_growth_labels) %};
+        var question_growth_data = {% raw json_encode(question_growth_data) %};
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: question_growth_labels,
+                datasets: [{
+                    label: '新增问题',
+                    data: question_growth_data,
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                }]
+            }
+        });
+        var ctx = document.getElementById("jobGrowth").getContext('2d');
+        var job_growth_labels = {% raw json_encode(job_growth_labels) %};
+        var job_growth_data = {% raw json_encode(job_growth_data) %};
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: job_growth_labels,
+                datasets: [{
+                    label: '家教需求',
+                    data: job_growth_data,
+                    borderColor: 'rgba(255, 206, 86, 1)',
+                }]
+            }
+        });
+
+
+        var ctx = document.getElementById("topEdu").getContext('2d');
+        var top_edu_labels = {% raw json_encode(top_edu_labels) %};
+        var top_edu_value = {% raw json_encode(top_edu_value) %};
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: top_edu_labels,
+                datasets: [{
+                    data: top_edu_value,
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                }]
+            },
+        });
+
+        var ctx = document.getElementById("topGender").getContext('2d');
+        var top_gender_labels = {% raw json_encode(top_gender_labels) %};
+        var top_gender_value = {% raw json_encode(top_gender_value) %};
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: top_gender_labels,
+                datasets: [{
+                    data: top_gender_value,
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                }]
+            },
+        });
+        var ctx = document.getElementById("topAge").getContext('2d');
+        var top_age_labels = {% raw json_encode(top_age_labels) %};
+        var top_age_value = {% raw json_encode(top_age_value) %};
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: top_age_labels,
+                datasets: [{
+                    data: top_age_value,
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                }]
+            },
+        });
+    });
+
+</script>
+{% end %}

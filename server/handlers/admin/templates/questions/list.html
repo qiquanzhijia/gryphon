@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}问题列表-人人教{% end %}
+
+
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th width="10%">提问者</th>
+        <th width="10%">关键词</th>
+        <th width="10%">附件</th>
+        <th width="10%">金额</th>
+        <th width="10%">状态</th>
+        <th width="50%">内容</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for q in questions %}
+    <tr>
+        <td>{{ q.asker.username }}</td>
+        <td>{% if q.keywords %}{{ q.keywords }}{% end %}</td>
+        <td>{% if q.attachments %}{{ q.attachments }}{% else %}无{% end %}</td>
+        <td>{{ q.pay }}</td>
+        <td>{% if q.state==1 %}已解决{% else %}未解决{% end %}</td>
+        <td>{{ q.content }}</td>
+    </tr>
+    {% end %}
+    </tbody>
+</table>
+{% end %}

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}地区列表-人人教{% end %}
+
+{% block vars %}
+{% set navbar = 'sys' %}
+{% set navleft = 'index' %}
+{% end %}
+
+{% block content %}
+
+{% if info %}
+<div class="alert alert-success" role="alert">
+  {{ info }}
+</div>
+{% end %}
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>地区代码</th>
+        <th>父级地区</th>
+        <th>层次</th>
+        <th>删除</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for s in regions %}
+    <tr>
+        <td>{{ s.name }}</td>
+        <td>{{ s.code }}</td>
+        <td>{{ s.parent_id }}</td>
+        <td>{{ s.level }}</td>
+        <td><button type="button" class="btn btn-danger btn-sm" name="delete" data-id="{{ s.id }}">删除</button></td>
+    {% end %}
+    </tbody>
+</table>
+
+<div class="d-none">
+    <form action="/admin/regions/delete" method="post" id="deleteForm">
+  <input type="text" name="id" value="" id="deleteId">
+  <input type="submit" value="Submit">
+</form>
+</div>
+{% end %}
+
+{% block script %}
+<script>
+    $(function () {
+        $("[name='delete']").click(function () {
+            $("#deleteId").val($(this).data("id"));
+            $("#deleteForm").submit();
+        });
+    });
+</script>
+{% end %}

@@ -1,0 +1,15 @@
+{% extends "../base.html" %}
+
+{% block left_nva %}
+<ul class="nav flex-column ">
+  <li class="nav-item">
+    <a class="nav-link {% if navleft=='index' %}active{% end %}" href="/admin/schools">学校列表</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link {% if navleft=='add' %}active{% end %}" href="/admin/schools/add">增加</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled {% if navleft=='import' %}active{% end %}" href="#">导入</a>
+  </li>
+</ul>
+{% end %}

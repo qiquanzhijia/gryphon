@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}学校列表-人人教{% end %}
+
+{% block vars %}
+{% set navbar = 'sys' %}
+{% set navleft = 'add' %}
+{% end %}
+
+
+{% block content %}
+
+{% if info %}
+<div class="alert alert-success" role="alert">
+    {{ info }}
+</div>
+{% end %}
+
+
+{% if err %}
+<div class="alert alert-danger" role="alert">
+    {{ err }}
+</div>
+{% end %}
+
+<form action="/admin/regions/add" method="post">
+    <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">名称</label>
+        <div class="col-sm-10">
+            <input type="text" name="name" class="form-control" id="name"
+                   placeholder="">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="code" class="col-sm-2 col-form-label">地区代码</label>
+        <div class="col-sm-10">
+            <input type="text" name="code" class="form-control" id="code"
+                   placeholder="">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="level" class="col-sm-2 col-form-label">层次</label>
+        <div class="col-sm-10">
+            <select class="form-control" id="level" name="level">
+                <option value="1">省级</option>
+                <option value="2">市级</option>
+                <option value="3">地区</option>
+            </select>
+        </div>
+    </div>
+
+        <div class="form-group row">
+        <label for="parent_id" class="col-sm-2 col-form-label">父级地区id</label>
+        <div class="col-sm-10">
+            <input type="text" name="parent_id" class="form-control"
+                   id="parent_id" placeholder="">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">添加</button>
+</form>
+{% end %}

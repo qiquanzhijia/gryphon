@@ -19,9 +19,9 @@ from gryphon.lib.exchange.consts import Consts
 from gryphon.lib.exchange.exchange_factory import make_exchange_from_key
 from gryphon.lib.models.base import Base
 from gryphon.lib.money import Money
-
+from gryphon.lib.tornado_sqlalchemy import declarative_base
 metadata = Base.metadata
-
+DeclarativeBase = declarative_base()
 
 class Trade(Base):
     __tablename__ = 'trade'
@@ -63,7 +63,10 @@ class Trade(Base):
         self.exchange_trade_id = exchange_trade_id
         self.order = order
         self.meta_data = json.dumps(meta_data)
-        
+
+    def __iter__(self):
+        return self
+
     def __unicode__(self):
         return u'[TRADE:%s, Order:%s] Price:%s, Volume:%s BTC, Exchange:%s' % (
             self.trade_type, self.order_id, self.price, self.volume, self.order.exchange.name)

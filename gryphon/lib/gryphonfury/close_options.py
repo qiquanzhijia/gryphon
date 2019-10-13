@@ -9,7 +9,7 @@ from gryphon.lib.gryphonfury import fees as fees_lib
 from gryphon.lib.gryphonfury import positions
 from gryphon.lib.gryphonfury import revenue as revenue_lib
 from gryphon.lib.metrics import quote as quote_lib
-from gryphon.lib.models.emeraldhavoc.orderbook import Orderbook
+# from gryphon.lib.models.emeraldhavoc import orderbook
 from gryphon.lib.models.order import Order
 from gryphon.lib.money import Money
 

@@ -2,7 +2,11 @@
 Unit tests for gryphon.lib.gryphonfury.close_options
 """
 
-import pyximport; pyximport.install()
+import pyximport;
+
+from gryphon.lib.gryphonfury import close_options
+
+pyximport.install()
 import gryphon.lib; gryphon.lib.prepare()
 
 import mock
@@ -11,7 +15,7 @@ import unittest
 
 from gryphon.lib.exchange.consts import Consts
 from gryphon.lib.exchange.exchange_order import Order as ExchangeOrder
-from gryphon.lib.gryphonfury import close_options
+# from gryphon.lib.gryphonfury import close_options
 from gryphon.lib.models.exchange import Exchange
 from gryphon.lib.models.order import Order
 from gryphon.lib.models.trade import Trade
@@ -19,7 +23,7 @@ from gryphon.lib.models.transaction import Transaction
 from gryphon.lib.money import Money
 
 
-class TestCloseOptions():
+class TestCloseOptions(unittest.TestCase):
     def mockExchange(self):
         exchange = Exchange('TEST')
         exchange.currency = 'USD'

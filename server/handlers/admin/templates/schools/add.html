@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}学校列表-人人教{% end %}
+
+{% block vars %}
+{% set navbar = 'sys' %}
+{% set navleft = 'add' %}
+{% end %}
+
+
+{% block content %}
+
+{% if info %}
+<div class="alert alert-success" role="alert">
+  {{ info }}
+</div>
+{% end %}
+
+
+{% if err %}
+<div class="alert alert-danger" role="alert">
+  {{ err }}
+</div>
+{% end %}
+
+<form action="/admin/schools/add" method="post">
+  <div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label">名称</label>
+    <div class="col-sm-10">
+      <input type="text" name="name" class="form-control" id="name" placeholder="河北大学">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="department" class="col-sm-2 col-form-label">主管部门</label>
+    <div class="col-sm-10">
+      <input type="text" name="department" class="form-control" id="department" placeholder="河北省">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="location" class="col-sm-2 col-form-label">所在地</label>
+    <div class="col-sm-10">
+      <input type="text" name="location" class="form-control" id="location" placeholder="保定市">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="level" class="col-sm-2 col-form-label">办学层次</label>
+    <div class="col-sm-10">
+      <input type="text" name="level" class="form-control" id="level" placeholder="本科">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="remark" class="col-sm-2 col-form-label">备注</label>
+    <div class="col-sm-10">
+      <input type="text" name="remark" class="form-control" id="remark" placeholder="">
+    </div>
+  </div>
+
+    <button type="submit" class="btn btn-primary">添加</button>
+</form>
+{% end %}

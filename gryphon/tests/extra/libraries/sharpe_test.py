@@ -24,7 +24,7 @@ class TestSharpe(unittest.TestCase):
 
     def test_basic(self):
         s = sharpe.calculate_sharpe_ratio(self.series, annualize_by_factor=24*365)
-        s.should.equal(np.float64(89.671800634636767))
+        s.should.equal(np.float64(89.67180063463678))
 
     def test_probabilistic(self):
         """

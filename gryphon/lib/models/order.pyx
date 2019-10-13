@@ -64,6 +64,9 @@ class Order(Base, BasicOrder):
         self.exchange_order_id = exchange_order_id
         self.currency = self.exchange.currency
 
+    def __iter__(self):
+        return self
+
     def __unicode__(self):
         return u'[ORDER:%s:%s] Status:%s, Price:%s, Volume:%s BTC' % (
             self.order_type, self.exchange.name, self.status, self.price, self.volume)
@@ -88,7 +91,7 @@ class Order(Base, BasicOrder):
 
     def set_trades(self, trades):
         self.trades = []
-        from gryphon.lib.models.trade import Trade  #sqlalchemy circular import
+        from gryphon.lib.models.trade import Trade  #sqlalchemy circular import todo
         for trade in trades:
             new_trade = Trade(
                 self.order_type,

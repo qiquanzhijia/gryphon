@@ -11,7 +11,7 @@ backtesting. For this, you can write another harness (so long as it conforms to 
 interface), and reimplement the interface functions in a different way.
 """
 
-from sets import Set
+# from sets import Set
 import termcolor as tc
 import time
 
